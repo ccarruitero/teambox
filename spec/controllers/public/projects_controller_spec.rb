@@ -2,10 +2,10 @@
 require 'spec_helper'
 
 describe Public::ProjectsController do
+  render_views
 
   before do
-    @public_project = Factory(:project)
-    @public_project.public = true
+    @public_project = Factory(:project, public: true)
   end
 
   describe '#index' do
@@ -17,7 +17,8 @@ describe Public::ProjectsController do
 
   describe '#show' do
     it 'should show public project' do
-      get :show, id: @public_project.name
+      get :show, id: @public_project.permalink
+      response.should be_success
       response.should have_selector 'title', content: @public_project.name
     end
   end
