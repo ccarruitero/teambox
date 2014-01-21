@@ -11,5 +11,6 @@ class Public::TaskListsController < Public::PublicController
   end
 
   def show
+    @public_task_list = @project.task_lists.find(params[:id])
   end
 end

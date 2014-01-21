@@ -2,6 +2,7 @@
 require 'spec_helper'
 
 describe Public::TaskListsController do
+  render_views
 
   before do
     @project = Factory(:project, public: true)
@@ -10,7 +11,7 @@ describe Public::TaskListsController do
   end
 
   describe '#index' do
-    it 'should show task lists in the project' do
+    it 'should show task lists in public project' do
       get :index, project_id: @project.permalink
       response.should be_success
     end
@@ -20,6 +21,7 @@ describe Public::TaskListsController do
     it 'should show task list' do
       get :show, project_id: @project.permalink, id: @task_list.id
       response.should be_success
+      response.should have_selector 'title', content: @task_list.name
     end
   end
 end
