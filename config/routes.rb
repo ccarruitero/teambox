@@ -18,6 +18,7 @@ Teambox::Application.routes.draw do
     match ':project_id/:id' => 'pages#show', :as => :project_page
     get ':project_id/task_lists' => 'task_lists#index', as: :project_task_lists
     get ':project_id/task_list/:id' => 'task_lists#show', as: :project_task_list
+    get ':project_id/task/:id' => 'tasks#show', as: :project_task
   end
 
   match 'api' => 'apidocs#index', :as => :api
