@@ -15,10 +15,10 @@ Teambox::Application.routes.draw do
     match ':id' => 'projects#show', :as => :project
     match ':project_id/conversations' => 'conversations#index', :as => :project_conversations
     match ':project_id/conversations/:id' => 'conversations#show', :as => :project_conversation
-    match ':project_id/:id' => 'pages#show', :as => :project_page
-    get ':project_id/task_lists' => 'task_lists#index', as: :project_task_lists
+    get ':project_id/task_lists', to: 'task_lists#index', as: :project_task_lists, format: 'rss'
     get ':project_id/task_list/:id' => 'task_lists#show', as: :project_task_list
     get ':project_id/task/:id' => 'tasks#show', as: :project_task
+    match ':project_id/:id' => 'pages#show', :as => :project_page
   end
 
   match 'api' => 'apidocs#index', :as => :api
@@ -231,6 +231,10 @@ Teambox::Application.routes.draw do
     end
 
     namespace :api_v1, :path => 'api/1' do
+
+      namespace :public do
+      end
+
       resources :projects, :except => [:new, :edit] do
         member do
           put :transfer
