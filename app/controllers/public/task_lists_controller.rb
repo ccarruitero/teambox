@@ -6,7 +6,6 @@ class Public::TaskListsController < Public::PublicController
 
     respond_to do |f|
       f.rss { render layout: false }
-      f.html
     end
   end
 

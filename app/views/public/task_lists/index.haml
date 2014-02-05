@@ -1,6 +1,0 @@
-.task_lists
-  - for task_list in @public_task_lists
-    .task_list
-      = link_to (task_list), seo_public_project_conversation_path(@project, task_list), class: :task_list
-
-= render 'public/projects/column'

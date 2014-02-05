@@ -1,9 +1,8 @@
 # -*- encoding : utf-8 -*-
 class Public::PublicController < ApplicationController
-  skip_before_filter :rss_token, :recent_projects, :touch_user, :verify_authenticity_token
-  skip_before_filter :login_required
-  before_filter :set_english_locale
-  before_filter :load_public_projects
+  skip_before_filter :rss_token, :recent_projects, :touch_user,
+                     :verify_authenticity_tokeni, :login_required
+  before_filter :set_english_locale, :load_public_projects
 
   layout 'public_projects'
 
@@ -23,7 +22,7 @@ class Public::PublicController < ApplicationController
     end
 
     def load_public_projects
-      @projects = current_user ? current_user.projects.find_all_by_public(true) : []
+      @projects = Project.find_all_by_public(true)
     end
 
 end
