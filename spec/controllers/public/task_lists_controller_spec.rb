@@ -12,7 +12,7 @@ describe Public::TaskListsController do
 
   describe '#index' do
     it 'should show task lists in public project' do
-      get :index, project_id: @project.permalink
+      get :index, format: 'rss',  project_id: @project.permalink
       response.should be_success
     end
   end
