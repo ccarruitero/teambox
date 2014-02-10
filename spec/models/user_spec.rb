@@ -505,7 +505,10 @@ describe User do
     describe "#notificable_users" do
       context "during week days" do
         it "returns all notificable users" do
-          Date.any_instance.stub(:wday).and_return(5)
+          stubbed_day = Date.today
+          stubbed_day.stub(:wday).and_return(5)
+          @zone.stub(:today).and_return(stubbed_day)
+
           User.notificable_users([@zone]).should include(@user)
           User.notificable_users([@zone]).should include(@user_notificable_on_weekends)
         end
@@ -513,7 +516,10 @@ describe User do
 
       context "during weekends" do
         it "returns only users who wants to be notified during weekends" do
-          Date.any_instance.stub(:wday).and_return(0)
+          stubbed_day = Date.today
+          stubbed_day.stub(:wday).and_return(0)
+          @zone.stub(:today).and_return(stubbed_day)
+
           User.notificable_users([@zone]).should_not include(@user)
           User.notificable_users([@zone]).should include(@user_notificable_on_weekends)
         end
