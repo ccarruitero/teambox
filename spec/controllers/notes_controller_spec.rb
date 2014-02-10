@@ -18,8 +18,12 @@ describe NotesController do
     it "should allow participants to create notes" do
       login_as @user
 
-      post :create, :project_id => @project.permalink, :page_id => @page.id, :note => {:name => 'Important!'}
-      response.should redirect_to(project_page_path(@project,@page))
+      post :create,
+        :project_id => @project.permalink,
+        :page_id => @page.id,
+        :note => {:name => 'Important!'}
+      response.should be_success
+      response.should redirect_to project_page_path( @project, @page )
 
       @page.notes(true).length.should == 2
       @page.notes.last.name.should == 'Important!'
