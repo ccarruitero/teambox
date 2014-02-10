@@ -210,7 +210,7 @@ class UsersController < ApplicationController
 
   private
     def find_user
-      unless @user = ( User.find_by_login(params[:id]) || User.find_by_id(params[:id]) )
+      unless @user = ( User.where(login: params[:id]) || User.find(params[:id]) )
         flash[:error] = t('not_found.user')
         redirect_to root_path
       end
