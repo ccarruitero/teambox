@@ -62,6 +62,7 @@ class User < ActiveRecord::Base
                   :card_attributes,
                   :notify_conversations,
                   :notify_tasks,
+                  :notify_on_weekends,
                   :splash_screen,
                   :wants_task_reminder,
                   :uses_ldap_authentication

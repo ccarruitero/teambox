@@ -8,10 +8,8 @@ class User
     zones = ActiveSupport::TimeZone.all.select {|tz|
       now.in_time_zone(tz).hour == send_at_hour
     }
-    # don't send on weekends
-    return if [0, 6].include?(zones.first.today.wday)
 
-    self.wants_task_reminder_email.in_time_zone(zones.map(&:name)).find_each do |user|
+    notificable_users(zones).each do |user|
       if user.assigned_tasks.due_sooner_than_two_weeks.any?
         Emailer.send_email :daily_task_reminder, user.id
       end
@@ -40,6 +38,16 @@ class User
       end
 
       all[due_identifier] << task
+    end
+  end
+
+  def self.notificable_users(zones)
+    notificable_users = self.wants_task_reminder_email.in_time_zone(zones.map(&:name))
+
+    if [0, 6].include?(zones.first.today.wday)
+      notificable_users.wants_notifications_on_weekends
+    else
+      notificable_users
     end
   end
 end

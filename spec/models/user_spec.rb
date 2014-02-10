@@ -493,4 +493,31 @@ describe User do
       @user.card.should_not be nil
     end
   end
+
+  context "task_reminders" do
+    before do
+      @zone = ActiveSupport::TimeZone.all.first
+      @user_notificable_on_weekends = Factory.create(:user,
+        :notify_on_weekends => true, :time_zone => @zone.name)
+      @user = Factory.create(:user, :time_zone => @zone.name)
+    end
+
+    describe "#notificable_users" do
+      context "during week days" do
+        it "returns all notificable users" do
+          Date.any_instance.stub(:wday).and_return(5)
+          User.notificable_users([@zone]).should include(@user)
+          User.notificable_users([@zone]).should include(@user_notificable_on_weekends)
+        end
+      end
+
+      context "during weekends" do
+        it "returns only users who wants to be notified during weekends" do
+          Date.any_instance.stub(:wday).and_return(0)
+          User.notificable_users([@zone]).should_not include(@user)
+          User.notificable_users([@zone]).should include(@user_notificable_on_weekends)
+        end
+      end
+    end
+  end
 end
