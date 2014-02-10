@@ -1653,6 +1653,7 @@ fr:
         notify_conversations: "Envoyez‑moi une notification lorsque je regarde une conversation"
         notify_tasks: "Envoyez‑moi une notification lorsque je regarde une tâche"
         wants_task_reminder: "Envoyez‑moi une notification journalière de mes tâches"
+        notify_on_weekends: "Envoyez-moi les notifications quotidiennes le week-end"
       password: "Mot de passe"
       password_confirmation: "Confirmer le mot de passe"
       phone: "Numéro de téléphone"

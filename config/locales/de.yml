@@ -1445,6 +1445,7 @@ de:
         notify_conversations: "Benachrichtigen Sie mich, wenn ich eine Konversation verfolge"
         notify_tasks: "Benachrichtigen Sie mich, wenn ich eine Aufgabe verfolge"
         wants_task_reminder: "Senden Sie mir täglich eine Email mit meinen Aufgaben"
+        notify_on_weekends: "Senden Sie mir täglich Meldungen am Wochenende"
       password: Passwort
       password_confirmation: "Passwort bestätigen"
       phone: Telefnonnummer

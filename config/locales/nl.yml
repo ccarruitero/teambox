@@ -1176,6 +1176,7 @@ nl:
         notify_conversations: "Laat me weten wanneer ik een conversatie volg"
         notify_tasks: "Laat me weten wanneer ik een taak volg"
         wants_task_reminder: "Stuur me een dagelijkse e-mail van mij taken"
+        notify_on_weekends: "Stuur me dagelijks meldingen in het weekend"
       password: Wachtwoord
       password_confirmation: "Wachtwoord bevestigen"
       picture: 

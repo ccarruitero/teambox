@@ -1455,6 +1455,7 @@ ko:
         notify_conversations: "대화를 \"살펴보기\" 하면 알림"
         notify_tasks: "테스크를 \"살펴보기\" 하면 알림"
         wants_task_reminder: "매일 내 테스크들에 대한 이메일 보내기"
+        notify_on_weekends: "나에게 주말에 매일 알림 보내기"
       password: 패스워드
       password_confirmation: "패스워드 확인"
       phone: 전화번호

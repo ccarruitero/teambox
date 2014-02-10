@@ -2066,6 +2066,7 @@ es:
         notify_conversations: "Notificarme de conversaciones que sigo"
         notify_tasks: "Notificarme de comentarios en tareas que sigo"
         wants_task_reminder: "Recibir un email diario con mis tareas"
+        notify_on_weekends: "Recibir emails diarios los fines de semana"
       old_password: "Contraseña antigua"
       password: Contraseña
       password_confirmation: "Confirmar contraseña"

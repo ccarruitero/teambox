@@ -1639,6 +1639,7 @@ pl:
         notify_conversations: "Powiadom mnie gdy obserwuję dyskusje"
         notify_tasks: "Powiadom mnie gdy obserwuję zadanie"
         wants_task_reminder: "Przysyłaj mi codziennie email przypominający o moich zadaniach"
+        notify_on_weekends: "Wyślij mi codzienne powiadomienia na weekendy"
       password: Hasło
       password_confirmation: "Potwierdź Hasło"
       phone: "Numer telefonu"

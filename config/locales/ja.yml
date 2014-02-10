@@ -1883,6 +1883,7 @@ ja:
         notify_conversations: 会話に参加しているときに通知する
         notify_tasks: タスクをウォッチしている時に通知する
         wants_task_reminder: 締め切り間近のタスクのリマインドメールを送信する
+        notify_on_weekends: 私に週末に毎日通知を送信
       old_password: 旧パスワード
       password: パスワード
       password_confirmation: パスワード確認

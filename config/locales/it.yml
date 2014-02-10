@@ -1143,6 +1143,7 @@ it:
         notify_conversations: "Mandami una notifica delle conversazioni che seguo"
         notify_tasks: "Mandami una notifica dei commenti nei compiti che seguo"
         wants_task_reminder: "Voglio ricevere una mail giornaliera dei miei compiti"
+        notify_on_weekends: "Inviami notifiche giornaliere durante il fine settimana"
       password: Password
       password_confirmation: "Conferma password"
       picture: 

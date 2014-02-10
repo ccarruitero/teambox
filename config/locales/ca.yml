@@ -1944,6 +1944,7 @@ ca:
         notify_conversations: "Notificarme les converses que segueixo"
         notify_tasks: "Notificarme els comentaris a tasques que segueixo"
         wants_task_reminder: "Rebre un correu diari amb les meves tasques"
+        notify_on_weekends: "Enviar notificacions diàries els caps de setmana"
       old_password: "Password antic"
       password: Contrasenya
       password_confirmation: "Confirmar Contrasenya"

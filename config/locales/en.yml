@@ -202,6 +202,7 @@ en:
         notify_conversations: Notify me of updates to conversations I'm watching
         notify_tasks: Notify me of updates to tasks I'm watching
         wants_task_reminder: Send me a daily reminder of tasks assigned to me that are due soon
+        notify_on_weekends: Send me daily notifications on weekends
       invalid_login: "use only letters, numbers and underscores"
       delete:
         steps_before_1: "To delete your Teambox account, you first need to leave or delete all your current projects."
