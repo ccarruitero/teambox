@@ -15,6 +15,7 @@ Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 require 'email_spec/helpers'
 require 'email_spec/matchers'
 require 'cancan/matchers'
+require 'database_cleaner'
 
 # require 'rack/test'
 require 'csv'
@@ -28,9 +29,38 @@ RSpec.configure do |config|
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
   # instead of true.
+  database_adapter = ActiveRecord::Base.connection.adapter_name.downcase.to_sym
+
   config.use_transactional_fixtures = true
   config.use_instantiated_fixtures  = false
   config.fixture_path = Rails.root + '/spec/fixtures/'
+
+  # == Focus
+  # Run only focus specs when specified
+  config.filter_run focus: true
+  config.run_all_when_everything_filtered = true
+
+  # == Database cleaner
+  if database_adapter.eql?(:sqlite)
+    config.use_transactional_fixtures = false
+
+    config.before(:suite) do
+      DatabaseCleaner.strategy = :truncation
+    end
+  else
+    config.before(:suite) do
+      DatabaseCleaner.strategy = :transaction
+      DatabaseCleaner.clean_with(:truncation)
+    end
+  end
+
+  config.before(:each) do
+    DatabaseCleaner.start
+  end
+
+  config.after(:each) do
+    DatabaseCleaner.clean
+  end
 
   # == Fixtures
   #
