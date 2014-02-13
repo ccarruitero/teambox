@@ -51,6 +51,7 @@ class Conversation
       task.save
       self.reload.destroy
     end
+
     task
   end
 end

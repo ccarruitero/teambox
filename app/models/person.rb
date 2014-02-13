@@ -13,7 +13,7 @@ class Person < ActiveRecord::Base
   after_create :log_create
   after_destroy :log_delete, :cleanup_after
 
-#  validates_uniqueness_of :user, :scope => :project
+  #  validates_uniqueness_of :user, :scope => :project
   validates_presence_of :user, :project   # Make sure they both exist and are set
   validates_inclusion_of :role, :in => 0..3
   validates_uniqueness_of :project_id, :scope => :user_id
@@ -23,17 +23,21 @@ class Person < ActiveRecord::Base
   ROLES = {:observer => 0, :commenter => 1, :participant => 2, :admin => 3}
   PERMISSIONS = [:view,:edit,:delete,:all]
 
-  scope :admins, :conditions => "role = #{ROLES[:admin]}"
-
-  scope :from_unarchived, :joins => :project,
-    :conditions => ['projects.archived = ?', false]
-
-  scope :by_login, lambda { |login|
-    {:include => :user, :conditions => {'users.login' => login}}
+  scope :admins, lambda{
+    where(:role => ROLES[:admin])
   }
 
-  scope :in_alphabetical_order, :include => :user, :order => 'users.first_name ASC'
+  scope :from_unarchived, lambda{
+    joins(:project).where(:projects => {:archived => false})
+  }
 
+  scope :by_login, lambda { |login|
+    includes(:user).where(:users => {:login => login})
+  }
+
+  scope :in_alphabetical_order, lambda {
+    includes(:user).order('users.first_name ASC')
+  }
 
   attr_accessible :role, :permissions
 
@@ -75,15 +79,12 @@ class Person < ActiveRecord::Base
 
   def self.user_names_from_projects(projects, current_user = nil)
     project_ids = Array.wrap(projects).map(&:id)
-    connection.select_rows(<<-SQL)
-      SELECT people.project_id, users.login, users.first_name, users.last_name, people.id, users.id
-      FROM people
-      INNER JOIN projects ON projects.id = people.project_id
-      INNER JOIN users ON users.id = people.user_id
-      WHERE people.project_id IN (#{project_ids.join(',')})
-        AND (people.deleted IS NULL OR people.deleted IS FALSE)
-      ORDER BY users.id = #{current_user.try(:id).to_i} DESC,users.login
-    SQL
+    current_user_id = current_user.try(:id).to_i
+
+    select("people.project_id, people.user_id, users.login, users.first_name, users.last_name, people.id, users.id")
+      .joins(:project).joins(:user)
+      .where("people.project_id IN (?) AND (people.deleted IS NULL OR people.deleted = ?)", project_ids, false)
+      .order("users.id = #{current_user_id} DESC, users.login")
   end
 
   def user
