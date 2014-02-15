@@ -64,6 +64,7 @@ group :test, :development do
   gem 'active_reload'
   gem 'better_errors'
   gem 'pry-rails'
+  gem 'guard-rspec'
 end
 
 # we don't call the group :test because we don't want them auto-required
