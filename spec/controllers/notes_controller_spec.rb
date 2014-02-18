@@ -1,7 +1,7 @@
 # -*- encoding : utf-8 -*-
 require 'spec_helper'
 
-describe NotesController do
+describe NotesController, focus: true do
   before do
     make_a_typical_project
 
@@ -22,7 +22,7 @@ describe NotesController do
         :project_id => @project.permalink,
         :page_id => @page.id,
         :note => {:name => 'Important!'}
-      response.should be_success
+
       response.should redirect_to project_page_path( @project, @page )
 
       @page.notes(true).length.should == 2
