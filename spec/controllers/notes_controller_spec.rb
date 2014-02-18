@@ -22,11 +22,11 @@ describe NotesController do
         :project_id => @project.permalink,
         :page_id => @page.id,
         :note => {:name => 'Important!'}
-      response.should be_success
+
       response.should redirect_to project_page_path( @project, @page )
 
       @page.notes(true).length.should == 2
-      @page.notes.last.name.should == 'Important!'
+      @page.notes.order(:id).last.name.should == 'Important!'
     end
 
     it "should insert notes at the top of a page" do

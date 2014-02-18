@@ -44,7 +44,7 @@ describe HooksController do
         conversation.name.should == 'Hey, check this awesome file!'
         conversation.comments.last.body.should == 'Lorem ipsum dolor sit amet, ...'
         conversation.comments.last.uploads.count.should == 2
-        conversation.comments.last.uploads.first.asset_file_name.should == 'tb-space.jpg'
+        conversation.comments.last.uploads.order(:id).first.asset_file_name.should == 'tb-space.jpg'
       end
 
       it "handles encoded headers" do

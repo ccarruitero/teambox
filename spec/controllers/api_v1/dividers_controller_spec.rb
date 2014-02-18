@@ -75,7 +75,7 @@ describe ApiV1::DividersController do
       response.should be_success
 
       @page.dividers(true).length.should == 2
-      @page.dividers.last.name.should == 'Divisions'
+      @page.dividers.order(:id).last.name.should == 'Divisions'
     end
 
     it "should insert dividers at the top of a page" do

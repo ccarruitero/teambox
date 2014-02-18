@@ -6,21 +6,21 @@ class Activity < ActiveRecord::Base
   belongs_to :user
   belongs_to :project
 
-  scope :for_task_lists, :conditions => "target_type = 'TaskList' OR target_type = 'Task' OR comment_target_type = 'TaskList' OR comment_target_type = 'Task'"
-  scope :for_conversations, :conditions => "target_type = 'Conversation' OR comment_target_type = 'Conversation'"
+  scope :for_task_lists, lambda{ where("target_type = 'TaskList' OR target_type = 'Task' OR comment_target_type = 'TaskList' OR comment_target_type = 'Task'") }
+  scope :for_conversations, lambda{ where("target_type = 'Conversation' OR comment_target_type = 'Conversation'") }
   scope :for_tasks, where("target_type = ? OR comment_target_type = ?", "Task", "Task" )
   scope :in_targets, lambda {|targets| where ["target_id IN (?) OR comment_target_id IN (?)", *(Array(targets).collect(&:id)*2)] }
 
-  scope :latest, :order => 'id DESC', :limit => Teambox.config.activities_per_page
+  scope :latest, lambda{ limit_per_page.by_id }
 
-  scope :in_projects, lambda { |projects| { :conditions => ["project_id IN (?)", Array(projects).collect(&:id) ] } }
-  scope :limit_per_page, :limit => Teambox.config.activities_per_page
-  scope :by_id, :order => 'id DESC'
-  scope :by_updated, :order => 'updated_at desc'
-  scope :threads, :conditions => "target_type != 'Comment'"
-  scope :before, lambda { |activity_id| { :conditions => ["id < ?", activity_id ] } }
-  scope :after, lambda { |activity_id| { :conditions => ["id > ?", activity_id ] } }
-  scope :from_user, lambda { |user| { :conditions => { :user_id => user.id } } }
+  scope :in_projects, lambda { |projects| where(:project_id => Array(projects).collect(&:id)) }
+  scope :limit_per_page, lambda{ limit(Teambox.config.activities_per_page) }
+  scope :by_id, lambda{ order('id DESC') }
+  scope :by_updated, lambda{ order('updated_at DESC') }
+  scope :threads, lambda{ where("target_type != 'Comment'") }
+  scope :before, lambda { |activity_id| where("id < ?", activity_id) }
+  scope :after, lambda { |activity_id| where("id > ?", activity_id) }
+  scope :from_user, lambda { |user| where(:user_id => user.id) }
 
   def self.log(project,target,action,creator_id)
     project_id = project.try(:id)
@@ -30,7 +30,7 @@ class Activity < ActiveRecord::Base
       comment_target_type = target.target_type
       comment_target_id = target.target_id
       # touch activity related to that comment's thread
-      Activity.last(:conditions => ["target_type = ? AND target_id = ?", comment_target_type, comment_target_id]).try(:touch)
+      Activity.where(:target_type => comment_target_type, :target_id => comment_target_id).last.try(:touch)
     end
 
     activity = Activity.new(

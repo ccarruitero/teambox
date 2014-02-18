@@ -26,13 +26,6 @@ RSpec.configure do |config|
   config.include EmailSpec::Matchers
   # config.include Rack::Test::Methods
 
-  # If you're not using ActiveRecord, or you'd prefer not to run each of your
-  # examples within a transaction, remove the following line or assign false
-  # instead of true.
-  database_adapter = ActiveRecord::Base.connection.adapter_name.downcase.to_sym
-
-  config.use_transactional_fixtures = true
-  config.use_instantiated_fixtures  = false
   config.fixture_path = Rails.root + '/spec/fixtures/'
 
   # == Focus
@@ -41,17 +34,11 @@ RSpec.configure do |config|
   config.run_all_when_everything_filtered = true
 
   # == Database cleaner
-  if database_adapter.eql?(:sqlite)
-    config.use_transactional_fixtures = false
+  database_adapter = ActiveRecord::Base.connection.adapter_name.downcase.to_sym
 
-    config.before(:suite) do
-      DatabaseCleaner.strategy = :truncation
-    end
-  else
-    config.before(:suite) do
-      DatabaseCleaner.strategy = :transaction
-      DatabaseCleaner.clean_with(:truncation)
-    end
+  config.before(:suite) do
+    DatabaseCleaner.strategy = database_adapter.eql?(:mysql) ? :transaction : :truncation
+    DatabaseCleaner.clean_with :truncation
   end
 
   config.before(:each) do

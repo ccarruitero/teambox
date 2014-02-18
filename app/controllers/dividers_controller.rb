@@ -100,7 +100,7 @@ class DividersController < ApplicationController
     def load_page
       page_id = params[:page_id]
       pages = @current_project.pages
-      @page = pages.find_by_permalink(page_id) || pages.find(page_id)
+      @page = pages.find_by_permalink(page_id.to_s) || pages.find(page_id)
     end
 
     def reload_page(extras={})

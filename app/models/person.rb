@@ -21,7 +21,7 @@ class Person < ActiveRecord::Base
   serialize :permissions
 
   ROLES = {:observer => 0, :commenter => 1, :participant => 2, :admin => 3}
-  PERMISSIONS = [:view,:edit,:delete,:all]
+  PERMISSIONS = [:view, :edit, :delete, :all]
 
   scope :admins, lambda{
     where(:role => ROLES[:admin])
@@ -73,8 +73,8 @@ class Person < ActiveRecord::Base
   end
 
   def self.users_from_projects(projects)
-    user_ids = Person.find(:all, :conditions => {:project_id => projects.map(&:id)}).map(&:user_id).uniq
-    User.find(:all, :conditions => {:id => user_ids}, :select => 'id, login, first_name, last_name').sort_by(&:name)
+    user_ids = Person.where(:project_id => projects.map(&:id)).uniq
+    User.select('id, login, first_name, last_name').where(:id => user_ids).sort_by(&:name)
   end
 
   def self.user_names_from_projects(projects, current_user = nil)

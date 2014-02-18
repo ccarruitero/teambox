@@ -22,7 +22,7 @@ describe DividersController do
       response.should redirect_to(project_page_path(@project,@page))
 
       @page.dividers(true).length.should == 2
-      @page.dividers.last.name.should == 'Divisions'
+      @page.dividers.order(:id).last.name.should == 'Divisions'
     end
 
     it "should insert dividers at the top of a page" do
