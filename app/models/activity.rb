@@ -6,22 +6,6 @@ class Activity < ActiveRecord::Base
   belongs_to :user
   belongs_to :project
 
-  # scope :for_task_lists, :conditions => "target_type = 'TaskList' OR target_type = 'Task' OR comment_target_type = 'TaskList' OR comment_target_type = 'Task'"
-  # scope :for_conversations, :conditions => "target_type = 'Conversation' OR comment_target_type = 'Conversation'"
-  # scope :for_tasks, where("target_type = ? OR comment_target_type = ?", "Task", "Task" )
-  # scope :in_targets, lambda {|targets| where ["target_id IN (?) OR comment_target_id IN (?)", *(Array(targets).collect(&:id)*2)] }
-
-  # scope :latest, :order => 'id DESC', :limit => Teambox.config.activities_per_page
-
-  # scope :in_projects, lambda { |projects| { :conditions => ["project_id IN (?)", Array(projects).collect(&:id) ] } }
-  # scope :limit_per_page, :limit => Teambox.config.activities_per_page
-  # scope :by_id, :order => 'id DESC'
-  # scope :by_updated, :order => 'updated_at desc'
-  # scope :threads, :conditions => "target_type != 'Comment'"
-  # scope :before, lambda { |activity_id| { :conditions => ["id < ?", activity_id ] } }
-  # scope :after, lambda { |activity_id| { :conditions => ["id > ?", activity_id ] } }
-  # scope :from_user, lambda { |user| { :conditions => { :user_id => user.id } } }
-
   scope :for_task_lists, lambda{ where("target_type = 'TaskList' OR target_type = 'Task' OR comment_target_type = 'TaskList' OR comment_target_type = 'Task'") }
   scope :for_conversations, lambda{ where("target_type = 'Conversation' OR comment_target_type = 'Conversation'") }
   scope :for_tasks, where("target_type = ? OR comment_target_type = ?", "Task", "Task" )
