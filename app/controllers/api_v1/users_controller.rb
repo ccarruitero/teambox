@@ -25,7 +25,7 @@ class ApiV1::UsersController < ApiV1::APIController
   protected
 
   def find_user
-    unless @user = (User.find_by_login(params[:id]) || User.find_by_id(params[:id]))
+    unless @user = (User.find_by_login(params[:id].to_s) || User.find_by_id(params[:id]))
       api_error(:not_found, :type => 'ObjectNotFound', :message => t('not_found.user'))
     end
   end

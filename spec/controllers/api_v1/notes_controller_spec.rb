@@ -75,7 +75,7 @@ describe ApiV1::NotesController do
       response.should be_success
 
       @page.notes(true).length.should == 2
-      @page.notes.last.name.should == 'Important!'
+      @page.notes.order(:id).last.name.should == 'Important!'
     end
 
     it "should insert notes at the top of a page" do

@@ -1,7 +1,7 @@
 # -*- encoding : utf-8 -*-
 require 'spec_helper'
 
-describe NotesController, focus: true do
+describe NotesController do
   before do
     make_a_typical_project
 
@@ -26,7 +26,7 @@ describe NotesController, focus: true do
       response.should redirect_to project_page_path( @project, @page )
 
       @page.notes(true).length.should == 2
-      @page.notes.last.name.should == 'Important!'
+      @page.notes.order(:id).last.name.should == 'Important!'
     end
 
     it "should insert notes at the top of a page" do
