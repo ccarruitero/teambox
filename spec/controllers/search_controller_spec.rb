@@ -10,7 +10,7 @@ describe SearchController do
     end
 
     it "searches across all user's projects" do
-      controller.stub!(:user_can_search?).and_return(true)
+      controller.stub(:user_can_search?).and_return(true)
 
       p1 = Factory.create :project, :user => @user
       p2 = Factory.create :project, :user => @user
@@ -26,7 +26,7 @@ describe SearchController do
     end
 
     it "rejects unauthorized search" do
-      controller.stub!(:user_can_search?).and_return(false)
+      controller.stub(:user_can_search?).and_return(false)
 
       get :index, :q => 'important'
       response.should redirect_to(root_path)
@@ -35,13 +35,13 @@ describe SearchController do
     end
 
     it "searches in a single project" do
-      controller.stub!(:user_can_search?).and_return(false)
+      controller.stub(:user_can_search?).and_return(false)
 
       project = Factory.create :project, :permalink => 'important-project'
       Factory.create :person, :user => @user, :project => project
       owner = project.user
-      owner.stub!(:can_search?).and_return(true)
-      controller.stub!(:project_owner).and_return(owner)
+      owner.stub(:can_search?).and_return(true)
+      controller.stub(:project_owner).and_return(owner)
 
       ThinkingSphinx.should_receive(:search).
         with(*search_params(project.id)).and_return(@results)
@@ -53,7 +53,7 @@ describe SearchController do
     end
 
     it "reject searching in unauthorized project" do
-      controller.stub!(:user_can_search?).and_return(false)
+      controller.stub(:user_can_search?).and_return(false)
 
       project = Factory.create :project, :permalink => 'important-project'
 

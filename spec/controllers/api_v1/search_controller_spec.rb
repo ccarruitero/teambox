@@ -11,7 +11,7 @@ describe ApiV1::SearchController do
 
     it "searches across all user's projects" do
       @results = mock('results', {:map => [@comment.to_api_hash], :each => true})
-      controller.stub!(:user_can_search?).and_return(true)
+      controller.stub(:user_can_search?).and_return(true)
 
       p1 = @project
       p2 = Factory.create :project, :user => @user
@@ -27,7 +27,7 @@ describe ApiV1::SearchController do
     end
 
     it "returns an empty array for blank searches" do
-      controller.stub!(:user_can_search?).and_return(true)
+      controller.stub(:user_can_search?).and_return(true)
 
       p1 = @project
       p2 = Factory.create :project, :user => @user
@@ -38,7 +38,7 @@ describe ApiV1::SearchController do
     end
 
     it "rejects unauthorized search" do
-      controller.stub!(:user_can_search?).and_return(false)
+      controller.stub(:user_can_search?).and_return(false)
 
       get :index, :q => 'important'
       [501, 403].include?(response.status).should == true
@@ -50,11 +50,11 @@ describe ApiV1::SearchController do
       comment = Factory.create :comment, :project => project
 
       @results = mock('results', {:map => [comment.to_api_hash], :each => true})
-      controller.stub!(:user_can_search?).and_return(false)
+      controller.stub(:user_can_search?).and_return(false)
 
       owner = project.user
-      owner.stub!(:can_search?).and_return(true)
-      controller.stub!(:project_owner).and_return(owner)
+      owner.stub(:can_search?).and_return(true)
+      controller.stub(:project_owner).and_return(owner)
 
       ThinkingSphinx.should_receive(:search).
         with(*search_params(project.id)).and_return(@results)
