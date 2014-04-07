@@ -6,7 +6,7 @@ describe SearchController do
   describe "#results" do
     before do
       @user = login_as(:confirmed_user)
-      @results = mock('results')
+      @results = double('results')
     end
 
     it "searches across all user's projects" do
