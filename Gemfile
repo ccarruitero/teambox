@@ -46,7 +46,7 @@ gem 'rack-ssl-enforcer', require: 'rack/ssl-enforcer'
 gem 'jammit'
 gem 'rake', '0.9.2'
 gem 'thin'
-
+gem 'websocket-driver'
 group :development do
   gem 'debugger'
 end
