@@ -63,6 +63,7 @@ group :test, :development do
   gem 'timecop', require: 'timecop'
   gem 'active_reload'
   gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'pry-rails'
   gem 'guard-rspec'
 end
