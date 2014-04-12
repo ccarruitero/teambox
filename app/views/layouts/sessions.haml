@@ -6,7 +6,7 @@
     %link{ :rel => "shortcut icon", :href => "/favicon.ico" }
     %title Teambox
     = include_stylesheets :sessions
-    = sprockets_include_tag :public
+    = javascript_include_tag '/assets/public'
 
   %body{ :class => "#{location_name} #{I18n.locale} #{Rails.env}"}
     .container
