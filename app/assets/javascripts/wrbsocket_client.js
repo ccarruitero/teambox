@@ -37,8 +37,8 @@
     generateToken: function() {
     },
 
-    renderCommnets: function(conversation_id) {
-    }
+    renderComments: function(conversation_id) {
+    },
 
     updateComments: function(msg, wrapEl) {
       // insert msg in commentTemplate, and all in wrapEl
@@ -60,9 +60,11 @@
     }
   }
 
-  var form = document.getElementsByClassName('new_comment');
-  form.addEventListener('submit', function() {
-    console.log('event added to form submit');
-    wrbSocketClient.init(form.getAttribute('data-conversation-id'));
-  });
+  var forms = document.getElementsByClassName('new_comment');
+  for(var i=0; i++; i < forms.length) {
+    forms[i].addEventListener('submit', function() {
+      console.log('event added to form submit');
+      wrbSocketClient.init(form.getAttribute('data-conversation-id'));
+    });
+  }
 })(scheme);

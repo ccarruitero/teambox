@@ -1,9 +1,5 @@
-//= require <prototype>
-//= require <builder>
-//= require <effects>
-//= require <controls>
-//= require <slider>
-//= require <yahoo.color>
+//= require slider
+//= require yahoo.color
 
 /*
    colorPicker for script.aculo.us, version 1.0
