@@ -1,5 +1,7 @@
 require 'socket'
-require 'websocket/driver'
+require 'websocket/drivier'
+require 'rack'
+require 'json'
 
 module WrbSockets
 
@@ -39,7 +41,12 @@ module WrbSockets
     end
 
     @driver.on(:message) do
-      @driver.text(e.data)
+      if e.type == 'comment' do
+        puts 'comment received'
+        conversation = Conversation.find(e.conversation_id)
+        @driver.text(e.message)
+        response = {type: 'update', comments: conversation.comments.to_json}
+      end
     end
 
     @driver.on(:close) do
