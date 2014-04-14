@@ -189,6 +189,17 @@ class ProjectsController < ApplicationController
     end.sort {|a,b| a[:organization].name <=> b[:organization].name}
   end
 
+  def kanban
+    @todo_tasks = @current_project.tasks.where('status < ?', 2)
+    @doing_tasks = @current_project.tasks.where('status = ?', 2)
+    @done_tasks = @current_project.tasks.where('status = ?', 3)
+
+    respond_to do |f|
+      f.html
+      f.json { render json: @current_project.tasks.to_json }
+    end
+  end
+
   protected
 
     def load_task_lists

@@ -1,30 +1,5 @@
 <section>
   <h2>Tasks (kanbanview)</h2>
-  <div id='kanban-wrapper' class='kanban-wrapper'>
-    <div id="todo" class="flex-item">
-      <h3>todo</h3>
-      <% @todo_tasks.each do |task| %>
-        <div class="kanban-task" id="task_<%= task.id %>">
-          <p><%= task.name %></p>
-        </div>
-      <% end %>
-    </div>
-    <div id="doing" class="flex-item">
-      <h3>doing</h3>
-      <% @doing_tasks.each do |task| %>
-        <div class="kanban-task" id="task_<%= task.id %>">
-          <p><%= task.name %></p>
-        </div>
-      <% end %>
-    </div>
-    <div id="done" class="flex-item">
-      <h3>done</h3>
-      <% @done_tasks.each do |task| %>
-        <div class="kanban-task" id="task_<%= task.id %>">
-          <p><%= task.name %></p>
-        </div>
-      <% end %>
-    </div>
-  </div>
+  <canvas id='kanban-board' width='650px' height='450px' ></canvas>
 </section>
 <div id="column-btn"></div>

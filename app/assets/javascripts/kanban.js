@@ -1,9 +1,54 @@
-(function(Draggable, Element) {
+//= require fabric
+
+(function(fabric) {
   var Kanban = {
     init: function() {
-      this.hideColumn();
-      this.showBtn();
-      this.setDraggables();
+      this.initCanvas();
+    },
+
+    initCanvas: function() {
+      console.log('init canvas');
+      var canvas = new fabric.Canvas('kanban-board');
+      this.createBox(canvas, 'todo', 'red', 0);
+      this.createBox(canvas, 'doing', 'yellow', 212);
+      this.createBox(canvas, 'done', 'green', 424);
+
+      var url = window.location.host + '.json';
+      var request = new XMLHttpRequest();
+      console.log(url);
+      request.open('get', url, true);
+      request.responseType = 'json';
+      request.send();
+      var tasks = request.response
+      var that = this;
+
+      for(var i=0; i < tasks.lenght; i++) {
+        var task = tasks[i]
+        that.createTask(canvas, task.id, task.name, 0);
+      }
+    },
+
+    createBox: function(canvas, name, color, posLeft) {
+      var box = new fabric.Rect({
+        id: name,
+        left: posLeft,
+        fill: '#fafafa',
+        width: 210,
+        height: 450,
+        stroke: color,
+        strokeDashArray: [5,5]
+      });
+      canvas.add(box);
+    },
+
+    createTask: function(canvas, id, desc, lastTop) {
+      var task = new fabric.Rect({
+        id: id,
+        width: 200,
+        height: 70,
+        fill: 'tomato',
+        top: lastTop
+      });
     },
 
     hideColumn: function() {
@@ -54,10 +99,8 @@
     }
   }
 
-  var kanbanWrap = document.getElementById('kanban-wrapper');
+  var kanbanWrap = document.getElementById('kanban-board');
   if (kanbanWrap !== null) {
-    setTimeout(function() {
-      Kanban.init();
-    }, 3000);
+    Kanban.init();
   }
-})(Draggable, Element);
+})(fabric);
