@@ -28,4 +28,5 @@ teambox2
 .rvmrc
 *.swp
 config/teambox.yml
+config/crewmate.yml
 

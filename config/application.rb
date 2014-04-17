@@ -95,7 +95,7 @@ module Teambox
       end
 
     end
-    config.from_file 'teambox.yml'
+    config.from_file 'crewmate.yml'
 
     # Redirect http to https if secure_logins is true
     # https://github.com/tobmatth/rack-ssl-enforcer
