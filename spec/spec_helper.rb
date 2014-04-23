@@ -16,7 +16,7 @@ require 'email_spec/helpers'
 require 'email_spec/matchers'
 require 'cancan/matchers'
 require 'database_cleaner'
-
+require 'webmock/rspec'
 # require 'rack/test'
 require 'csv'
 
