@@ -46,7 +46,7 @@ module RSpec
 
       RSpec::Matchers.define :validate_uniqueness_of do |attribute|
         match do |model|
-          model.class.stub!(:find).and_return(true)
+          model.class.stub(:find).and_return(true)
           !model.valid? && model.errors[attribute].any?
         end
         description do

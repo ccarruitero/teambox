@@ -7,8 +7,8 @@ describe <%= model_controller_class_name %>Helper do
   before do
     @<%= file_name %> = mock_<%= file_name %>
   end
-  
-  describe "if_authorized" do 
+
+  describe "if_authorized" do
     it "yields if authorized" do
       should_receive(:authorized?).with('a','r').and_return(true)
       if_authorized?('a','r'){|action,resource| [action,resource,'hi'] }.should == ['a','r','hi']
@@ -18,7 +18,7 @@ describe <%= model_controller_class_name %>Helper do
       if_authorized?('a','r'){ 'hi' }.should be_nil
     end
   end
-  
+
   describe "link_to_<%= file_name %>" do
     it "should give an error on a nil <%= file_name %>" do
       lambda { link_to_<%= file_name %>(nil) }.should raise_error('Invalid <%= file_name %>')
@@ -81,7 +81,7 @@ describe <%= model_controller_class_name %>Helper do
 
   describe "link_to_current_<%= file_name %>, When logged in" do
     before do
-      stub!(:current_<%= file_name %>).and_return(@<%= file_name %>)
+      stub(:current_<%= file_name %>).and_return(@<%= file_name %>)
     end
     it "should link to the given <%= file_name %>" do
       should_receive(:<%= model_controller_routing_name.singularize %>_path).at_least(:once).and_return('/<%= model_controller_file_path %>/1')
@@ -114,7 +114,7 @@ describe <%= model_controller_class_name %>Helper do
 
   describe "link_to_current_<%= file_name %>, When logged out" do
     before do
-      stub!(:current_<%= file_name %>).and_return(nil)
+      stub(:current_<%= file_name %>).and_return(nil)
     end
     it "should link to the login_path" do
       link_to_current_<%= file_name %>().should have_tag("a[href='/login']")
