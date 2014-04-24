@@ -2,9 +2,17 @@
 require 'spec_helper'
 
 describe GoogleDocs do
+  let(:consumer) { OAuth::Consumer.new('key', 'secret', GoogleDocs::RESOURCES) }
+  let(:docs)     { GoogleDocs.new("key", "secret", consumer) }
+
+  before :each do
+    stub_request(:get,  GoogleDocs::RESOURCES[:list]).to_return(status: 200, body: File.open("#{Rails.root}/spec/fixtures/google_docs_response.atom").read)
+    stub_request(:post, GoogleDocs::RESOURCES[:create]).to_return(status: 201, body: File.open("#{Rails.root}/spec/fixtures/google_docs_response.atom").read)
+    stub_request(:post, GoogleDocs::RESOURCES[:authorize_url]).to_return(status: 201, body: '')
+  end
+
   describe "when creating a new entry" do
     it "should generate a valid atom entry when sent generate atom" do
-      docs = GoogleDocs.new("key", "secret", nil)
       atom_entry = docs.send(:generate_atom, "example document", "document")
 
       document = Nokogiri::XML(atom_entry)
@@ -16,24 +24,21 @@ describe GoogleDocs do
     end
 
     it "should require a title and document_type" do
-      docs = GoogleDocs.new("key", "secret", nil)
       lambda do
         docs.create()
       end.should raise_error(ArgumentError)
     end
 
     it "should not raise an error when passed a title and document_type" do
-      docs = GoogleDocs.new("key", "secret", nil)
       options = HashWithIndifferentAccess.new('title' => 'test', 'document_type' => 'spreadsheet')
       lambda do
         docs.create(options)
-      end.should_not raise_error(ArgumentError)
+      end.should_not raise_error
     end
   end
 
   describe "when modifying an ACL entry" do
     it "should generate a valid atom entry when sent generate acl atom" do
-      docs = GoogleDocs.new("key", "secret", nil)
       atom_entry = docs.send(:generate_acl_atom, 'new_writer@example.com', 'user', :writer)
 
       document = Nokogiri::XML(atom_entry)
@@ -45,43 +50,36 @@ describe GoogleDocs do
     end
 
     it "should accept valid google role values" do
-      docs = GoogleDocs.new("key", "secret", nil)
-
       [:writer, :reader, :owner].each do |role|
         lambda do
-          atom_entry = docs.add_permission('url', 'new_writer@example.com', :user, role)
-        end.should_not raise_error(ArgumentError)
+          atom_entry = docs.add_permission(GoogleDocs::RESOURCES[:authorize_url], 'new_writer@example.com', :user, role)
+        end.should_not raise_error
       end
     end
 
     it "should reject invalid google role values" do
-      docs = GoogleDocs.new("key", "secret", nil)
       lambda do
-        atom_entry = docs.add_permission('url', 'new_writer@example.com', :user, :fuuuu)
+        atom_entry = docs.add_permission(GoogleDocs::RESOURCES[:authorize_url], 'new_writer@example.com', :user, :fuuuu)
       end.should raise_error(ArgumentError)
     end
 
     it "should accept valid google scope values" do
-      docs = GoogleDocs.new("key", "secret", nil)
-
       [:user, :group, :domain, :default].each do |scope|
         lambda do
-          atom_entry = docs.add_permission('url', 'new_writer@example.com', scope, :reader)
-        end.should_not raise_error(ArgumentError)
+          atom_entry = docs.add_permission(GoogleDocs::RESOURCES[:authorize_url], 'new_writer@example.com', scope, :reader)
+        end.should_not raise_error
       end
     end
 
     it "should reject invalid google scope values" do
-      docs = GoogleDocs.new("key", "secret", nil)
       lambda do
-        atom_entry = docs.add_permission('url', 'new_writer@example.com', :fuuuu, :reader)
+        atom_entry = docs.add_permission(GoogleDocs::RESOURCES[:authorize_url], 'new_writer@example.com', :fuuuu, :reader)
       end.should raise_error(ArgumentError)
     end
   end
 
   it "should parse an atom_entry correctly when sent #parse_entry" do
     atom = File.read(File.expand_path(File.join(File.dirname(__FILE__), '..', 'fixtures', 'google_docs_response.atom')))
-    docs = GoogleDocs.new("key", "secret", nil)
     list = docs.send(:parse_list, atom)
 
     list.class.name.should == "Array"
