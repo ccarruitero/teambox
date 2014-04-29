@@ -49,11 +49,11 @@ document.on('click', '.date_picker', function(e, element) {
 })
 
 Task = {
-  
+
   sortableChange: function(draggable) {
     this.currentDraggable = draggable
   },
-  
+
   sortableUpdate: function() {
     var taskId = this.currentDraggable.readAttribute('data-task-id'),
         taskList = this.currentDraggable.up('.task_list')
@@ -190,6 +190,5 @@ document.on('ajax:success', 'form.edit_task', function(e, form) {
       task_count -= 1
   }
   $('open_my_tasks').update(task_count)
-
 })
 

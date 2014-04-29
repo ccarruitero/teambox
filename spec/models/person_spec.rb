@@ -55,30 +55,34 @@ describe Person do
       user_names.size.should eql 2
     end
 
-    it 'should contain user1' do
-      user_names.map(&:user_id).should include(user1.id)
-    end
-
-    it 'should contain user3' do
-      user_names.map(&:user_id).should include(user3.id)
+    it 'should contain user1 and user3' do
+      user_names.map(&:user_id).should include(user1.id, user3.id)
     end
 
     it 'should not contain user2' do
-      user_names.map(&:user_id).should_not include(user2.id)
+      user_names.map(&:user_id).should_not include user2.id
     end
 
     it 'should contain project1' do
-      user_names.map(&:project_id).should include(project1.id)
+      user_names.map(&:project_id).should include project1.id
     end
 
     it 'should not contain project2' do
-      user_names.map(&:project_id).should_not include(project2.id)
+      user_names.map(&:project_id).should_not include project2.id
+    end
+
+    its 'ids should not include project2\' ids' do
+      user_names.map(&:id).should_not include Person.user_names_from_projects(project2).map(&:id)
+    end
+
+    it 'should not contain project2' do
+      user_names.map(&:project_id).should_not include project2.id
     end
 
     context 'his first result' do
       subject(:user_name) { user_names.first }
-
-      it { should respond_to(:project_id, :login, :first_name, :last_name, :user_id) }
+      it { should respond_to(:project_id, :login, :first_name, :last_name, :user_id, :id) }
     end
+
   end
 end

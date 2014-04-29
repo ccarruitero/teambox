@@ -81,7 +81,7 @@ class Person < ActiveRecord::Base
     project_ids = Array.wrap(projects).map(&:id)
     current_user_id = current_user.try(:id).to_i
 
-    select("people.project_id, people.user_id, users.login, users.first_name, users.last_name, people.id, users.id")
+    select("people.id, people.project_id, people.user_id, users.login, users.first_name, users.last_name")
       .joins(:project).joins(:user)
       .where("people.project_id IN (?) AND (people.deleted IS NULL OR people.deleted = ?)", project_ids, false)
       .order("users.id = #{current_user_id} DESC, users.login")
