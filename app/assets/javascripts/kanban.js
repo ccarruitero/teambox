@@ -13,19 +13,37 @@
       this.createBox(canvas, 'doing', 'yellow', 212);
       this.createBox(canvas, 'done', 'green', 424);
 
-      var url = window.location.host + '.json';
+      var host = window.location.host;
+      var path = window.location.pathname;
+      var url = 'http://' + host + path + '.json';
       var request = new XMLHttpRequest();
+      var that = this;
+
       console.log(url);
       request.open('get', url, true);
       request.responseType = 'json';
-      request.send();
-      var tasks = request.response
-      var that = this;
+      request.onload = function(e) {
+        var tasks = request.response
+        var lastTopTodo = 4;
+        var lastTopDoing = 4;
+        var lastTopDone = 4;
 
-      for(var i=0; i < tasks.lenght; i++) {
-        var task = tasks[i]
-        that.createTask(canvas, task.id, task.name, 0);
+        for(var i=0; i < tasks.length; i++) {
+          var task = tasks[i].task
+          if (task.status < 2) {
+            that.createTask(canvas, task.id, task.name, lastTopTodo, 4);
+            lastTopTodo += 71;
+          } else if (task.status > 2) {
+            that.createTask(canvas, task.id, task.name, lastTopDone, 428);
+            lastTopDone += 71;
+          } else {
+            that.createTask(canvas, task.id, task.name, lastTopDoing, 216);
+            lastTopDoing += 71;
+          }
+        }
       }
+
+      request.send();
     },
 
     createBox: function(canvas, name, color, posLeft) {
@@ -41,14 +59,23 @@
       canvas.add(box);
     },
 
-    createTask: function(canvas, id, desc, lastTop) {
-      var task = new fabric.Rect({
+    createTask: function(canvas, id, desc, lastTop, left) {
+      var text = new fabric.Text(desc, {
+        fontSize: 11,
+        width: 200,
+        height: 70,
+      });
+      var bg = new fabric.Rect({
         id: id,
         width: 200,
         height: 70,
         fill: 'tomato',
-        top: lastTop
       });
+      var task = new fabric.Group([bg, text], {
+        top: lastTop,
+        left: left
+      });
+      canvas.add(task);
     },
 
     hideColumn: function() {
