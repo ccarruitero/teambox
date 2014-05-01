@@ -1,6 +1,6 @@
 Feature: Notifications of comment mentions
   In order to not miss any of the discussions important to me
-  As a Teambox user
+  As a Crewmate user
   I want to be notified when I'm mentioned
 
   Background: 

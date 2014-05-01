@@ -4,7 +4,7 @@ Feature: Transfer Project
     Given the following confirmed users exist
       | login  | email                    | first_name | last_name |
       | balint | balint.erdi@gmail.com    | Balint     | Erdi      |
-      | pablo  | pablo@teambox.com        | Pablo      | Villalba  |
+      | pablo  | pablo@crewmate.org        | Pablo      | Villalba  |
       | james  | james.urquhart@gmail.com | James      | Urquhart  |
     Given @mislav exists and is logged in
     And I am currently in the project ruby_rockstars

@@ -3,12 +3,12 @@ Feature: Editing a task
 
   Background:
     Given @charles exists and is logged in
-    And I am in the project called "Teambox"
-    And the task list called "Bugs" belongs to the project called "Teambox"
+    And I am in the project called "Crewmate"
+    And the task list called "Bugs" belongs to the project called "Crewmate"
     And the following task with associations exist:
       | name          | task_list | project |
-      | Fix major bug | Bugs      | Teambox |
-    And I go to the "Teambox" tasks page
+      | Fix major bug | Bugs      | Crewmate |
+    And I go to the "Crewmate" tasks page
 
   Scenario: I change task name from full view
     When I follow "Fix major bug"

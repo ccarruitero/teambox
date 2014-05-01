@@ -7,7 +7,7 @@ Feature: Resetting passwords
   Background: 
     Given the following confirmed users exist
       | login | email             | first_name | last_name |
-      | pablo | pablo@teambox.com | Pablo      | Villalba  |
+      | pablo | pablo@crewmate.org | Pablo      | Villalba  |
 
   Scenario: I try resetting the password for a non existing user
     Given I am on the login page
@@ -28,7 +28,7 @@ Feature: Resetting passwords
     And "mislav@fuckingawesome.com" should receive an email
     When I open the email
     Then I should see "Hey, Mislav Marohnić!" in the email body
-    When I follow "Log into Teambox now!" in the email
+    When I follow "Log into Crewmate now!" in the email
     Then I should see "You can now reset your password"
     When I fill in "Password" with "thirstycups"
     And I fill in "Password confirmation" with "thirstycups"
@@ -55,7 +55,7 @@ Feature: Resetting passwords
     And I press "Send me a link to reset my password"
     And "mislav@fuckingawesome.com" should receive an email
     When I open the email
-    When I follow "Log into Teambox now!" in the email
+    When I follow "Log into Crewmate now!" in the email
     When I fill in "Password" with "thirstycups"
     And I fill in "Password confirmation" with "thirstycups"
     And I press "Reset my password"
@@ -65,10 +65,10 @@ Feature: Resetting passwords
   Scenario: Deleted user tries to reset password
     Given the user with login: "pablo" is deleted
     And I am on the forgot password page
-    When I fill in "Email" with "pablo@teambox.com"
+    When I fill in "Email" with "pablo@crewmate.org"
     And I press "Send me a link to reset my password"
     Then I should see "We can't find a user with that email"
-    And "pablo@teambox.com" should receive 0 emails
+    And "pablo@crewmate.org" should receive 0 emails
 
   Scenario: Deleted user tries to use a previously generated reset code
     Given the user with login: "pablo" has asked to reset his password

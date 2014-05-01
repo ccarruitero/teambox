@@ -4,8 +4,8 @@ Feature: Managing organizations
   Background: 
     Given the following confirmed users exist
       | login  | email                    | first_name | last_name |
-      | pablo  | pablo@teambox.com        | Pablo      | Villalba  |
-      | jordi  | jordi@teambox.com        | Jordi      | Romero    |
+      | pablo  | pablo@crewmate.org        | Pablo      | Villalba  |
+      | jordi  | jordi@crewmate.org        | Jordi      | Romero    |
     And @mislav exists and is logged in
     And I am currently in the project ruby_rockstars
     And "jordi" is in the project called "Ruby Rockstars"

@@ -5,8 +5,8 @@ Feature: Invite a user to a project
     Given an organization exists with name: "ACME"
     And a project exists with name: "Ruby Rockstars"
     And the project "Ruby Rockstars" belongs to "ACME" organization
-    And a confirmed user exists with login: "mislav", first_name: "Mislav", last_name: "Marohnić", email: "mislav@teambox.com"
-    And a confirmed user exists with login: "pablo", first_name: "Pablo", last_name: "Villalba", email: "pablo@teambox.com"
+    And a confirmed user exists with login: "mislav", first_name: "Mislav", last_name: "Marohnić", email: "mislav@crewmate.org"
+    And a confirmed user exists with login: "pablo", first_name: "Pablo", last_name: "Villalba", email: "pablo@crewmate.org"
     And "mislav" is the owner of the project "Ruby Rockstars"
     And "mislav" is an administrator in the organization called "ACME"
     And "pablo" is a participant in the organization called "ACME"
@@ -42,7 +42,7 @@ Feature: Invite a user to a project
   Scenario: User creates account and joins project from invitation
     Given "mislav" sent an invitation to "ed_bloom@spectre.com" for the project "Ruby Rockstars"
     When "ed_bloom@spectre.com" opens the email with subject "Ruby Rockstars"
-    And they should see "Mislav Marohnić wants to collaborate with you on Teambox" in the email body
+    And they should see "Mislav Marohnić wants to collaborate with you on Crewmate" in the email body
     And I should see "Ruby Rockstars" in the email body
     And I follow "Accept the invitation to start collaborating" in the email
     When I fill in "Username" with "bigfish"
@@ -59,25 +59,25 @@ Feature: Invite a user to a project
 
   Scenario: Mislav is invited to a project by someone else
     Given I am logged in as @mislav
-    And there is a project called "Teambox Roulette"
-    When I go to the page of the "Teambox Roulette" project
+    And there is a project called "Crewmate Roulette"
+    When I go to the page of the "Crewmate Roulette" project
     Then I should see the unauthorized private project message
-    Given the owner of the project "Teambox Roulette" sent an invitation to "mislav"
-    When I go to the page of the "Teambox Roulette" project
+    Given the owner of the project "Crewmate Roulette" sent an invitation to "mislav"
+    When I go to the page of the "Crewmate Roulette" project
     And I press "Accept"
-    Then I should see "Teambox Roulette"
+    Then I should see "Crewmate Roulette"
 
   Scenario: Mislav invites a user who belongs to the project's organization
     Given I am logged in as @mislav
     When I go to the people page of the "Ruby Rockstars" project
     And I fill in "invitation_user_or_email" with "pablo"
     And I press "Invite"
-    Then "pablo@teambox.com" should receive an email
-    When "pablo@teambox.com" opens the email
+    Then "pablo@crewmate.org" should receive an email
+    When "pablo@crewmate.org" opens the email
     Then I should see "You are now a member of the project" in the email body
     And I should see "Ruby Rockstars" in the email body
 
-  Scenario: Mislav invites existing teambox users to a project
+  Scenario: Mislav invites existing crewmate users to a project
 
   Scenario: Mislav leaves a project
 
@@ -86,9 +86,9 @@ Feature: Invite a user to a project
   Scenario: Mislav deletes an invitation that hasnt been accepted
     Given I am logged in as @mislav
     When I go to the people page of the "Ruby Rockstars" project
-    And I fill in "invitation_user_or_email" with "charles@teambox.com"
+    And I fill in "invitation_user_or_email" with "charles@crewmate.org"
     And I press "Invite"
     And I follow "Discard invitation"
     And I wait for 1 second
-    Then I should not see "charles@teambox.com"
+    Then I should not see "charles@crewmate.org"
 

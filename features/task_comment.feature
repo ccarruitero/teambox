@@ -3,12 +3,12 @@ Feature: Commenting on a task
 
   Background:
     Given @mislav exists and is logged in
-    And I am in the project called "Teambox"
-    And the task list called "This week" belongs to the project called "Teambox"
+    And I am in the project called "Crewmate"
+    And the task list called "This week" belongs to the project called "Crewmate"
     And the following task with associations exist:
       | name                         | task_list      | project |
-      | Setup Continious integration | This week      | Teambox |
-    And I go to the "teambox" tasks page
+      | Setup Continious integration | This week      | Crewmate |
+    And I go to the "crewmate" tasks page
 
   Scenario: I change task date by commenting
     When I follow "Setup Continious integration"

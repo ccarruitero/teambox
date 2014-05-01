@@ -1,24 +1,24 @@
 @javascript @tasks
 Feature: Show archived tasks in task lists
   In order to cut down on page load time
-  As a Teambox developer
+  As a Crewmate developer
   I want users to see archived tasks in task lists quickly and easily
 
   Background: 
-    Given a project exists with name: "Market Teambox"
+    Given a project exists with name: "Market Crewmate"
     And a confirmed user exists with login: "balint"
-    And "balint" is in the project called "Market Teambox"
+    And "balint" is in the project called "Market Crewmate"
     And a task list exists with name: "This week"
-    And the task list called "This week" belongs to the project called "Market Teambox"
+    And the task list called "This week" belongs to the project called "Market Crewmate"
     And the following tasks with associations exist:
       | name                   | task_list | project        |
-      | Tell my friends        | This week | Market Teambox |
-      | Tell the tech bloggers | This week | Market Teambox |
+      | Tell my friends        | This week | Market Crewmate |
+      | Tell the tech bloggers | This week | Market Crewmate |
     And the task called "Tell my friends" is resolved
     And I am logged in as @balint
 
   Scenario: See archived tasks
-    When I go to the "Market Teambox" tasks page
+    When I go to the "Market Crewmate" tasks page
     Then I should see the task called "Tell the tech bloggers" in the "This week" task list
     But I should not see the task called "Tell my friends" in the "This week" task list
     When I follow "Show 1 archived task" in the "This week" task list
@@ -30,10 +30,10 @@ Feature: Show archived tasks in task lists
 
   Scenario: No archived tasks in a task list
     Given a task list exists with name: "Next month"
-    And the task list called "Next month" belongs to the project called "Market Teambox"
+    And the task list called "Next month" belongs to the project called "Market Crewmate"
     And the following tasks with associations exists:
       | name                         | task_list  | project        |
-      | Post on Digg and Hacker News | Next month | Market Teambox |
-    When I go to the "Market Teambox" tasks page
+      | Post on Digg and Hacker News | Next month | Market Crewmate |
+    When I go to the "Market Crewmate" tasks page
     Then I should not see a "Show 0 archived tasks" link in the "Next month" task list
 

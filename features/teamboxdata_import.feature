@@ -5,18 +5,18 @@ Background:
   And @mislav exists and is logged in
   And I am in the project called "Ruby Rockstars"
   And I am an administrator in the organization of the project called "Ruby Rockstars"
-  And the organization of the project called "Ruby Rockstars" is called "Teambox Data"
+  And the organization of the project called "Ruby Rockstars" is called "Crewmate Data"
   And deferred data processing is off
 
 Scenario: Mislav imports an historic project
   When I go to the your data page
   And the following confirmed users exist
     | login  | email                    | first_name | last_name |
-    | pablo  | pablo@teambox.com        | Pablo      | Villalba  |
+    | pablo  | pablo@crewmate.org        | Pablo      | Villalba  |
     | frodo  | frodo@theshire.com       | Frodo      | Baggins   |
     | gandalf| gandalf@middleearth.com  | Gandalf    | Grey      |
   And I follow "Import"
-  And I choose "Teambox"
+  And I choose "Crewmate"
   And I attach the file "spec/fixtures/teamboxdump.json" to "teambox_data_import_data"
   And I press "Import data"
   Then I should see "Andrew Wiggin (@gandhi_1)"
@@ -28,10 +28,10 @@ Scenario: Mislav imports an historic project
     | Andrew Wiggin (@gandhi_2)             |  Mislav Marohnić (@mislav) |
     | Andrew Wiggin (@gandhi_3)             |  Mislav Marohnić (@mislav) |
     | Andrew Wiggin (@gandhi_4)             |  Mislav Marohnić (@mislav) |
-    | Put all projects in this organization | Teambox Data               |
+    | Put all projects in this organization | Crewmate Data               |
   And I press "Import"
   Then I should see "Imported projects"
-  And I should see "Teambox #1"
+  And I should see "Crewmate #1"
   And @mislav should receive 1 email
   And @pablo should receive no emails
   And @frodo should receive no emails
@@ -42,14 +42,14 @@ Scenario: Mislav imports another historic project
   When I go to the your data page
   And the following confirmed users exist
     | login  | email                    | first_name | last_name |
-    | pablo  | pablo@teambox.com        | Pablo      | Villalba  |
+    | pablo  | pablo@crewmate.org        | Pablo      | Villalba  |
     | frodo  | frodo@theshire.com       | Frodo      | Baggins   |
     | gandalf| gandalf@middleearth.com  | Gandalf    | Grey      |
   And "pablo" is an administrator in the organization of the project called "Ruby Rockstars"
   And "gandalf" is an administrator in the organization of the project called "Ruby Rockstars"
   And "frodo" is an administrator in the organization of the project called "Ruby Rockstars"
   And I follow "Import"
-  And I choose "Teambox"
+  And I choose "Crewmate"
   And I attach the file "spec/fixtures/teamboxdump_problem.json" to "teambox_data_import_data"
   And I press "Import data"
   When I select the following:
@@ -57,7 +57,7 @@ Scenario: Mislav imports another historic project
     | Test Test (@steve_testing)            |  Pablo Villalba (@pablo)   |
     | Card Test (@stevecardtest)            |  Gandalf Grey (@gandalf)   |
     | Stevie Hobs (@steve)                  |  Frodo Baggins (@frodo)    |
-    | Put all projects in this organization | Teambox Data               |
+    | Put all projects in this organization | Crewmate Data               |
   And I press "Import"
   Then I should see "Imported projects"
   And I should see "Hobo Pro"
@@ -66,7 +66,7 @@ Scenario: Mislav imports another historic project
   And @frodo should receive no emails
   And @gandalf should receive no emails
 
-Scenario: Mislav gets fed up of Basecamp and moves to Teambox
+Scenario: Mislav gets fed up of Basecamp and moves to Crewmate
   When I go to the your data page
   And I follow "Import"
   And I choose "Basecamp"
@@ -75,7 +75,7 @@ Scenario: Mislav gets fed up of Basecamp and moves to Teambox
   Then I should see "Frodo Baggins (@FrodoBaggins)"
   When I select the following:
     | Frodo Baggins                         |  Mislav Marohnić (@mislav) |
-    | Put all projects in this organization | Teambox Data               |
+    | Put all projects in this organization | Crewmate Data               |
   And I press "Import"
   Then I should see "Imported projects"
   And I should see "Widgets"
@@ -85,7 +85,7 @@ Scenario: Mislav gets fed up of Basecamp and moves to Teambox
 Scenario: Mislav gets confused and uploads the wrong dump
   When I go to the your data page
   And I follow "Import"
-  And I choose "Teambox"
+  And I choose "Crewmate"
   And I attach the file "spec/fixtures/campdump.xml" to "teambox_data_import_data"
   And I press "Import data"
   Then I should see "There was an error loading your import. Please try again."
@@ -94,7 +94,7 @@ Scenario: Mislav gets confused and uploads the wrong dump
 Scenario: Mislav forgets to map the data
   When I go to the your data page
   And I follow "Import"
-  And I choose "Teambox"
+  And I choose "Crewmate"
   And I attach the file "spec/fixtures/teamboxdump.json" to "teambox_data_import_data"
   And I press "Import data"
   Then I should see "Andrew Wiggin (@gandhi_1)"
@@ -108,7 +108,7 @@ Scenario: Mislav forgets to map the data
 Scenario: Mislav imports data with invalid records
   When I go to the your data page
   And I follow "Import"
-  And I choose "Teambox"
+  And I choose "Crewmate"
   And I attach the file "spec/fixtures/teamboxdump_invalid.json" to "teambox_data_import_data"
   And I press "Import data"
   Then I should see "Andrew Wiggin (@gandhi_1)"
@@ -120,7 +120,7 @@ Scenario: Mislav imports data with invalid records
     | Andrew Wiggin (@gandhi_2)             |  Mislav Marohnić (@mislav) |
     | Andrew Wiggin (@gandhi_3)             |  Mislav Marohnić (@mislav) |
     | Andrew Wiggin (@gandhi_4)             |  Mislav Marohnić (@mislav) |
-    | Put all projects in this organization | Teambox Data               |
+    | Put all projects in this organization | Crewmate Data               |
   And I press "Import"
   Then I should see "There were errors with the information you supplied!"
   And @mislav should receive 1 email

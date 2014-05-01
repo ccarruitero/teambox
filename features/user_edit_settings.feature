@@ -1,6 +1,6 @@
 Feature: Edit user settings
   In order to save a ton of time
-  As a Teambox admin
+  As a Crewmate admin
   I want users to edit their own settings
 
   Background: 

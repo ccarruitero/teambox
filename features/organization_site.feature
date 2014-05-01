@@ -5,7 +5,7 @@ Feature: Public sites for organizations. Allow to view an entrance page and log 
     Given @mislav exists and is logged in
     And the following confirmed users exist
       | login  | email                    | first_name | last_name |
-      | pablo  | pablo@teambox.com        | Pablo      | Villalba  |
+      | pablo  | pablo@crewmate.com        | Pablo      | Villalba  |
     And I am currently in the project ruby_rockstars
     And "pablo" is in the project called "Ruby Rockstars"
     And I am an administrator in the organization called "ACME"

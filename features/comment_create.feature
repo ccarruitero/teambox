@@ -32,5 +32,5 @@ Feature: Posting a comment on a project wall
     When I fill in the comment box with underscored words and links
     And I wait for 1 second
     Then I should see "<em>Text</em> with an underscored_long_word" in the preview
-    And I should see "http://teambox.com" in the preview
-    And I should see "jordi@teambox.com" in the preview
+    And I should see "http://crewmate.org" in the preview
+    And I should see "jordi@crewmate.org" in the preview

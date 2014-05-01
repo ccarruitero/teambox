@@ -5,7 +5,7 @@ Background:
   Given @mislav exists and is logged in
   And the following confirmed users exist
     | login  | email                    | first_name | last_name |
-    | pablo  | pablo@teambox.com        | Pablo      | Villalba  |
+    | pablo  | pablo@crewmate.org        | Pablo      | Villalba  |
   And I am currently in the project ruby_rockstars
   And I am an administrator in the organization called "ACME"
 

@@ -3,12 +3,12 @@ Feature: Reorder task within the task list view
 
   Background:
     Given @mislav exists and is logged in
-    And I am in the project called "Teambox"
+    And I am in the project called "Crewmate"
     And the following task lists with associations exist:
       | name         | project |
-      | Bugfixes     | Teambox |
-      | Next release | Teambox |
-    And I go to the "teambox" tasks page
+      | Bugfixes     | Crewmate |
+      | Next release | Crewmate |
+    And I go to the "crewmate" tasks page
 
   Scenario: Reorder task list
     When I follow "Reorder Task Lists"

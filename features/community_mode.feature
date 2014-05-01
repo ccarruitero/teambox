@@ -1,5 +1,5 @@
 @organizations
-Feature: When I use Teambox community version, there is only one organization
+Feature: When I use Crewmate community version, there is only one organization
 
   Background:
     Given I am using the community version
@@ -26,7 +26,7 @@ Feature: When I use Teambox community version, there is only one organization
     And "mislav@fuckingawesome.com" should receive an email
     When I open the email
     Then I should see "Hey, Mislav Marohnić!" in the email body
-    When I follow "Log into Teambox now!" in the email
+    When I follow "Log into Crewmate now!" in the email
     Then I should see "Welcome"
 
   Scenario: I create a user account, but without an organization the system is not fully configured
@@ -49,7 +49,7 @@ Feature: When I use Teambox community version, there is only one organization
     And "mislav" sent an invitation to "ed_bloom@spectre.com" for the project "Ruby Rockstars"
     And I log out
     When "ed_bloom@spectre.com" opens the email with subject "Ruby Rockstars"
-    And they should see "Mislav Marohnić wants to collaborate with you on Teambox" in the email body
+    And they should see "Mislav Marohnić wants to collaborate with you on Crewmate" in the email body
     And I should see "Ruby Rockstars" in the email body
     And I follow "Accept the invitation to start collaborating" in the email
     When I fill in "Username" with "bigfish"

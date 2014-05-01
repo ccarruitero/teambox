@@ -15,4 +15,4 @@ Feature: Public projects
     And I should see "Other public projects..."
     When I follow "All Conversations"
     Then I should see "Conversations in this community"
-    And I should see "+ Log into Teambox to create a new conversation"
+    And I should see "+ Log into Crewmate to create a new conversation"

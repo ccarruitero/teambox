@@ -69,16 +69,16 @@ Feature: Converting a conversation to a task
   Scenario: Converting a simple conversation on the overview page and specifying additional task attributes
     Given the following confirmed users exist
     | login  | email                    | first_name | last_name |
-    | pablos | pablo@teambox.com        | Pablo      | Villalba  |
-    | saimon | saimon@teambox.com       | Saimon     | Moore     |
-    And I am in the project called "Teambox"
-    And all the users are in the project with name: "Teambox"
+    | pablos | pablo@crewmate.org        | Pablo      | Villalba  |
+    | saimon | saimon@crewmate.org       | Saimon     | Moore     |
+    And I am in the project called "Crewmate"
+    And all the users are in the project with name: "Crewmate"
     And the following task lists with associations exist:
       | name         | project |
-      | Next release | Teambox |
-      | Bugfixes     | Teambox |
-    Given I started a simple conversation in the "Teambox" project
-    When I go to the page of the "Teambox" project
+      | Next release | Crewmate |
+      | Bugfixes     | Crewmate |
+    Given I started a simple conversation in the "Crewmate" project
+    When I go to the page of the "Crewmate" project
     And I click the conversation's comment box
     And I follow "Convert to task"
     And I wait for 2 seconds

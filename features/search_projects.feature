@@ -1,7 +1,7 @@
 @sphinx @no-txn @javascript
 Feature: Search comments in projects
   In order to discover what has been said about a subject
-  As a Teambox user
+  As a Crewmate user
   I want to search for keywords
 
   Background: 

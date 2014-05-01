@@ -11,6 +11,6 @@ When /^I fill in the comment box with line breaks$/ do
 end
 
 When /^I fill in the comment box with underscored words and links$/ do
-  text = "_Text_ with an underscored_long_word and a link:\nhttp://teambox.com or an email: jordi@teambox.com"
+  text = "_Text_ with an underscored_long_word and a link:\nhttp://crewmate.org or an email: jordi@crewmate.org"
   find(:xpath, '//textarea[contains(@name, \'[body]\')]').set(text)
 end

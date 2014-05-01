@@ -5,8 +5,8 @@ Feature: Joining organizations
     Given @mislav exists and is logged in
     And the following confirmed users exist
       | login  | email                    | first_name | last_name |
-      | pablo  | pablo@teambox.com        | Pablo      | Villalba  |
-      | jordi  | jordi@teambox.com        | Jordi      | Romero    |
+      | pablo  | pablo@crewmate.org        | Pablo      | Villalba  |
+      | jordi  | jordi@crewmate.org        | Jordi      | Romero    |
     And I am currently in the project ruby_rockstars
     And I am an administrator in the organization called "ACME"
     And "pablo" is a participant in the organization called "ACME"
@@ -44,7 +44,7 @@ Feature: Joining organizations
     And I select "Admin. Can invite users to the project, and delete comments." from "invitation_role"
     And I select "Don't invite. User won't be able to create projects in this organization." from "invitation_membership"
     And I press "Invite"
-    When "jordi" accepts the invitation from "jordi@teambox.com"
+    When "jordi" accepts the invitation from "jordi@crewmate.org"
     Then "jordi" should not belong to the organization "ACME"
     And "jordi" should belong to the project "Ruby Rockstars" as an admin
 
@@ -53,7 +53,7 @@ Feature: Joining organizations
     And I select "Admin. Can invite users to the project, and delete comments." from "invitation_role"
     And I select "As a participant. Will be able to create his own projects." from "invitation_membership"
     And I press "Invite"
-    When "jordi" accepts the invitation from "jordi@teambox.com"
+    When "jordi" accepts the invitation from "jordi@crewmate.org"
     Then "jordi" should belong to the organization "ACME" as a participant
     And "jordi" should belong to the project "Ruby Rockstars" as an admin
 
@@ -62,7 +62,7 @@ Feature: Joining organizations
     And I select "Admin. Can invite users to the project, and delete comments." from "invitation_role"
     And I select "As an administrator. Will be able to add new users and manage the organization." from "invitation_membership"
     And I press "Invite"
-    When "jordi" accepts the invitation from "jordi@teambox.com"
+    When "jordi" accepts the invitation from "jordi@crewmate.org"
     Then "jordi" should belong to the organization "ACME" as a admin
     And "jordi" should belong to the project "Ruby Rockstars" as an admin
 

@@ -3,18 +3,18 @@ Feature: Reorder task within the task list view
 
   Background:
     Given @mislav exists and is logged in
-    And I am in the project called "Teambox"
+    And I am in the project called "Crewmate"
     And the following task lists with associations exist:
       | name      | project |
-      | This week | Teambox |
-      | Next week | Teambox |
+      | This week | Crewmate |
+      | Next week | Crewmate |
     And the following tasks with associations exist:
       | name                    | task_list | project |
-      | Write more test         | This week | Teambox |
-      | Fix a drag and drop bug | This week | Teambox |
-      | Write a blog post       | Next week | Teambox |
-      | Publish a gem           | Next week | Teambox |
-    And I go to the "teambox" tasks page
+      | Write more test         | This week | Crewmate |
+      | Fix a drag and drop bug | This week | Crewmate |
+      | Write a blog post       | Next week | Crewmate |
+      | Publish a gem           | Next week | Crewmate |
+    And I go to the "crewmate" tasks page
 
   Scenario: Reorder task within a task list
     When I follow "This week"

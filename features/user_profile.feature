@@ -4,7 +4,7 @@ Feature: Showing users
     Given the following confirmed users exist
       | login  | email                 | first_name | last_name |
       | balint | balint.erdi@gmail.com | Balint     | Erdi      |
-      | pablo  | pablo@teambox.com     | Pablo      | Villalba  |
+      | pablo  | pablo@crewmate.org     | Pablo      | Villalba  |
     Given @mislav exists and is logged in
     And I am currently in the project ruby_rockstars
     And I go to project settings page

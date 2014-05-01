@@ -16,7 +16,7 @@ Feature: Signing up
     And "mislav@fuckingawesome.com" should receive an email
     When I open the email
     Then I should see "Hey, Mislav Marohnić!" in the email body
-    When I follow "Log into Teambox now!" in the email
+    When I follow "Log into Crewmate now!" in the email
     Then I should see "Welcome"
 
   Scenario Outline: User tries to sign up with a reserved username
