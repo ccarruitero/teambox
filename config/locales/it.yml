@@ -213,7 +213,7 @@ it:
       define_html: "Usa le conversazioni per <b>discutere su decisioni</b> e <b>tieni aggiornato il tuo team</b> in maniera centralizzata.<br/>Ogni conversazione è una lista di messaggi, che sostituiscono emails confuse."
       empty: "Non c'è ancora nessuna conversazione in questo progetto."
       footer1_html: "Le conversazioni sono perfette per <b>condividere un disegno</b>, <b>decidere una data</b> per riunioni o <b>informare</b> sulle notizie del progetto."
-      footer2_html: "Essendo tutto collegato, è facile tornare indietro nel temppo e vedere quali file sono stati inviati e cosa ha detto ciascun membro del team. In Teambox, <b>collaborare</b> genera una <b>tracciabilità</b> di quel che si è fatto."
+      footer2_html: "Essendo tutto collegato, è facile tornare indietro nel temppo e vedere quali file sono stati inviati e cosa ha detto ciascun membro del team. In Crewmate, <b>collaborare</b> genera una <b>tracciabilità</b> di quel che si è fatto."
       item1_html: "<b>Condividi files</b>. Puoi allegare files ad ogni messaggio."
       item2_html: "<b>Iscriviti</b> ad una conversazione per ricevere notifiche di risposte via mail e RSS."
       item3_html: "<b>Esprimiti</b>. Ogni commento può essere formattato utilizzando il grassetto, il corsivo e stili di testo."
@@ -605,18 +605,18 @@ it:
       do_not_answer: "Non rispondere a questa email."
     confirm: 
       hey: "Ciao, %{user_name}!"
-      log_in: "Entra in Teambox ora!"
+      log_in: "Entra in Crewmate ora!"
       plaintext_link: "Se il link sopra non funziona, copia e incolla il seguente link nella barra degli indirizzi del tuo browser:"
       problems_html: "Se hai problemi, contattaci in %{support}"
-      report_abuse: "Hai ricevuto questo messaggio perchè ti sei registrato in Teambox con l'indirizzo %{email}"
+      report_abuse: "Hai ricevuto questo messaggio perchè ti sei registrato in Crewmate con l'indirizzo %{email}"
     invitation: 
       accept_the_invitation: "Accetta l'invito per iniziare la collaborazione"
-      collaborate_with: "%{name} vuole collaborare con te in Teambox:"
+      collaborate_with: "%{name} vuole collaborare con te in Crewmate:"
       current_users: "Utenti in questo progetto:"
       plaintext_link: "Se il link sopra non funziona, copia e incolla il seguente link nella barra degli indirizzi del tuo browser:"
       plan_share_and_collaborate: "Pianifica, condividi e tieniti aggiornato su quel che è stato fatto. Facile come dovrebbe essere."
       report_abuse: "Questa email ti è stata inviata su richiesta di un tuo contatto. Se c'è stato un intento di abuso, contattaci."
-      teambox_is_a_pm_platform: "Teambox è una piattaforma di gestione dei progetti pensata per il mondo reale."
+      teambox_is_a_pm_platform: "Crewmate è una piattaforma di gestione dei progetti pensata per il mondo reale."
       you_have_been_invited_to: "Sei stato invitato al progetto <b>%{project}</b>"
     notify: 
       are_watching: " sono iscritti alla conversazione, e riceveranno notifica delle risposte future."
@@ -627,26 +627,26 @@ it:
       due_on: "Data limite: %{date}"
       my_tasks: "Altri tuoi compiti in %{project}"
       notification_settings: "Puoi cambiare le tue <a href='%{url}'>impostazioni di notifica</a> per le emails successive."
-      project: "Progetto di Teambox:"
+      project: "Progetto di Crewmate:"
       reply: "Puoi anche rispondere a questa mail per pubblicare la risposta."
       status: "Stato: %{status}"
       stop_watching: "<a href='%{stop_watching_url}'>Non seguire più</a> questo elemento per non ricevere più emails su di esso."
       task: "Compiti:"
       task_list: "Lista di compiti:"
-      view_online: "Puoi <a href='%{link}'>entrare in Teambox</a> per rispondere e allegare files."
+      view_online: "Puoi <a href='%{link}'>entrare in Crewmate</a> per rispondere e allegare files."
     reset_password: 
       hey: "Ciao, %{user_name}!"
-      log_in: "Entra in Teambox ora!"
+      log_in: "Entra in Crewmate ora!"
       plaintext_link: "Se il link sopra non funziona, copia e incolla il seguente link nella barra degli indirizzi del tuo browser:"
       problems_html: "Se hai problemi, contattaci in %{support}"
-      report_abuse: "Hai ricevuto questo messaggio perchè ti sei registrato in Teambox con l'indirizzo %{email}"
+      report_abuse: "Hai ricevuto questo messaggio perchè ti sei registrato in Crewmate con l'indirizzo %{email}"
     upload: 
       file: "File:"
   example_projects: 
     new: 
       create: "Crea il progetto tutorial"
       learn: "Progetto Tutorial"
-      line1: "Se è la tua prima volta in Teambox, puoi creare un progetto di esempio con alcuni contenuti."
+      line1: "Se è la tua prima volta in Crewmate, puoi creare un progetto di esempio con alcuni contenuti."
       line2: "Navigando tra le pagine imparerai come utilizzare i progetti, le conversazioni e i compiti."
       line3: "Non dimenticare di <b>leggere le istruzioni</b> e <b>sperimentare</b> creando, modificando e cancellando elementi!"
       line4: "In questo progetto non potrai invitare altre persone, però puoi fare tutto il resto."
@@ -680,7 +680,7 @@ it:
       username_or_email: "Scrivi l'indirizzo email o il nome utente del tuo collega"
     sent: 
       email_sent: "<b>Abbiamo inviato una mail avvisando l'utente di accettare il tuo invito</b>. Se non riesce a trovare la mail, assicurati che non sia stata classificata come spam. Se il problema persiste, scrivici una mail."
-  last_announcement_html: "Read <a href='http://blog.teambox.com'>our blog</a> for the latest news about Teambox."
+  last_announcement_html: "Read <a href='http://crewmate.org/articles'>our blog</a> for the latest news about Crewmate."
   locales: 
     it: Italiano
   notes: 
@@ -762,7 +762,7 @@ it:
       feature2_html: "<b>Pubblica</b>. Publicazione istantanea al web con le pagine condivise."
       feature3_html: "<b>Stampa</b>. Le pagine sono pronte per essere stampate. Prova a stamparne una o ad esportarle in PDF!"
       feature4_html: "<b>Wiki</b>. Funzionano come un wiki, dando tutte le informazioni sul tuo progetto."
-      footer1_html: "Usa Teambox come una <b>bacheca condivisa</b> per informazioni di uso frequente."
+      footer1_html: "Usa Crewmate come una <b>bacheca condivisa</b> per informazioni di uso frequente."
       footer2_html: "Puoi anche allegare files in qualsiasi pagina del progetto."
       submit: Crea
       title: "Nuova pagina"
@@ -771,7 +771,7 @@ it:
       define1_html: "Qui puoi <b>condividere informazioni di uso frequente</b> con il tuo team: un roadmap, links utili, istruzioni, emails template..."
       define2_html: "Editare una pagina è semplice e divertente, con elementi trascinabili che puoi editare nel sito."
       empty: "Non c'è ancora nessuna pagina in questo progetto."
-      footer1_html: "Usa Teambox come una <b>bacheca condivisa</b> per informazioni di uso frequente."
+      footer1_html: "Usa Crewmate come una <b>bacheca condivisa</b> per informazioni di uso frequente."
       footer2_html: "Puoi anche allegare files in qualsiasi pagina del progetto."
       item1_html: "<b>Condividi</b>. Tutti i membri del progetto possono vederle ed editarle."
       item2_html: "<b>Pubblica</b>. Publicazione istantanea al web con le pagine condivise."
@@ -822,10 +822,10 @@ it:
       projects: "I miei progetti"
       rss: 
         description: "Attività in tutti i tuoi progetti"
-        title: Teambox
+        title: Crewmate
       subscribe: "Iscriviti al feed di attività"
     new: 
-      create_an_example_project: "Questa è la tua prima volta in Teambox? <a href='%{link}'>Crea un progetto di esempio</a> per sperimentare e imparare."
+      create_an_example_project: "Questa è la tua prima volta in Crewmate? <a href='%{link}'>Crea un progetto di esempio</a> per sperimentare e imparare."
       created: "Il progetto è stato creato!"
       invalid_project: "Progetto non valido, correggi gli errori e riprova."
       new_project: "Nuovo progetto..."
@@ -869,14 +869,14 @@ it:
       invalid: "Il link che hai seguito per modificare la password non è valido o è scaduto. Riprova a fare click sul link Ricordami la password nella home page.<br/>Se non funziona, scrivici: %{support}"
       not_found_html: "Non è stato trovato nessun utente con la email: %{email}<br/>Controlla di aver scritto bene e tenta di nuovo. Se continua a non funzionare, scrivici: %{support}"
       password_not_updated: "Nuova password non valida. Riprova."
-      password_updated: "La password è stata aggiornata. Puoi già entrare in Teambox."
+      password_updated: "La password è stata aggiornata. Puoi già entrare in Crewmate."
     new: 
       back: "Torna alla pagina di Login"
-      email: "Con quale email ti sei iscritto a Teambox?"
+      email: "Con quale email ti sei iscritto a Crewmate?"
       submit: "Inviami una mail per modificare la mia password"
       title: "Hay dimenticato la password?"
     sent: 
-      follow_the_link_html: "Fai click sul link contenuto nell'email per entrare in Teambox! Se non la trovi, controlla nella cartella della posta indesiderata o della spam. "
+      follow_the_link_html: "Fai click sul link contenuto nell'email per entrare in Crewmate! Se non la trovi, controlla nella cartella della posta indesiderata o della spam. "
       login_link_sent: "Ti abbiamo inviato un'email a %{email} per la modifica della password."
       title: "Modfica password"
   sessions: 
@@ -888,7 +888,7 @@ it:
     new: 
       submit: Entra
       title: Entra
-      video: "Breve introduzione a Teambox"
+      video: "Breve introduzione a Crewmate"
   shared: 
     archived_projects: 
       archived_projects: "Progetti archiviati"
@@ -933,7 +933,7 @@ it:
     public_navigation: 
       community: Comunità
       help: Aiuto
-      home: Teambox
+      home: Crewmate
       privacy: Privacy
       services: Servizi
       terms: "Condizioni d'uso"
@@ -953,7 +953,7 @@ it:
       ie: "Aggiorna Internet Explorer"
       or_install: "o installa"
       safari: Safari
-      upgrade: "Sai usando una versione obsoleta di Internet Explorer. Può succedere che Teambox non funzioni correttamente."
+      upgrade: "Sai usando una versione obsoleta di Internet Explorer. Può succedere che Crewmate non funzioni correttamente."
     user_navigation: 
       account_settings: "Impostazioni account"
       notifications: Notifiche
@@ -1085,12 +1085,12 @@ it:
       select_a_file: "Scegli un file"
     primer: 
       create_first: "Carica il primo file!"
-      define1_html: "Hai mai avuto problemi nel condividere un file? Con Teambox è facile."
+      define1_html: "Hai mai avuto problemi nel condividere un file? Con Crewmate è facile."
       define2_html: "Puoi caricare i files qui o allegarli a conversazioni, compiti o pagine."
       empty: "Non ha ancora alcun file in questo progetto"
       item1_html: "<b>Maggior capacità</b>. Carica archivi di qualunque dimensione e dimentica i limiti delle email."
       item2_html: "<b>Versioni</b>. Carica nuove versioni dei tuoi files e controlla lo storico."
-      item3_html: "<b>Sempre disponibili</b>. I files rimangono in Teambox perchè tu possa consultarli nel futuro."
+      item3_html: "<b>Sempre disponibili</b>. I files rimangono in Crewmate perchè tu possa consultarli nel futuro."
     upload: 
       download: Scarica
       on_: in
@@ -1098,9 +1098,9 @@ it:
       uploaded_by: "Caricato da"
   users: 
     activation: 
-      activated: "Abbiamo attivato il tuo account! Benvenuto su Teambox :)"
-      already_done: "Hai già confermato la tua registrazione. Puoi già utilizzare Teambox!"
-      invalid_html: "<p>Hai utilizzato un link non valido per entrare in Teambox. Entra con il tuo nome utente e password dalla home page.</p><p>Se non ricordi le tue credenziali, utilizza il link Ricordami la password.</p>"
+      activated: "Abbiamo attivato il tuo account! Benvenuto su Crewmate :)"
+      already_done: "Hai già confermato la tua registrazione. Puoi già utilizzare Crewmate!"
+      invalid_html: "<p>Hai utilizzato un link non valido per entrare in Crewmate. Entra con il tuo nome utente e password dalla home page.</p><p>Se non ricordi le tue credenziali, utilizza il link Ricordami la password.</p>"
       invalid_user: "Utente non valido"
       resent: "Ti abbiamo rimandato la mail di attivazione. Controlla la tua casella di posta!"
     create: 
@@ -1126,7 +1126,7 @@ it:
         field: "La tua icona"
         max_size: "Il file non può essere superiore di %{mb}"
         presence: "Non puoi caricare un file vuoto"
-        upload_here_or_at_gravatar_html: "Puoi caricare un nuovo avatar in Teambox, o creare un %{gravatar} che puoi usare in Teambox o in altri siti web."
+        upload_here_or_at_gravatar_html: "Puoi caricare un nuovo avatar in Crewmate, o creare un %{gravatar} che puoi usare in Crewmate o in altri siti web."
         we_have_this_avatar_html: "Questa è la tua immagine:"
       biography: Biografia
       change_password: "Modifica la password"
@@ -1150,7 +1150,7 @@ it:
         field: "La tua icona"
         max_size: "Il file non può essere superiore di %{mb}"
         presence: "Non puoi caricare un file vuoto"
-        upload_here_or_at_gravatar: "Puoi caricare un nuovo avatar in Teambox, o creare un %{gravatar} che puoi usare in Teambox o in altri siti web."
+        upload_here_or_at_gravatar: "Puoi caricare un nuovo avatar in Crewmate, o creare un %{gravatar} che puoi usare in Crewmate o in altri siti web."
         we_have_this_avatar: "Questa è la tua immagine:"
       sunday: Domenica
       time_zone: "Fuso orario"
@@ -1164,7 +1164,7 @@ it:
       existing_user_html: "Se hai già un account, <a href='%{login_url}'>entra</a> o <a href='%{forgot_url}'>reimposta la tua password</a>."
       submit: "Crea account"
       title: "Crea un account"
-      you_are_logged_in: "Hai già un account di Teambox. Se voi entrare con un'altro utente, esci e riprova l'accesso."
+      you_are_logged_in: "Hai già un account di Crewmate. Se voi entrare con un'altro utente, esci e riprova l'accesso."
     show: 
       pending_invite: "%{name} currently has a pending invitation to one of your projects. You will not be able to access any more information until this invitation has been accepted."
       profile: Profilo
@@ -1186,8 +1186,8 @@ it:
       formatted_address: "%{street}, %{city} (%{country})"
       remove_from_project: "Rimuovi dal progetto"
     welcome: 
-      get_started: "Benvenuto in Teambox!"
-      intro1: "Sei il nostro membro più recente! Vedi come Teambox può diventare il punto di partenza della tua giornata."
+      get_started: "Benvenuto in Crewmate!"
+      intro1: "Sei il nostro membro più recente! Vedi come Crewmate può diventare il punto di partenza della tua giornata."
       intro2: "E adesso? Crea un progetto per <b>collaborare</b>."
       projects: 
         create_your_first_project: "Un evento, un disegno, un prodotto..?  <a href='%{link}'>Crea il tuo primo progetto</a> ora!"
@@ -1195,10 +1195,10 @@ it:
         title: Progetti
       spread: 
         facebook: Facebook
-        help: "Puoi <b>aiutarci</b> raccontando ai tuoi amici come usi Teambox in"
+        help: "Puoi <b>aiutarci</b> raccontando ai tuoi amici come usi Crewmate in"
         in_your_site: "nel tuo sito web o nel tuo blog!"
-        reasons: "Abbiamo lavorato su Teambox per anni, sperando che sia utile per il tuo lavoro.<br/>Siamo persone come te, sviluppatori motivati con voglia di fare meglio le cose."
-        tell_us: "Usi Teambox ogni giorno? Raccontaci <a href='mailto:%{address}'>come lo usi</a> scrivendoci una mail!"
+        reasons: "Abbiamo lavorato su Crewmate per anni, sperando che sia utile per il tuo lavoro.<br/>Siamo persone come te, sviluppatori motivati con voglia di fare meglio le cose."
+        tell_us: "Usi Crewmate ogni giorno? Raccontaci <a href='mailto:%{address}'>come lo usi</a> scrivendoci una mail!"
         title: "Vogliamo esserti utili!"
         twitter: "Twitter,"
       stop_welcome: "Nascondi la pagina di benvenuto"

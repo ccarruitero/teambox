@@ -2,7 +2,7 @@
 # Mark missing translations by adding ##### at the end of the line
 en:
   # if latest_announcement is less than 5 characters, it will not be displayed
-  latest_announcement_html: "<strong>New</strong>: Earn money by referring new users into Teambox. Log in and go into your affiliate area to make up a 15% of the income you generate!<br/><br/>Read <a href='http://blog.teambox.com'>our blog</a> for more news about Teambox."
+  latest_announcement_html: "<strong>New</strong>: Earn money by referring new users into Crewmate. Log in and go into your affiliate area to make up a 15% of the income you generate!<br/><br/>Read <a href='http://crewmate.org/articles'>our blog</a> for more news about Crewmate."
   common:
     format_name: "%{first_name} %{last_name}"
     format_name_short: "%{first_name_first_character}. %{last_name}"
@@ -134,7 +134,7 @@ en:
     sent:
       title: Reset Password
       login_link_sent: "We just sent you an email to %{email} so you can retrieve your password."
-      follow_the_link_html: "Follow the link inside this email to log into Teambox! If you can't find it, look in the spam folder."
+      follow_the_link_html: "Follow the link inside this email to log into Crewmate! If you can't find it, look in the spam folder."
     reset:
       title: You can now reset your password
       submit: Reset my password
@@ -205,10 +205,10 @@ en:
         notify_on_weekends: Send me daily notifications on weekends
       invalid_login: "use only letters, numbers and underscores"
       delete:
-        steps_before_1: "To delete your Teambox account, you first need to leave or delete all your current projects."
+        steps_before_1: "To delete your Crewmate account, you first need to leave or delete all your current projects."
         steps_before_2: "This will ensure that no other users will lose data on their projects when you delete your account."
         steps_before_3: "Leave or delete your current projects and then come back to this page to delete your account."
-        what_will_happen: "After deleting your account, your Teambox profile will not be accessible anymore."
+        what_will_happen: "After deleting your account, your Crewmate profile will not be accessible anymore."
         delete_my_account: "Delete my account now"
         account_deleted: "Your account has been deleted. We will miss you!"
         couldnt_delete_account: "We can't delete your account because you still have active or archived projects."
@@ -223,7 +223,7 @@ en:
       new:
         use_this_email: "You have invitations to share projects for this email address. If you want to access these projects, don't change this email address. You can change your email address once you've completed the signup process."
         account:
-          title: Your Teambox account
+          title: Your Crewmate account
           choose_username: Choose a username so people can find you. You will use it to log in.
           validations: Must be all lowercase, no spaces allowed. You can use underscores.
     new:
@@ -232,7 +232,7 @@ en:
       no_public_signup: "Public signups are not allowed on this system."
       you_are_logged_in: "You already have an account. Log out first to sign up as a different user."
       existing_user_html: "If you already have an account, <a href='%{login_url}'>log in</a> or <a href='%{forgot_url}'>retrieve your password</a>."
-      you_already_have_an_account_html: "You already have a Teambox account for the address %{email}. <a href='%{login_link}'>Log in with this email</a> or <a href='%{reset_password_link}'>reset your password</a> if you forgot it."
+      you_already_have_an_account_html: "You already have a Crewmate account for the address %{email}. <a href='%{login_link}'>Log in with this email</a> or <a href='%{reset_password_link}'>reset your password</a> if you forgot it."
     create:
       thanks: Thanks for signing up!
       error: "We couldn't set up that account, sorry. Please try again, or contact an admin (link is above)."
@@ -250,8 +250,8 @@ en:
       error: "Couldn't save the updated profile. Please correct the mistakes and retry."
     activation:
       resent: "We've re-sent the activation email. Take a look at your inbox!"
-      already_done: "You have already confirmed your email! You can now use Teambox."
-      activated: "Your account has been activated! Welcome to Teambox :)"
+      already_done: "You have already confirmed your email! You can now use Crewmate."
+      activated: "Your account has been activated! Welcome to Crewmate :)"
       invalid_html: "<p>Invalid or expired access link. Login with your email and password.</p><p>If you don't remember your login data, follow the Forgot your Password link.</p>"
       invalid_user: Invalid user
     show:
@@ -265,9 +265,9 @@ en:
       remove_from_project: Remove from Project
     feeds:
       title: Sync your activity feeds
-      follow_activities: "You can follow Teambox activities from News Readers (Desktop or Mobile)."
+      follow_activities: "You can follow Crewmate activities from News Readers (Desktop or Mobile)."
       receive_notifications: "By using a Feed Reader on your computer or mobile device, you will receive notifications from activities in your projects."
-      configure: "You can configure your feed reader to alert you every time something new happens in Teambox, even if you don't have it open in a window."
+      configure: "You can configure your feed reader to alert you every time something new happens in Crewmate, even if you don't have it open in a window."
       import:
         title: How to import a news feed
         body_html: "Beneath you have a list of feeds you can follow. To import them into your feed reader you need to <strong>right-click the link</strong> and select <strong>copy link address</strong>. Next, go to your feed reader, add a new Feed and paste the address of that feed."
@@ -279,10 +279,10 @@ en:
         body_html: "Refer to the <a href='%{link}'>knowledge base</a> for this."
       more_tips:
         title: More tips
-        body_html: "Learn <a href='%{link}'>more ways to access Teambox</a>."
+        body_html: "Learn <a href='%{link}'>more ways to access Crewmate</a>."
     calendars:
       title: Sync your calendars
-      tasks_can_be_synced: "Teambox tasks can be synched with your usual Calendars so you don't forget what's coming up."
+      tasks_can_be_synced: "Crewmate tasks can be synched with your usual Calendars so you don't forget what's coming up."
       possible_clients: "You can sync your Google Calendar, your Apple's iCal, Outlook, Blackberry and others."
       your_calendars: Your Calendars
       subscribe_to_all: "All Projects: "
@@ -304,7 +304,7 @@ en:
       problems_html: "If you're still having problems, please contact us at %{support}"
     daily_task_reminder_email:
       daily_task_reminder: "Daily task reminder"
-      daily_task_reminder_from_teambox: "This is the daily task reminder email from Teambox"
+      daily_task_reminder_from_teambox: "This is the daily task reminder email from Crewmate"
       late_tasks: "Late tasks"
       tasks_for_today: "Tasks for today"
       tasks_for_tomorrow: "Tasks for tomorrow"
@@ -321,7 +321,7 @@ en:
           ======
         image: "![alt text](http://w3.org/img.jpg)"
         italic_text: "*italics* text"
-        link: "[Link something](http://teambox.com)"
+        link: "[Link something](http://crewmate.org)"
         ordered_list: |
           1. ordered list
           2. leave empty lines!
@@ -337,7 +337,7 @@ en:
         header_html: "<h3 style=\"font-size:18px\">Header</h3>"
         image_html: "<img src=\"http://www.w3.org/Icons/valid-html401\">"
         italic_text_html: "<i>italics</i> text"
-        link_html: "<a href=\"http://www.teambox.com\">Link something</a>"
+        link_html: "<a href=\"http://www.crewmate.org\">Link something</a>"
         ordered_list_html: |
           <li>ordered list</li>
           <li>leave empty lines!</li>
@@ -352,8 +352,8 @@ en:
       subscribe: Subscribe to the news feed
       new_project: New Project
       rss:
-        title: Teambox projects overview
-        description: Overview of all projects in Teambox
+        title: Crewmate projects overview
+        description: Overview of all projects in Crewmate
       archived: "Show %{count} Archived Projects..."
     primer:
       empty: You don't own or belong to any projects yet.
@@ -517,7 +517,7 @@ en:
       no_invoices: You don't have any invoice
       company_name: Company name
       vat: VAT Code
-      invoice: Teambox invoice
+      invoice: Crewmate invoice
       print: Print
       date: Date
       amount: Amount
@@ -549,7 +549,7 @@ en:
       name_html: "Organization name"
       name_placeholder: Your organization
       permalink_html: Short organization code <em>No spaces allowed. Will be used for the web address.</em>
-      domain_html: "Domain <em>You can use your own domain for your organization, check the <a href='http://help.teambox.com/faqs/more-ways-to-access-teambox/custom-domain' title='How to use your own domain for your organization in Teambox'>documentation</a>.</em>"
+      domain_html: "Domain <em>You can use your own domain for your organization, check the <a href='https://github.com/crewmate/crewmate/wiki/custom-domain' title='How to use your own domain for your organization in Crewmate'>documentation</a>.</em>"
       default_html: Default organization for new users. <em>Every newly signed user will be added to this organization as participant, i.e. will be able to create projects. Change will not affect existing users.</em>
     appearance_fields:
       colours: Site colors
@@ -559,12 +559,12 @@ en:
       link_hover_colour: default link hover color
       text_colour: default text color
       header_bar_colour: header bar color
-      description_html: HTML to be displayed on the entrance page <a href="http://help.teambox.com/faqs/more-ways-to-access-teambox/customize-organizations">Learn how to use this</a>
+      description_html: HTML to be displayed on the entrance page <a href="https://github.com/crewmate/crewmate/wiki//customize-organizations">Learn how to use this</a>
     index:
       about:
         title: About Organizations
         explain1: An organization allows you to group projects and users under a brand name.
-        explain2: "You can link them to your own domain to customize your Teambox space. Use your own logo and login page, and share it with your clients."
+        explain2: "You can link them to your own domain to customize your Crewmate space. Use your own logo and login page, and share it with your clients."
       new:
         create: "+ Create a new Organization"
         explain: "Brand it with your own logo and website, and create projects inside."
@@ -610,7 +610,7 @@ en:
       not_paid_plan: You can't delete an organization with a paid plan.
       go_downgrade_to_free_plan: "You need to <a href='%{link}'>unsubscribe</a> from the paid plan before deleting the organization. You can downgrade your account to the free plan from the <a href='%{link}'>billing</a> section."
       delete: Delete this organization
-      clarification: "If you delete this organization, all the information that's attached to it organization will be lost forever. The users that belong to this organization will still be able to login to Teambox and work with their other organizations."
+      clarification: "If you delete this organization, all the information that's attached to it organization will be lost forever. The users that belong to this organization will still be able to login to Crewmate and work with their other organizations."
       confirm: I understand that deleting this organization is irreversible and I all the content related to this organization will be lost.
       deleted: You deleted the organization
   memberships:
@@ -722,7 +722,7 @@ en:
       item3_html: "<b>Impress</b>. Any comment can be formatted with text styles."
       item4_html: "<b>Inbox-driven?</b> You can reply to a conversation from your email."
       footer1_html: "Conversations are great to <b>share a design</b>, <b>decide a date</b> for meeting or <b>report</b> some news."
-      footer2_html: "Since they're threaded, it's easy to go back in time and see which files were sent and what did each teammate said. In Teambox, <b>collaborating is also reporting</b>."
+      footer2_html: "Since they're threaded, it's easy to go back in time and see which files were sent and what did each teammate said. In Crewmate, <b>collaborating is also reporting</b>."
     column:
       new_conversation: New Conversation
       cant_create: You don't have permission to create conversations in this project
@@ -862,7 +862,7 @@ en:
       item2_html: "<b>Publish</b>. Instant web publishing with shared pages. Show the world."
       item3_html: "<b>Print</b>. Pages are printer-friendly. Try printing or exporting a PDF!"
       item4_html: "<b>Wiki</b>. Pages acts like a wiki, giving quick access to the project's information."
-      footer1_html: "Use Teambox as your <b>shared whiteboard</b> for frequently used stuff."
+      footer1_html: "Use Crewmate as your <b>shared whiteboard</b> for frequently used stuff."
       footer2_html: "You can also attach files to any page inside each note. Enjoy!"
     buttons:
       new_note: Text
@@ -877,7 +877,7 @@ en:
       feature2_html: "<b>Publish</b>. Instant web publishing with shared pages. Show the world."
       feature3_html: "<b>Print</b>. Pages are printer-friendly. Try printing or exporting a PDF!"
       feature4_html: "<b>Wiki</b>. Pages acts like a wiki, giving quick access to the project's information."
-      footer1_html: "Use Teambox as your <b>shared whiteboard</b> for frequently used stuff."
+      footer1_html: "Use Crewmate as your <b>shared whiteboard</b> for frequently used stuff."
       footer2_html: "You can also attach files to any page inside each note. Enjoy!"
       submit: Create page
       sending: Sending...
@@ -1080,10 +1080,10 @@ en:
     import_fields:
       select_file: Please choose a file containing your data.
       service: "Which service did you export your data from?"
-      please_supply_user_map: We detected the following users in your import. Please confirm which users correspond to which user on Teambox.
+      please_supply_user_map: We detected the following users in your import. Please confirm which users correspond to which user on Crewmate.
       in_organization: "Put all projects in this organization"
       user: User
-      teambox_user: Teambox user
+      teambox_user: Crewmate user
     new_export:
       title: "Export data"
       submit: Export data
@@ -1092,7 +1092,7 @@ en:
     index:
       title: "Import or export your data"
       imports: "Import data from a file"
-      imports_explain: "You may import Teambox backup files, or Basecamp projects."
+      imports_explain: "You may import Crewmate backup files, or Basecamp projects."
       exports: "Export your projects"
       no_imports: "There are no recent imports."
       no_exports: "There are no recent exports."
@@ -1112,12 +1112,12 @@ en:
       projects: "Imported projects"
       import_error: "There was an error loading your import. Please try again."
     column:
-      description: "Here you can move your data in and out of Teambox."
+      description: "Here you can move your data in and out of Crewmate."
   uploads:
     tooltip: Upload a file
     comment_upload_link: Attachment
     new:
-      select_a_file: Select a file to upload to Teambox
+      select_a_file: Select a file to upload to Crewmate
       storage_remaining: "You can upload up to %{bytes} more with your current plan. <a href='%{url}'>Upgrade</a> for more storage."
       uploading: Uploading...
     index:
@@ -1137,7 +1137,7 @@ en:
     primer:
       empty: This project doesn't have any files yet.
       create_first: Upload the first file to this project!
-      define1_html: "Ever had problems sharing a file with your team? Teambox makes sharing easy again."
+      define1_html: "Ever had problems sharing a file with your team? Crewmate makes sharing easy again."
       define2_html: "You can upload files here or attach documents to conversations, tasks or pages. "
       item1_html: "<b>Bigger files</b>. Upload files of any size and forget about email limitations."
       item2_html: "<b>Versioning</b>. Upload new versions of a file and keep track of changes."
@@ -1158,7 +1158,7 @@ en:
       signup: Sign up for an account
     new:
       title: Login
-      video: What's Teambox about?
+      video: What's Crewmate about?
       submit: Login
       login_failed: "Couldn't log you in as %{login}. Try inserting your email and password, or use Forgot your Password to set a new one."
   sites:
@@ -1170,13 +1170,13 @@ en:
   plans:
     thanks:
       title: Thank you for your support!
-      explain: "By purchasing a premium account, you're contributing to Teambox's development and getting much more."
+      explain: "By purchasing a premium account, you're contributing to Crewmate's development and getting much more."
       you_can_now_create: "You can now create up to %{projects} projects."
       reset_your_password: Please enter a new password and confirm it.
     show:
       title: Which organization would you like to upgrade?
       usage: "You can create <b>%{available_projects} more projects</b> on this organization"
-      plan: Teambox plans
+      plan: Crewmate plans
       current_plan_html: "Your current plan is <strong>%{name}</strong>."
       max_projects: "You can have up to %{max} projects."
       max_storage: "You can store up to %{max}."
@@ -1184,13 +1184,13 @@ en:
         configure_html: "Your plan supports custom branding and domain names. <a href='%{link}'>Configure your branding here</a>."
         not_available_html: "Your plan doesn't support <strong>custom branding</strong>. Upgrade to a higher account to get it."
     copies:
-      copy1_html: "Liking Teambox? We're full-time workers! <a href='%{link}'>Upgrade now</a> to support our development!"
+      copy1_html: "Liking Crewmate? We're full-time workers! <a href='%{link}'>Upgrade now</a> to support our development!"
       copy2_html: "<a href='%{link}'>Upgrade now</a> to get more projects, storage and search across all projects."
       copy3_html: "<a href='%{link}'>Get more done</a> with a premium account! Extra storage, up to 2000 projects."
       copy4_html: "<a href='%{link}'>Work better</a> with a premium account: Search bar across all projects."
-      copy5_html: "<a href='%{link}'>Upgrade your Teambox account now</a> and enjoy professional collaboration!"
+      copy5_html: "<a href='%{link}'>Upgrade your Crewmate account now</a> and enjoy professional collaboration!"
       copy6_html: "Search bar across all projects could save you hours. <a href='%{link}'>Upgrade now</a> to have it!"
-      copy7_html: "Your business matters! <a href='%{link}'>Get the best support</a> for Teambox with our premium plans."
+      copy7_html: "Your business matters! <a href='%{link}'>Get the best support</a> for Crewmate with our premium plans."
 
   shared:
     strip:
@@ -1255,7 +1255,7 @@ en:
       settings: Settings
       help: Help
     public_navigation:
-      home: Teambox
+      home: Crewmate
       tour: Tour
       users: Our Users
       services: Services
@@ -1294,14 +1294,14 @@ en:
       started_watching: "You will now be notified of updates by email."
       stopped_watching: "You will no longer receive notifications for this item."
     upgrade_browser:
-      upgrade: You're using an outdated version of Internet Explorer. Teambox may not work properly under this version.
+      upgrade: You're using an outdated version of Internet Explorer. Crewmate may not work properly under this version.
       ie: Upgrade to Internet Explorer 8
       or_install: or install
       chrome: "Chrome,"
       firefox: "Firefox"
       safari: "Safari"
     chrome_frame:
-      enhance_html: Enhance your Teambox experience with Google Chrome Frame. Click <a href="%{link}" target=\"_blank\">here</a> to set it up.
+      enhance_html: Enhance your Crewmate experience with Google Chrome Frame. Click <a href="%{link}" target=\"_blank\">here</a> to set it up.
     instructions:
       subscribe_to_feeds: Subscribe to feeds...
       subscribe_to_calendars: Subscribe to calendars...
@@ -1317,15 +1317,15 @@ en:
       facebook: Facebook
       twitter: Twitter
       website: "Share it on your website,"
-      send_invites: Invite to Teambox
+      send_invites: Invite to Crewmate
       sent_invites_to: "The invitation email will be sent to the following addresses:"
       refer_info: "Refer %{users} users on %{plan} accounts, get $%{credit} every month."
-      desc_1_html: "With our partner tools, you can get <strong>free months</strong> using Teambox or make <strong>real money</strong> by referring others."
-      desc_2_html: "Bring new users to Teambox, and get <strong>%{percent}% of the income</strong> your referred users generate, <strong>forever</strong>."
+      desc_1_html: "With our partner tools, you can get <strong>free months</strong> using Crewmate or make <strong>real money</strong> by referring others."
+      desc_2_html: "Bring new users to Crewmate, and get <strong>%{percent}% of the income</strong> your referred users generate, <strong>forever</strong>."
       option_1: "Option 1: Share this link"
       option_2: "Option 2: Invite your contacts by entering their email"
       option_3: "Option 3: Invite your contacts by importing contacts from a CSV file"
-      twitter_link: "Try+Teambox+to+collaborate+with+your+team,+sign+up+for+free+at+%{link}"
+      twitter_link: "Try+Crewmate+to+collaborate+with+your+team,+sign+up+for+free+at+%{link}"
       referred_users: "Your referred users "
       no_referred_users: "You don't have any referred users yet."
       credits_earned: "Credit you've earned"
@@ -1336,14 +1336,14 @@ en:
       over_100: "Whenever you have over $100,"
       send_money: "and we will send you the money you've earned."
       get_in_touch: "get in touch with us"
-      ideas: "Some ideas to make the most out of Teambox"
-      idea1: "Create a site about how to use Teambox, with guides for beginners."
-      idea2: "Post a link to Teambox on your blog and talk about how it helped you."
+      ideas: "Some ideas to make the most out of Crewmate"
+      idea1: "Create a site about how to use Crewmate, with guides for beginners."
+      idea2: "Post a link to Crewmate on your blog and talk about how it helped you."
       idea3: "Run an event about Project Collaboration and refer your attendees."
       idea4: "Simply email invitations to new users."
       learn_more: "Learn more..."
       use_tracking_code: "You must use a tracking code so we can know which users are coming from you."
-      tracking1: "When you refer users to Teambox, they must sign up at a page with a special parameter."
+      tracking1: "When you refer users to Crewmate, they must sign up at a page with a special parameter."
       tracking2: "This parameter is unique for you, and it allows us to track your users."
       tracking3: "Once a user follows this link, they will be marked as coming from you."
       tracking4: "Even if they navigate away from the page and come later, we store this data in their session so when they sign up we still remember they came from you."
@@ -1352,13 +1352,13 @@ en:
       addresses: "addresses"
       sent_number_of_invites: "The invitation email will be sent to"
     notification:
-      new_signup: "A user signed up on Teambox using your referral code!"
-      new_subscription: "A user upgraded his account on Teambox using your referral code!"
-      accepted_subscription: "%{name} (%{email}) just signed up on Teambox using your referral code."
-      upgraded_subscription: "%{name} (%{email}) just upgraded his account on Teambox, and you are earning $%{price} in credit"
-      check_your_earnings: "Go check your earnings from referrals on Teambox"
-      check_your_referrals: "Go check your referred users on Teambox"
-      wait: "The transaction has been just processed, but may take a while to be reflected on your Teambox Partner area"
+      new_signup: "A user signed up on Crewmate using your referral code!"
+      new_subscription: "A user upgraded his account on Crewmate using your referral code!"
+      accepted_subscription: "%{name} (%{email}) just signed up on Crewmate using your referral code."
+      upgraded_subscription: "%{name} (%{email}) just upgraded his account on Crewmate, and you are earning $%{price} in credit"
+      check_your_earnings: "Go check your earnings from referrals on Crewmate"
+      check_your_referrals: "Go check your referred users on Crewmate"
+      wait: "The transaction has been just processed, but may take a while to be reflected on your Crewmate Partner area"
   roles:
     observer: observer
     commenter: commenter
@@ -1374,48 +1374,48 @@ en:
       project_link: "Click on the link below to start collaborating on %{project} now"
     invitation:
       subject: "%{user} shared [%{project}] with you"
-      collaborate_with: "%{name} wants to collaborate with you on Teambox:"
+      collaborate_with: "%{name} wants to collaborate with you on Crewmate:"
       you_have_been_invited_to: "You have been invited to the project %{project}"
       accept_the_invitation: Accept the invitation to start collaborating
       current_users: "Current users in this project:"
       plaintext_link: "If the above link doesn't work, copy and paste the following code into your browser bar: "
-      teambox_is_a_pm_platform: "Teambox is a project management platform made for real-world collaboration."
+      teambox_is_a_pm_platform: "Crewmate is a project management platform made for real-world collaboration."
       plan_share_and_collaborate: "Plan, share and keep track of what's been done. Simple as it should be."
       report_abuse: "This email was sent to you at your contact's request. Please report any abuse."
-      subject_without_project: "%{name} invited you to Teambox"
+      subject_without_project: "%{name} invited you to Crewmate"
     teamboxdata:
         hey: "Hey, %{user_name}!"
-        data_imported: "Your data has been successfully imported into Teambox. To view details, please visit the following link:"
-        data_import_failed: "Your data could not be imported into Teambox. Please check that the data you uploaded is valid. To try again, visit the following link:"
-        data_exported: "Your data has been exported from Teambox, and is available as a download from the following link:"
-        data_export_failed: "Your data could not be exported from Teambox. To try again, please visit the following link:"
+        data_imported: "Your data has been successfully imported into Crewmate. To view details, please visit the following link:"
+        data_import_failed: "Your data could not be imported into Crewmate. Please check that the data you uploaded is valid. To try again, visit the following link:"
+        data_exported: "Your data has been exported from Crewmate, and is available as a download from the following link:"
+        data_export_failed: "Your data could not be exported from Crewmate. To try again, please visit the following link:"
         exported: "Your data is ready for download"
         export_failed: "Your data could not be exported"
         imported: "Your data has been imported"
         import_failed: "Your data could not be imported"
     confirm:
-      subject: "Get started with Teambox"
+      subject: "Get started with Crewmate"
       hey: "Hey, %{user_name}!"
-      follow_this_link: "In order to %{complete} for Teambox, we need you to log in by clicking here:"
+      follow_this_link: "In order to %{complete} for Crewmate, we need you to log in by clicking here:"
       complete: complete your signup
-      log_in: "Log into Teambox now!"
+      log_in: "Log into Crewmate now!"
       plaintext_link: "If this doesn't work, copy and paste the following link in your browser's bar:"
-      report_abuse: "You received this message because you signed up for a Teambox account with %{email}"
+      report_abuse: "You received this message because you signed up for a Crewmate account with %{email}"
       problems_html: "If you have any problems, please contact us at %{support}"
     reset_password:
       subject: "Your password has successfully been reset"
       hey: "Hey, %{user_name}!"
-      follow_this_link: "In order to %{new_password} for Teambox, we need you to log in with the following link:"
+      follow_this_link: "In order to %{new_password} for Crewmate, we need you to log in with the following link:"
       new_password: set a new password
-      log_in: "Log into Teambox now!"
+      log_in: "Log into Crewmate now!"
       plaintext_link: "If this doesn't work, copy and paste the following link in your browser's bar:"
-      report_abuse: "You received this message because you signed up for a Teambox account with %{email}"
+      report_abuse: "You received this message because you signed up for a Crewmate account with %{email}"
       problems_html: "If you have any problems, please contact us at %{support}"
       successfully_reset: "Your password has been successfully reset." 
     forgot_password:
-      subject: "Password retrieval for Teambox"
+      subject: "Password retrieval for Crewmate"
     notify:
-      project: "Teambox Project:"
+      project: "Crewmate Project:"
       view_this_conversation_online_html: "You can click on %{conversation} to answer and attach files."
       view_this_task_online_html: "You can %{link} to comment and attach files."
       conversation: view this conversation online
@@ -1444,12 +1444,12 @@ en:
     upload:
       file: "File:"
     bounce:
-      subject: "Error sending email to Teambox"
-      user_not_found_error: "This email address is not associated with any Teambox account."
-      not_project_member_error: "You are not a member of the specified Teambox project."
-      project_not_found_error: "There is no project on Teambox corresponding to this email address."
+      subject: "Error sending email to Crewmate"
+      user_not_found_error: "This email address is not associated with any Crewmate account."
+      not_project_member_error: "You are not a member of the specified Crewmate project."
+      project_not_found_error: "There is no project on Crewmate corresponding to this email address."
       target_not_found_error: "We couldn't find the item where you are trying to post your comment."
-      not_delivered: "Your email couldn't be processed by Teambox. View our documentation to learn which types of email we accept: %{link}"
+      not_delivered: "Your email couldn't be processed by Crewmate. View our documentation to learn which types of email we accept: %{link}"
 
   weakling:
     default: Must be at least 5 characters
@@ -1779,26 +1779,26 @@ en:
     this_account_will_be_linked_to: "This account will be linked with %{provider}"
     account_linked: "Your account has been linked."
     app_unlinked: "App unlinked"
-    not_linked: "That service is not linked to your Teambox account."
+    not_linked: "That service is not linked to your Crewmate account."
     already_linked_to_your_account: "This service is already linked to your account. You can log in with it."
     already_taken_by_other_account: "This service is already linked to another account on the system. Try logging out and logging in with it. To link it to a different account, you'll need to unlink it from the current one."
     auth_status: OAuth Auth
     auth_status_linked: Linked with the provider
     auth_status_link: Link with your account
     logged_in: Logged in successfully
-    your_account_is_linked_html: "Your %{provider} profile is <strong>linked</strong> to Teambox."
-    your_account_is_not_linked_html: "Your %{provider} profile is <strong>not linked</strong> to Teambox."
+    your_account_is_linked_html: "Your %{provider} profile is <strong>linked</strong> to Crewmate."
+    your_account_is_not_linked_html: "Your %{provider} profile is <strong>not linked</strong> to Crewmate."
     link_account: Link account.
     unlink_account: Unlink account.
     user_exists: This %{provider} profile is not linked with any account yet.
-    user_already_exists_by_email: "Link '%{email}' to your Teambox account"
+    user_already_exists_by_email: "Link '%{email}' to your Crewmate account"
     user_already_exists_by_login: "The username '%{login}' is already taken"
-    user_exists_instruction: If you already have a Teambox account, log in to link it automatically to your %{provider} profile.
+    user_exists_instruction: If you already have a Crewmate account, log in to link it automatically to your %{provider} profile.
     user_exists_is_not_yours_html: If you don't own the account '%{account}', %{signup_for_a_new_account}.
     signup_for_a_new_account: click here to sign up for a new account
     
   google_docs:
-    authorization_required: In order to use Google Docs you must first authorize Teambox to use your google account.
+    authorization_required: In order to use Google Docs you must first authorize Crewmate to use your google account.
     authorize_link: Authorize Google Docs
     create_new: Create a New Blank Document
     create: Create

@@ -627,7 +627,7 @@ sl:
       do_not_answer: "NE odgovarjaj na ta email!"
     confirm: 
       hey: "Živjo, %{user_name}!"
-      log_in: "Prijavi se v Teambox!"
+      log_in: "Prijavi se v Crewmate!"
     invitation: 
       subject: "%{user}} je delil [%{project}] s teboj"
     notify: 
@@ -886,7 +886,7 @@ sl:
     public_navigation: 
       community: Skupnost
       help: "Pomoč in Podpora"
-      home: Teambox
+      home: Crewmate
       privacy: Zasebnost
       services: Storitve
       terms: "Pravila Uporabe"

@@ -287,7 +287,7 @@ de:
       define_html: "Nutzen Sie Konversationen, um <b>Entscheidungen zu diskutieren</b> und <b>ihr Team zu informieren</b> auf einer zentralen Plattform.<br/> Jede Konversation ist ein Kommentarbaum, der viele Emails überflüssig macht."
       empty: "Dieses Projekt hat bisher keine Konversationen."
       footer1_html: "Konversationen sind hervorragend, um <b>ein Design zu bearbeiten</b>, <b>einen Termin zu entscheiden</b> für ein Treffen oder um Neuigkeiten <b>mitzuteilen</b>."
-      footer2_html: "Durch die Baumanordnung ist es einfach, den zeitlichen Ablauf zu verfolgen, zu sehen welche Dateien gesendet worden sind und die Meinungen jedes Teilnehmers  zu kennen. In Teambox heißt <b>zusammenarbeiten auch kommunizieren</b>."
+      footer2_html: "Durch die Baumanordnung ist es einfach, den zeitlichen Ablauf zu verfolgen, zu sehen welche Dateien gesendet worden sind und die Meinungen jedes Teilnehmers  zu kennen. In Crewmate heißt <b>zusammenarbeiten auch kommunizieren</b>."
       item1_html: "<b>Dateien hochladen</b>. An Kommentare können auch Dateien angehängt werden."
       item2_html: "<b>Abonnieren</b> Sie eine Konversation, um über zukünftige Antworten per Email oder RSS informiert zu werden."
       item3_html: "<b>Formatieren</b>. Jeder Kommentar kann mit Textstilen formatiert werden."
@@ -699,22 +699,22 @@ de:
       do_not_answer: "Antworten Sie nicht auf diese Email."
     confirm: 
       hey: "Hallo %{user_name}!"
-      log_in: "Jetzt bei Teambox anmelden!"
+      log_in: "Jetzt bei Crewmate anmelden!"
       plaintext_link: "Wenn das nicht funktioniert, kopieren Sie den folgenden Link und fügen Sie ihn in die Adresszeile Ihres Browsers ein:"
       problems_html: "Wenn Sie irgendwelche Probleme haben, kontaktieren Sie uns unter %{support}"
-      report_abuse: "Sie erhalten diese Email, weil Sie sich mit der Adresse %{email} für ein Teambox-Benutzerkonto registriert haben."
-      subject: "Starten Sie mit Teambox"
+      report_abuse: "Sie erhalten diese Email, weil Sie sich mit der Adresse %{email} für ein Crewmate-Benutzerkonto registriert haben."
+      subject: "Starten Sie mit Crewmate"
     forgot_password: 
-      subject: "Passworterneuerung für Teambox"
+      subject: "Passworterneuerung für Crewmate"
     invitation: 
       accept_the_invitation: "Nehmen Sie die Einladung an, um mit der Zusammenarbeit zu beginnen."
-      collaborate_with: "%{name} will mit Ihnen auf Teambox zusammenarbeiten:"
+      collaborate_with: "%{name} will mit Ihnen auf Crewmate zusammenarbeiten:"
       current_users: "Benutzer aktuell in diesem Projekt: "
       plaintext_link: "Wenn der obige Link nicht funktioniert, kopieren Sie den folgenden Code und fügen Sie Ihn in die Adresszeile Ihres Browsers ein: "
       plan_share_and_collaborate: "Planen Sie, Geben Sie Aufgaben frei and erfassen Sie, was gemacht werden soll. So einfach, wie es sein soll."
       report_abuse: "Diese Email wurde versendet auf den Wunsch einer Ihrer Kontakte. Teilen Sie uns bitte jeglichen Missbrauch mit."
       subject: "%{user} teilt das Projekt [%{project}] mit Ihnen "
-      teambox_is_a_pm_platform: "Teambox ist eine Projekt Management Plattform, die für die Echtzeit Zusammenarbeit entwickelt wurde."
+      teambox_is_a_pm_platform: "Crewmate ist eine Projekt Management Plattform, die für die Echtzeit Zusammenarbeit entwickelt wurde."
       you_have_been_invited_to: "Sie sind zu dem Projekt <b>%{project}</b> eingeladen worden!"
     notify: 
       are_watching: " haben diese Konversation abonniert und werden über zukünftige Antworten benachrichtigt."
@@ -725,7 +725,7 @@ de:
       due_on: "Fällig am %{date}"
       my_tasks: "Mehr Aufgaben, die Ihnen zugeordnet sind in %{project}"
       notification_settings: "Sie können Ihre <a href='%{url}'>Benachrichtigungseinstellungen hier</a> für weitere Emails ändern."
-      project: "Teambox Projekt:"
+      project: "Crewmate Projekt:"
       reply: "Sie können auch eine Email senden um auf die Konversation zu antworten."
       status: "Status: %{status}"
       stop_watching: "<a href='%{stop_watching_url}'>Abbestellen</a> der Email Benachrichtigungen für diesen Baum."
@@ -735,10 +735,10 @@ de:
       view_online: "Sie können <a href='%{link}'>diese Konversation online aufrufen</a>, um zu antworten und Dateien hochzuladen."
     reset_password: 
       hey: "Hallo %{user_name}!"
-      log_in: "Melden Sie sich jetzt bei Teambox an!"
+      log_in: "Melden Sie sich jetzt bei Crewmate an!"
       plaintext_link: "Wenn dieses nicht funktioniert, kopieren Sie den folgenden Link und fügen Sie ihn in die Adresszeile Ihres Browsers ein:"
       problems_html: "Wenn Sie irgendwelche Probleme haben, kontaktieren Sie uns unter %{support}"
-      report_abuse: "Sie erhalten dieses Email, weil Sie sichr für ein Teambox-Benutzerkonto registriert haben mit %{email}"
+      report_abuse: "Sie erhalten dieses Email, weil Sie sichr für ein Crewmate-Benutzerkonto registriert haben mit %{email}"
       subject: "Ihr Passwort wurde erfolgreich zurückgesetzt"
     upload: 
       file: "Datei:"
@@ -748,8 +748,8 @@ de:
       error: "Beispielprojekt konnte nicht erstellt werden."
       error_list: "Beispielprojekt konnte nicht erstellt werden. Folgende Projekte sind ungültig: %{list}."
       learn: "Lernen Sie an einem Beispiel!"
-      line1: "Wenn Sie das erste Mal Teambox nutzen, können Sie ein Beispiel-Projekt mit beliebigen Inhalten erstellen."
-      line2: "Das Navigieren durch die Seiten lehrt Sie, wie Sie jeden Bestandteil von Teambox nutzen."
+      line1: "Wenn Sie das erste Mal Crewmate nutzen, können Sie ein Beispiel-Projekt mit beliebigen Inhalten erstellen."
+      line2: "Das Navigieren durch die Seiten lehrt Sie, wie Sie jeden Bestandteil von Crewmate nutzen."
       line3: "Stellen Sie sicher, dass Sie <b>die Anleitungen lesen</b> und <b>experimentieren</b> Sie mit dem Erstellen, Bearbeiten und Löschen von Elementen!"
       line4: "In diesem Projekt können Sie keine anderen Benutzer einladen, aber Sie können alles andere ausprobieren."
   form: 
@@ -807,7 +807,7 @@ de:
       username_or_email: "Geben Sie den Benutzernamen des Teammitglieds oder die Email ein:"
     sent: 
       email_sent: "<b>Wir haben diesem Benutzer gerade eine Benachrichtigungs-Email gesendet mit einem Link, um die Einladung anzunehmen</b>. Wenn sie die Email nicht erhalten haben, stellen Sie sicher, dass sie nicht als Spam eingestuft wurde oder wählen Sie eine andere Email Adresse. Wenn weiterhin Probleme bestehen, nehmen Sie bitte Kontakt zu unserem Team auf."
-  last_announcement_html: "Read <a href='http://blog.teambox.com'>our blog</a> for the latest news about Teambox."
+  last_announcement_html: "Read <a href='http://crewmate.org/articles'>our blog</a> for the latest news about Crewmate."
   locales: 
     de: Deutsch
   not_found: 
@@ -863,11 +863,11 @@ de:
     auth_status_linked: "Verbunden mit dem Anbieter"
     link_account: "Konto verbinden"
     logged_in: "Anmeldung erfolgreich"
-    not_linked: "Dieser Dienst ist nicht mit Ihrem Teambox Konto verbunden."
+    not_linked: "Dieser Dienst ist nicht mit Ihrem Crewmate Konto verbunden."
     this_account_will_be_linked_to: "Dieses Konto wird verbunden mit %{provider} "
     unlink_account: "Verbindung zu Konto aufheben"
-    your_account_is_linked_html: "Ihr %{provider} Profil ist <strong>verbunden</strong> mit Teambox."
-    your_account_is_not_linked_html: "Ihr %{provider} Profil ist <strong>nicht verbunden</strong> mit Teambox"
+    your_account_is_linked_html: "Ihr %{provider} Profil ist <strong>verbunden</strong> mit Crewmate."
+    your_account_is_not_linked_html: "Ihr %{provider} Profil ist <strong>nicht verbunden</strong> mit Crewmate"
   page_title: 
     archived_task_lists: "Archivierte Aufgaben"
     create_uploads: "Datei hochladen"
@@ -919,7 +919,7 @@ de:
       feature2_html: "<b>Veröffentlichen</b>. Sofortiges Veröffentlichen der freigegebenen Seiten im Web. Zeigen Sie sie der Welt."
       feature3_html: "<b>Drucken</b>. Die Seiten sind druckerfreundlich. Drucken Sie sie einfach aus oder exportieren Sie sie als PDF!"
       feature4_html: "<b>Wiki</b>. Seiten funktionieren wie ein Wiki, sie geben schnellen Zugriff auf die Projektinformationen."
-      footer1_html: "Nutzen Sie Teambox als Ihr <b>öffentliches Whiteboard</b> für häufig gebrauchte Informationen."
+      footer1_html: "Nutzen Sie Crewmate als Ihr <b>öffentliches Whiteboard</b> für häufig gebrauchte Informationen."
       footer2_html: "Sie können auf jeder Seite zu jeder Notiz auch Dateien hinzufügen. Probieren Sie es einfach aus!"
       submit: Erstellen
       title: "Neue Seite"
@@ -928,7 +928,7 @@ de:
       define1_html: "Hier können Sie <b>nützliche Informationen mitteilen</b> für Ihr Team: Eine Roadmap, interessante Links, Anleitungen, Email-Vorlagen..."
       define2_html: "Eine Seite zu bearbeiten ist sehr einfach, mit Drag-and-Drop können Sie Elemente genau platzieren."
       empty: "Dieses Projekt hat bisher keine Seiten."
-      footer1_html: "Nutzen Sie Teambox als Ihr <b>öffentliches Whiteboard</b> für häufig gebrauchte Informationen."
+      footer1_html: "Nutzen Sie Crewmate als Ihr <b>öffentliches Whiteboard</b> für häufig gebrauchte Informationen."
       footer2_html: "Sie können auf jeder Seite zu jeder Notiz auch Dateien hinzufügen. Probieren Sie es einfach aus!"
       item1_html: "<b>Freigeben</b>. Alle Teammitglieder können die Projektseiten lesen und bearbeiten."
       item2_html: "<b>Veröffentlichen</b>. Sofortiges Veröffentlichen der freigegebenen Seiten im Web. Präsentieren Sie sie der Welt."
@@ -973,13 +973,13 @@ de:
       success: "Sie haben die Rolle von %{name} aktualisiert"
   plans: 
     copies: 
-      copy1: "Teambox gefällt Ihnen? Wir sind Vollzeitkräfte! <a href='%{link}'>Stufen Sie Ihren Tarif hoch</a>, um unsere Leistung zu unterstützen! "
+      copy1: "Crewmate gefällt Ihnen? Wir sind Vollzeitkräfte! <a href='%{link}'>Stufen Sie Ihren Tarif hoch</a>, um unsere Leistung zu unterstützen! "
       copy2: "<a href='%{link}'>Stufen Sie Ihren Tarif hoch</a> für mehr Projekte, mehr Speicherplatz und für die Suche über alle Projekte. "
       copy3: "<a href='%{link}'>Mehr Leistung</a> mit einem Premium Tarif! Mehr Speicherplatz, bis zu 2000 Projekte. "
       copy4: "<a href='%{link}'>Arbeiten Sie besser</a> mit einem Premium Tarif: Suchleiste über alle Projekte. "
-      copy5: "<a href='%{link}'>Stufen Sie Ihren Teamboxtarif jetzt hoch</a> und genießen Sie professionelle Zusammenarbeit! "
+      copy5: "<a href='%{link}'>Stufen Sie Ihren Crewmatetarif jetzt hoch</a> und genießen Sie professionelle Zusammenarbeit! "
       copy6: "Die Suchleiste über alle Projekte kann Ihnen viele Stunden Suche ersparen. <a href='%{link}'>Stufen sie jetzt hoch</a>, um sie zu nutzen! "
-      copy7: "Ihr Geschäft ist wichtig! <a href='%{link}'>Erhalten Sie den besten Support</a> für Teambox mit unseren Premium Tarifen. "
+      copy7: "Ihr Geschäft ist wichtig! <a href='%{link}'>Erhalten Sie den besten Support</a> für Crewmate mit unseren Premium Tarifen. "
   projects: 
     edit: 
       change_owner: "Besitzer ändern"
@@ -1019,7 +1019,7 @@ de:
         one: "Sie haben ein aktives Projekt"
         other: "Sie haben %{count} aktive Projekte."
         zero: "Sie haben keine aktiven Projekte."
-      create_an_example_project: "Zum ersten Mal bei Teambox? <a href='%{link}'>Erstellen Sie ein Beispiel-Projekt</a> zum Ausprobieren und Lernen."
+      create_an_example_project: "Zum ersten Mal bei Crewmate? <a href='%{link}'>Erstellen Sie ein Beispiel-Projekt</a> zum Ausprobieren und Lernen."
       created: "Ihr Projekt wurde erstellt!"
       invalid_project: "Ungültiges Projekt, bitte Fehler korrigieren und noch einmal versuchen."
       new_project: "Neues Projekt..."
@@ -1077,7 +1077,7 @@ de:
       submit: "Schicken Sie mir einen Link, um mein Passwort zurückzusetzen"
       title: "Sie haben Ihr Passwort vergessen?"
     sent: 
-      follow_the_link_html: "Folgen Sie dem Link in der Email, um sich bei Teambox anzumelden. Wenn Sie die Email nicht finden, schauen Sie bitte auch in Ihrem Spam-Ordner nach."
+      follow_the_link_html: "Folgen Sie dem Link in der Email, um sich bei Crewmate anzumelden. Wenn Sie die Email nicht finden, schauen Sie bitte auch in Ihrem Spam-Ordner nach."
       login_link_sent: "Wir haben Ihnen eine Email an %{email} gesendet. Sie erhalten damit Ihr Passwort."
       title: "Passwort zurücksetzen"
   sessions: 
@@ -1090,7 +1090,7 @@ de:
       login_failed: "Fehler beim Anmelden als %{login}"
       submit: Anmelden
       title: Anmelden
-      video: "Um was geht es in Teambox?"
+      video: "Um was geht es in Crewmate?"
   shared: 
     archived_projects: 
       archived_projects: "Archivierte Projekte"
@@ -1101,7 +1101,7 @@ de:
     gantt_banner_primer: 
       title: "Es gibt keine fälligen Aufgaben für das GANTT Chart"
     global_navigation: 
-      home: Teambox
+      home: Crewmate
       login: Anmelden
       logout: Abmelden
       project_invitations: "Einladungen (%{count})"
@@ -1138,7 +1138,7 @@ de:
     public_navigation: 
       community: Community
       help: "Hilfe and Support"
-      home: Teambox
+      home: Crewmate
       privacy: Privatsphäre
       services: Services
       terms: Nutzungsbedingungen
@@ -1163,7 +1163,7 @@ de:
       ie: "Aktualisieren Sie Internet Explorer"
       or_install: "oder installieren Sie"
       safari: Safari
-      upgrade: "Sie benutzen eine alte Version des Internet Explorer. Teambox wird nicht zuverlässig mit dieser Version funktionieren."
+      upgrade: "Sie benutzen eine alte Version des Internet Explorer. Crewmate wird nicht zuverlässig mit dieser Version funktionieren."
     user_navigation: 
       account_settings: Kontoeinstellungen
       delete_account: "Lösche Konto..."
@@ -1343,7 +1343,7 @@ de:
       select_a_file: "Wählen Sie eine Datei"
     primer: 
       create_first: "Laden Sie zuerst Dateine für dieses Projekt hoch!"
-      define1_html: "Hatten Sie jemals Probleme mit dem Freigeben von Dateien für Ihr Team? Teambox macht das Freigeben einfach."
+      define1_html: "Hatten Sie jemals Probleme mit dem Freigeben von Dateien für Ihr Team? Crewmate macht das Freigeben einfach."
       define2_html: "Sie können Dateien hier hochladen oder Dateien an Konversationen, Aufgaben oder Seiten anhängen."
       empty: "Dieses Projekt hat bisher keine Dateien."
       item1_html: "<b>Größere Dateien</b>. Laden Sie Dateien jeder Größe hoch und vergessen Sie die Grenzen von Emails."
@@ -1356,8 +1356,8 @@ de:
       uploaded_by: "Hochgeladen von"
   users: 
     activation: 
-      activated: "Ihr Benutzerkonto wurde aktiviert! Willkommen bei Teambox :)"
-      already_done: "Sie haben Ihre Email schon bestätigt! Sie können Teambox jetzt nutzen."
+      activated: "Ihr Benutzerkonto wurde aktiviert! Willkommen bei Crewmate :)"
+      already_done: "Sie haben Ihre Email schon bestätigt! Sie können Crewmate jetzt nutzen."
       invalid_html: "<p>Ungültiger oder abgelaufener Zugangs-Link. Melden Sie sich mit Ihrer Email Adresse und Ihrem Passwort an. </p><p>Wenn Sie Ihre Anmeldedaten vergessen haben, folgen Sie dem Link 'Passwort vergessen'.</p>"
       invalid_user: "Ungültiger Benutzer"
       resent: "Wir haben die Aktvierungs-Email noch einmal versendet. Schauen Sie bitte in Ihren Posteingang!"
@@ -1371,7 +1371,7 @@ de:
       possible_clients: "Sie können Termine synchronisieren mit Google Kalender, mit Apples iCal, Outlook, Blackberry und anderen. "
       subscribe_to_all: "Alle Projekte:"
       subscribe_to_project: "Projekt %{project}: "
-      tasks_can_be_synced: "Teambox Aufgaben können synchronisiert werden mit Ihren üblichen Kalendern, damit Sie nicht vergessen, was ansteht."
+      tasks_can_be_synced: "Crewmate Aufgaben können synchronisiert werden mit Ihren üblichen Kalendern, damit Sie nicht vergessen, was ansteht."
       title: "Synchronisieren Sie Ihre Kalender"
       your_calendars: "Ihre Kalender"
     create: 
@@ -1379,14 +1379,14 @@ de:
       thanks: "Danke für die Anmeldung!"
     daily_task_reminder_email: 
       daily_task_reminder: "Tägliche Aufgabenerinnerung"
-      daily_task_reminder_from_teambox: "Dies ist die tägliche Aufgabenerinnerung von Teambox"
+      daily_task_reminder_from_teambox: "Dies ist die tägliche Aufgabenerinnerung von Crewmate"
       late_tasks: "Verspätete Aufgaben"
       settings_page: Einstellungen
       tasks_for_next_two_weeks: "Aufgaben für nächste 2 Wochen"
       tasks_for_today: "Heutige Aufgaben"
       tasks_for_tomorrow: "Aufgaben für Morgen"
       tasks_without_a_due_date: "Aufgaben ohne Enddatum"
-      you_receive_this_message_html: "Sie sind für den Email Dienst von Teambox angemeldet. Konfigurieren Sie Email Benachrichtigungen über Ihre %{link}"
+      you_receive_this_message_html: "Sie sind für den Email Dienst von Crewmate angemeldet. Konfigurieren Sie Email Benachrichtigungen über Ihre %{link}"
     edit: 
       submit: "Konto aktualisieren"
       title_delete: "Konto löschen"
@@ -1397,16 +1397,16 @@ de:
       title_profile: "Ihre Profil Einstellungen"
       title_settings: "Ihre Konto Einstellungen"
     feeds: 
-      configure: "Sie können Ihren News-Reader so einstellen, dass er Sie über Neuigkeiten in Teambox informiert, auch wenn Sie ihn nicht in einem Fenster geöffnet haben. "
+      configure: "Sie können Ihren News-Reader so einstellen, dass er Sie über Neuigkeiten in Crewmate informiert, auch wenn Sie ihn nicht in einem Fenster geöffnet haben. "
       feed_reader: 
         body_html: "Lesen Sie mehr zu diesem Thema in der <a href='%{link}'>Hilfedatenbank</a>. "
         title: "Welchen Nachrichten-Ticker sollte ich benutzen?"
-      follow_activities: "Sie können Teambox Aktivitäten mit News-Readern (Desktop oder Mobil) beobachten."
+      follow_activities: "Sie können Crewmate Aktivitäten mit News-Readern (Desktop oder Mobil) beobachten."
       import: 
         body: "Sie finden hier eine Liste von Feeds, die Sie abonnieren können. Importieren Sie diese in Ihren News-Reader mit einem <strong>Rechtsklick auf den Link</strong> und wählen Sie <strong>Link-Adresse kopieren</strong>. Wechseln Sie zu Ihrem News-Reader, erstellen Sie einen neuen Feed und fügen Sie die kopierte Adresse des Feeds ein. "
         title: "Wie Sie einen neuen Nachrichten Feed importieren"
       more_tips: 
-        body_html: "Lernen Sie <a href='%{link}'>mehr Wege kennen, auf Teambox zuzugreifen</a>. "
+        body_html: "Lernen Sie <a href='%{link}'>mehr Wege kennen, auf Crewmate zuzugreifen</a>. "
         title: "Mehr Tipps"
       receive_notifications: "Mit einem News-Reader auf Ihrem Computer oder Ihrem Mobil-Gerät erhalten Sie Benachrichtigungen über Aktivitäten in Ihren Projekten."
       subscribe_to_all: "Aktivität für alle Projekte"
@@ -1418,17 +1418,17 @@ de:
         account_deleted: "Ihr Konto wurde gelöscht. Wir werden Sie vermissen!"
         couldnt_delete_account: "Wir können Ihr Konto nicht löschen, da Sie noch aktive oder archivierte Projekte haben. "
         delete_my_account: "Löschen Sie mein Konto jetzt"
-        steps_before_1: "Um Ihr Teambox Konto zu löschen, müssen Sie alle aktuellen Projekte verlassen oder löschen. "
+        steps_before_1: "Um Ihr Crewmate Konto zu löschen, müssen Sie alle aktuellen Projekte verlassen oder löschen. "
         steps_before_2: "Das stellt sicher, dass andere Benutzer die Daten behalten, wenn Sie Ihr Konto löschen. "
         steps_before_3: "Verlassen Sie oder löschen Sie Ihre aktuellen Projekte, und kehren Sie dann auf diese Seite zurück, um Ihr Konto zu löschen. "
-        what_will_happen: "Nach dem Löschen Ihres Kontos werden Sie auf Ihr Teambox-Profil nicht mehr zugreifen können."
+        what_will_happen: "Nach dem Löschen Ihres Kontos werden Sie auf Ihr Crewmate-Profil nicht mehr zugreifen können."
       picture: 
         destroy: "Avatar löschen"
         field: "Ihr Avatar"
         gravatar_in_use_html: "Wir haben kein Bild von Ihnen, daher benutzen wir %{gravatar}: "
         max_size: "Die Datei ist größer als %{mb}"
         presence: "Sie können keine leere Datei hochladen"
-        upload_here_or_at_gravatar_html: "Sie können hier einen neuen Avator hochladen, oder laden Sie ihren globalen Avatar zu der Adresse %{gravatar}, um ihn für Teambox und für viele andere Webseiten zu benutzen."
+        upload_here_or_at_gravatar_html: "Sie können hier einen neuen Avator hochladen, oder laden Sie ihren globalen Avatar zu der Adresse %{gravatar}, um ihn für Crewmate und für viele andere Webseiten zu benutzen."
         we_have_this_avatar_html: "Dies ist ihr momentaner Avatar: "
       biography: Lebenslauf
       change_password: "Passwort ändern"
@@ -1456,7 +1456,7 @@ de:
         gravatar_in_use: "Wir haben kein Bild von Ihnen, daher benutzen wir %{gravatar}: "
         max_size: "Die Datei ist größer als %{mb}"
         presence: "Sie können keine leere Datei hochladen"
-        upload_here_or_at_gravatar: "Sie können hier einen neuen Avator hochladen, oder laden Sie ihren globalen Avatar zu der Adresse %{gravatar}, um ihn für Teambox und für viele andere Webseiten zu benutzen."
+        upload_here_or_at_gravatar: "Sie können hier einen neuen Avator hochladen, oder laden Sie ihren globalen Avatar zu der Adresse %{gravatar}, um ihn für Crewmate und für viele andere Webseiten zu benutzen."
         we_have_this_avatar: "Dies ist ihr momentaner Avatar: "
       sunday: Sonntag
       time_zone: Zeitzone
@@ -1472,7 +1472,7 @@ de:
       no_public_signup: "Public signup wird vom System leider nicht unterstützt."
       submit: "Benutzerkonto erstellen"
       title: "Erstellen eines Benutzerkontos"
-      you_already_have_an_account_html: "Sie haben schon ein Teambox-Konto für die Adresse %{email}. <a href='%{login_link}'>Melden Sie sich mit dieser Email an</a> oder <a href='%{reset_password_link}'>setzen Sie Ihr Passwort zurück</a>, wenn Sie es nicht mehr kennen. "
+      you_already_have_an_account_html: "Sie haben schon ein Crewmate-Konto für die Adresse %{email}. <a href='%{login_link}'>Melden Sie sich mit dieser Email an</a> oder <a href='%{reset_password_link}'>setzen Sie Ihr Passwort zurück</a>, wenn Sie es nicht mehr kennen. "
       you_are_logged_in: "Sie haben bereits ein Benutzerkonto. Melden Sie sich ab, um sich als anderer Benutzer anzumelden."
     show: 
       pending_invite: "%{name} wurde bereits zu einem Ihrer Projekte eingeladen. Sie können nicht auf die Informationen zugreifen, bevor die Einladung akzeptiert wurde."
@@ -1495,8 +1495,8 @@ de:
       formatted_address: "%{street}, %{city} (%{country})"
       remove_from_project: "Aus dem Projekt entfernen"
     welcome: 
-      get_started: "Starten Sie mit Teambox!"
-      intro1: "Herzlich Willkommen als neueste Mitglied von Teambox! Sie werden bald erleben, wie Sie Teambox zum Ausgangspukt für Ihre täglichen Aufgaben machen können."
+      get_started: "Starten Sie mit Crewmate!"
+      intro1: "Herzlich Willkommen als neueste Mitglied von Crewmate! Sie werden bald erleben, wie Sie Crewmate zum Ausgangspukt für Ihre täglichen Aufgaben machen können."
       intro2: "Was können Sie jetzt tun? Erstellen Sie ein Projekt zum <b>Zusammenarbeiten</b>:"
       projects: 
         create_your_first_project: "Eine Veranstaltung, ein Design, ein Produkt... Starten Sie und <a href='%{link}'>erstellen Sie Ihr erstes Projekt</a> jetzt!"
@@ -1504,10 +1504,10 @@ de:
         title: Projekte
       spread: 
         facebook: Facebook
-        help: "Sie können <b>uns helfen</b>, indem Sie Ihren Freunden erzählen, wie viel Spaß die Arbeit mit Teambox macht auf"
+        help: "Sie können <b>uns helfen</b>, indem Sie Ihren Freunden erzählen, wie viel Spaß die Arbeit mit Crewmate macht auf"
         in_your_site: "auf Ihrer Webseite!"
-        reasons: "Wir haben jahrelang an Teambox gearbeitet in der Hoffnung, dass es für Sie nützlich ist. <br/>Wir sind reale Menschen, motivierte Entwickler mit viel Engagement, genau wie Sie!"
-        tell_us: "Wenn Ihnen Teambox gefällt, <a href='mailto:%{address}'> erzählen Sie uns davon</a> in einer Email!"
+        reasons: "Wir haben jahrelang an Crewmate gearbeitet in der Hoffnung, dass es für Sie nützlich ist. <br/>Wir sind reale Menschen, motivierte Entwickler mit viel Engagement, genau wie Sie!"
+        tell_us: "Wenn Ihnen Crewmate gefällt, <a href='mailto:%{address}'> erzählen Sie uns davon</a> in einer Email!"
         title: "Lieben Sie uns auch?"
         twitter: "Twitter,"
       stop_welcome: "Diesen Willkommensdialog nicht mehr zeigen"

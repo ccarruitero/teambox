@@ -191,11 +191,11 @@ ja:
       addresses: 住所
       credits_earned: 獲得したクレジット
       desc_1_html: 私達のパートナーツールを利用して、<strong>無料利用</strong>もしくは友人・知人に紹介して<strong>収益</strong>を得る事が出来ます。
-      desc_2_html: "Teambox新規有償ユーザーをご紹介頂き、<strong>売上の%{percent}%</strong>を得る事が出来ます。"
+      desc_2_html: "Crewmate新規有償ユーザーをご紹介頂き、<strong>売上の%{percent}%</strong>を得る事が出来ます。"
       facebook: フェースブック
       get_in_touch: 連絡して下さい
-      idea1: Teamboxの使い方、特に初心者のためのガイドを記載したサイトを作成しましょう。
-      idea2: Teamboxについてのあなたのブログにリンクをポストし、Teamboxがいかに便利かを語って下さい。
+      idea1: Crewmateの使い方、特に初心者のためのガイドを記載したサイトを作成しましょう。
+      idea2: Crewmateについてのあなたのブログにリンクをポストし、Crewmateがいかに便利かを語って下さい。
       idea3: プロジェクトコラボレーションについてのイベントに参加し、参加者に紹介しましょう
       idea4: 新しいユーザーへ招待メールを送ります。
       ideas: アフィリエイト・プログラム導入例
@@ -209,32 +209,32 @@ ja:
       premium_plan: プレミアム・アカウント
       refer_info: "%{users} のユーザーが%{plan}導入頂いた場合、毎月$%{credit}の収入"
       referred_users: あなたの紹介ユーザー
-      send_invites: Teamboxに招待する
+      send_invites: Crewmateに招待する
       send_money: そして送金手続きをいたします。
       sent_invites_to: 招待メールは以下のメールアドレスに送られます：
       sent_number_of_invites: 招待メールは次の人に送られます。
-      tracking1: あなたに招待されたユーザーがTeamboxに登録する際には、特別なパラメータを持つページでサインアップする必要があります。
+      tracking1: あなたに招待されたユーザーがCrewmateに登録する際には、特別なパラメータを持つページでサインアップする必要があります。
       tracking2: このパラメーターはユニークであり、あなたのユーザーを追跡する事ができます。
       tracking3: ユーザーがこのリンクをたどった場合、あなたの紹介という事が記録されます。
       tracking4: 彼らが一旦ページを離れた場合でも、セッションデータにリファラーが保存されますので、再アクセス後のユーザ登録がなされた場合でも、あなたの紹介ユーザーであるということは記憶されます。
       tracking5: サインアップに必要なあなた専用のページは
       tracking6: フェースブック、Twitterやご自分のサイトにリンクを掲載したり、招待メールを知人友人に送りましょう。登録の際は、あなたにその旨の連絡がメールでいきます。
       twitter: Twitter
-      twitter_link: "Teamboxを+利用してみて下さい。+新しいプロジェクト管理の+コラボツールです。+無料で+お試し頂けます+%{link} "
+      twitter_link: "Crewmateを+利用してみて下さい。+新しいプロジェクト管理の+コラボツールです。+無料で+お試し頂けます+%{link} "
       use_money: この収益を次のものに使うことができます。
       use_money_cash: もしくは現金を得ます
       use_tracking_code: トラッキング・コードを利用する事により、どのユーザーがあなたの紹介ユーザーであるかを知る事が出来ます。
       website: あなたのWEBで紹介する
     notification: 
       accepted_subscription: |-
-          %{name} (%{email})はTeamboxにあなたの紹介コードを使って登録をしまし
+          %{name} (%{email})はCrewmateにあなたの紹介コードを使って登録をしまし
           た。おめでとうございます。
       check_your_earnings: どのくらいの収入になったか、確認しましょう
       check_your_referrals: あなたの紹介ユーザーがどなたかを確認しましょう
       new_signup: あなたの紹介ユーザーとして1人が登録をしました！
       new_subscription: あなたの紹介ユーザーがアップ・グレードしました！
       upgraded_subscription: "%{name} (%{email})さんがアップグレードした場合は、$%{price}の収入を得る事が出来ます"
-      wait: 現在登録中です。Teamboxパートナーエリアに反映されるには、しばらく時間がかかります。
+      wait: 現在登録中です。Crewmateパートナーエリアに反映されるには、しばらく時間がかかります。
   avatars: 
     edit: 
       upload: このアバターをアップロード
@@ -389,7 +389,7 @@ ja:
       create_first: プロジェクトの最初のチャットを始めましょう!
       define_html: 会話機能を使って<b>意思決定のための議論</b>や、<b>チームへの情報更新</b>に集中することができます。<br/>会話はスレッド形式になっており、乱雑なメールでのやりとりから自由になれます。
       footer1_html: 会話は<b>デザインを共有</b>したり、ミーティングの<b>日程</b>を決めたり、ニュースを<b>周知</b>するのにとても便利です。
-      footer2_html: スレッド形式になっているので、過去どんなファイルが送られたか、チームメイトが何を言ったかをさっと振り返ることができます。Teamboxでは、<b>共同作業がそのまま報告</b>なのです。
+      footer2_html: スレッド形式になっているので、過去どんなファイルが送られたか、チームメイトが何を言ったかをさっと振り返ることができます。Crewmateでは、<b>共同作業がそのまま報告</b>なのです。
       item1_html: "<b>ファイル共有</b> それぞれのコメントにはファイルを添付できます。"
       item2_html: 会話に<b>参加</b>すると、それ以降の返信をメールやRSSで受け取ることができます。
       item3_html: "<b>印象付け</b> 全てのコメントはテキスト装飾を使って整形できます。"
@@ -803,29 +803,29 @@ ja:
       project_not_found_error: 指定されたプロジェクトは見当たりません
       subject: メアドの記述を確認してください
       target_not_found_error: 選択されたアイテムは追加先に見つかりませんでした。
-      user_not_found_error: このメッセージの送り主はteamboxのアカウント所有者では無いようです。
+      user_not_found_error: このメッセージの送り主はcrewmateのアカウント所有者では無いようです。
     common: 
       answer_above_this_line: 返答は、文頭よりお願いします。
       do_not_answer: このメールに返信しないでください。
     confirm: 
       hey: "こんにちは、 %{user_name}!"
-      log_in: Teamboxにログインしてください!
+      log_in: Crewmateにログインしてください!
       plaintext_link: "リンクが正常に動作しないときは、以下のリンクをブラウザのアドレスバーにコピー&ペーストしてください。:"
       problems_html: "もし問題がありましたら、%{support}に連絡してください。"
-      report_abuse: "このメールは、あなたが%{email}でTeamboxにサインアップしたために送付されています。"
-      subject: さあ早速Teamboxを始めましょう
+      report_abuse: "このメールは、あなたが%{email}でCrewmateにサインアップしたために送付されています。"
+      subject: さあ早速Crewmateを始めましょう
     forgot_password: 
-      subject: Teamboxによりパスワード検索？
+      subject: Crewmateによりパスワード検索？
     invitation: 
       accept_the_invitation: 共同作業を開始するために、招待を承諾してください。
-      collaborate_with: "%{name}はTeamboxであなたと共同作業をしたいと思っています:"
+      collaborate_with: "%{name}はCrewmateであなたと共同作業をしたいと思っています:"
       current_users: "このプロジェクトの現在のユーザー:"
       plaintext_link: "上のリンクが正常に動作しないときは、以下のコードをブラウザのアドレスバーにコピー&ペーストしてください: "
       plan_share_and_collaborate: 計画、共有、作業の終了の確認など。可能な限りシンプルになっています。
       report_abuse: このメールは、あなたのお知り合いからの要求に基づいて送付されています。もし悪用されているようでしたら、お知らせください。
       subject: "%{user} はあなたと [%{project}]を共有しました"
-      subject_without_project: "%{name}さんはあなたをTeamboxに招待しました"
-      teambox_is_a_pm_platform: Teamboxは現実世界の共同作業のために作られた、プロジェクト管理プラットフォームです。
+      subject_without_project: "%{name}さんはあなたをCrewmateに招待しました"
+      teambox_is_a_pm_platform: Crewmateは現実世界の共同作業のために作られた、プロジェクト管理プラットフォームです。
       you_have_been_invited_to: "あなたはプロジェクト<b>%{project}</b>に招待されました。"
     notify: 
       are_watching: " は会話参加者です。これ以降の回答が通知されます。"
@@ -836,7 +836,7 @@ ja:
       due_on: "%{date}まで"
       my_tasks: "%{project}で、あなたに割り当てされているタスク"
       notification_settings: "以後のメール通知について、<a href='%{url}'>こちらで</a>通知設定を変更できます。"
-      project: "Teambox プロジェクト:"
+      project: "Crewmate プロジェクト:"
       reply: このメールに返信することで、会話に返信することもできます。
       status: "状態: %{status}"
       stop_watching: "このスレッドの<a href='%{stop_watching_url}'>ウォッチをやめる</a>と、eメールでの通知をやめることができます。"
@@ -846,10 +846,10 @@ ja:
       view_online: "<a href='%{link}'>この会話をオンラインで見て</a>、回答や添付ファイルを確認できます。"
     reset_password: 
       hey: "こんにちは、%{user_name}!"
-      log_in: Teamboxにログインしてください!
+      log_in: Crewmateにログインしてください!
       plaintext_link: "これが正常に動作しないときは、以下のリンクをブラウザのアドレスバーにコピー&ペーストしてください。:"
       problems_html: "もし問題がありましたら、%{support}に連絡してください。"
-      report_abuse: "このメールは、あなたが%{email}でTeamboxにサインアップしたために送付されています。"
+      report_abuse: "このメールは、あなたが%{email}でCrewmateにサインアップしたために送付されています。"
       subject: パスワードのリセット完了
       successfully_reset: パスワードはリセットされました。
     upload: 
@@ -860,8 +860,8 @@ ja:
       error: サンプルプロジェクトを作成できません。
       error_list: "サンプルプロジェクトを作成できません。以下のプロジェクトは無効です。: %{list}"
       learn: サンプルで学習しましょう!
-      line1: Teamboxを使うのが今回初めてなら、サンプル・プロジェクトを作成することができます。
-      line2: ページを読み進むことで、Teamboxのそれぞれの機能の使い方を知ることができるでしょう。
+      line1: Crewmateを使うのが今回初めてなら、サンプル・プロジェクトを作成することができます。
+      line2: ページを読み進むことで、Crewmateのそれぞれの機能の使い方を知ることができるでしょう。
       line3: 必ず<b>説明を読み</b>、要素の作成、編集、削除を<b>試して</b>ください。
       line4: このプロジェクトでは他のユーザーを招待することはできませんが、それ以外の機能は全部利用できます。
   form: 
@@ -935,7 +935,7 @@ ja:
       username_or_email: チームメートのユーザ名、もしくはeメールを入力してください。
     sent: 
       email_sent: <b>このユーザーにプロジェクトへの招待を受け入れるリンクを含んだeメールを送信しました。もしeメールが見つからないようであれば、迷惑メールに分類されていないか確認するか、異なるeメールアドレスを試して見てください。もし問題が解決しないようでしたら、我々のスタッフに連絡してください。
-  last_announcement_html: "Teamboxに関する最新の情報は<a href='http://blog.teambox.com'>ブログ(英語)</a>でお読みになれます。日本語での提供は下半期を2010年秋頃を予定してます。 "
+  last_announcement_html: "Crewmateに関する最新の情報は<a href='http://crewmate.org/articles'>ブログ(英語)</a>でお読みになれます。日本語での提供は下半期を2010年秋頃を予定してます。 "
   locales: 
     af: アフリカーンス語
     ar: アラビア語
@@ -1067,17 +1067,17 @@ ja:
     auth_status_linked: プロバイダーとリンクしています
     link_account: アカウントをリンクする。
     logged_in: ログインしました
-    not_linked: そのサービスはあなたのTeamboxアカウントとリンクされていません
+    not_linked: そのサービスはあなたのCrewmateアカウントとリンクされていません
     signup_for_a_new_account: 新規アカウントを取得する
     this_account_will_be_linked_to: "このアカウントは%{provider} とリンクされます"
     unlink_account: アカウントのリンクを外す。
-    user_already_exists_by_email: "%{email} はすでにTeamboxのアカウントを持っています。<br/>そのアカウントを利用しログインをして頂き、設定パネルよりリンクして下さい。"
-    user_already_exists_by_login: "%{login} はすでにTeamboxのアカウントを持っています。<br/>そのアカウントを利用しログインをして頂き、設定パネルよりリンクして下さい。"
+    user_already_exists_by_email: "%{email} はすでにCrewmateのアカウントを持っています。<br/>そのアカウントを利用しログインをして頂き、設定パネルよりリンクして下さい。"
+    user_already_exists_by_login: "%{login} はすでにCrewmateのアカウントを持っています。<br/>そのアカウントを利用しログインをして頂き、設定パネルよりリンクして下さい。"
     user_exists: "この%{provider} プロファイルはどのアカウントともリンクされていません。"
-    user_exists_instruction: "既にTeamboxに登録済みならば、あなたのプロファイル%{provider} を自動的にリンク出来ます。"
-    user_exists_is_not_yours_html: "Teambox未登録の場合は'%{account}', %{signup_for_a_new_account}。"
-    your_account_is_linked_html: "プロファイル%{provider}がTeamboxと<strong>リンクされました。</strong>"
-    your_account_is_not_linked_html: "プロファイル %{provider}はTeambox と <strong>リンクされていません。</strong> "
+    user_exists_instruction: "既にCrewmateに登録済みならば、あなたのプロファイル%{provider} を自動的にリンク出来ます。"
+    user_exists_is_not_yours_html: "Crewmate未登録の場合は'%{account}', %{signup_for_a_new_account}。"
+    your_account_is_linked_html: "プロファイル%{provider}がCrewmateと<strong>リンクされました。</strong>"
+    your_account_is_not_linked_html: "プロファイル %{provider}はCrewmate と <strong>リンクされていません。</strong> "
   organizations: 
     billing: 
       billing_area: "請求書へのアクセス、ダウングレード若しくは請求関連の設定はいつでも<a href='%{link}'>請求関連エリア</a>から可能です。"
@@ -1105,7 +1105,7 @@ ja:
       delete: この組織を消去
       general_settings: 一般設定
     delete: 
-      clarification: もしこの組織を消去した場合、この組織に含まれる全ての情報は完全消去されます。この組織に所属するユーザーは、Teamboxへのアクセスは可能で、他の組織において活動する事が可能です。
+      clarification: もしこの組織を消去した場合、この組織に含まれる全ての情報は完全消去されます。この組織に所属するユーザーは、Crewmateへのアクセスは可能で、他の組織において活動する事が可能です。
       confirm: 組織の消去は元に戻せない動作であり、そしてその組織に関係のある情報も消去される事理解しています。
       delete: この組織を消去する
       deleted: その組織を消去しました
@@ -1128,8 +1128,8 @@ ja:
       title: "%{name} "
       you_cant_access: この組織にアクセスしたり、編集をする権限はありません。
     fields: 
-      description: "入り口ページに表示されるHTMLは<a href=\"http://help.teambox.com/faqs/more-ways-to-access-teambox/customize-organizations\">こちらでさらに詳しく分かります</a> "
-      domain: "ドメイン<em>オプションです。独自のドメインを組織に利用する事が出来ます。詳しくはこちらをどうぞ<a href='http://help.teambox.com/faqs/more-ways-to-access-teambox/custom-domain' title='How to use your own domain for your organization in Teambox'>documentation</a>.</em> "
+      description: "入り口ページに表示されるHTMLは<a href=\"https://github.com/crewmate/crewmate/wiki/customize-organizations\">こちらでさらに詳しく分かります</a> "
+      domain: "ドメイン<em>オプションです。独自のドメインを組織に利用する事が出来ます。詳しくはこちらをどうぞ<a href='https://github.com/crewmate/crewmate/wiki/custom-domain' title='How to use your own domain for your organization in Crewmate'>documentation</a>.</em> "
       logo: "ロゴは<em>134x36 ピクセルが理想です</em> "
       name: 組織名
       name_placeholder: あなたの組織
@@ -1137,7 +1137,7 @@ ja:
     index: 
       about: 
         explain1: 組織はプロジェクトとユーザーのグループ化をパーソナライズ化した名前のもと利用出来ます。
-        explain2: あなたのTeamboxをカスタマイズし、あなたのドメインとリンクする事が可能です。独自のロゴ、ログインページそしてお客様と共有する事が可能になります。
+        explain2: あなたのCrewmateをカスタマイズし、あなたのドメインとリンクする事が可能です。独自のロゴ、ログインページそしてお客様と共有する事が可能になります。
         title: 組織について
       new: 
         create: "+ 新しい組織を作成"
@@ -1159,7 +1159,7 @@ ja:
         one: １つのプロジェクト
         other: "%{count} のプロジェクト"
       participant: 参加者
-      upgrade: Teamboxをアップグレードしましょう。
+      upgrade: Crewmateをアップグレードしましょう。
       you_are: "あなたはこの組織の<strong>%{role}</strong> です。"
       your_plan_is: "あなたのプランは%{plan} です"
     projects: 
@@ -1232,7 +1232,7 @@ ja:
       feature2_html: "<b>公開</b> 共有ページを簡単に公開できます。世界に向け公開しましょう。"
       feature3_html: "<b>印刷</b> ページは印刷しやすいようにできています。印刷、またはPDF出力を試してみてください。"
       feature4_html: "<b>Wiki</b> ページはwikiのように、プロジェクトの情報に簡単にアクセスできます。"
-      footer1_html: Teamboxを、よく使う情報を書く<b>共有のホワイトボード</b>のように使ってください。
+      footer1_html: Crewmateを、よく使う情報を書く<b>共有のホワイトボード</b>のように使ってください。
       footer2_html: また、それぞれのページにあるノートには、ファイルを添付することができます。Enjoy!
       sending: 送信中...
       submit: 作成
@@ -1242,7 +1242,7 @@ ja:
       define1_html: "ここで、あなたのチーム向けに<b>役立つ情報の共有</b>ができます。: ロードマップや、役立つリンク、説明、eメールのテンプレートなどなど・・・"
       define2_html: ページの編集は簡単で楽しい作業です。ドラッグ&ドロップで、見た通りに編集することができます。
       empty: このプロジェクトにはまだページがありません。
-      footer1_html: Teamboxを、よく使う情報を書く<b>共有のホワイトボード</b>のように使ってください。
+      footer1_html: Crewmateを、よく使う情報を書く<b>共有のホワイトボード</b>のように使ってください。
       footer2_html: また、それぞれのページにあるノートには、ファイルを添付することができます。Enjoy!
       item1_html: "<b>共有</b> 全てのチームメイトはプロジェクト中のページを見たり、編集したりできます。"
       item2_html: "<b>公開</b> 共有ページを簡単に公開できます。世界に向け公開しましょう。"
@@ -1294,7 +1294,7 @@ ja:
       success: "%{name}の役割を更新しました "
   plans: 
     copies: 
-      copy1: "Teamboxの調子はいかがですか？ <a href='%{link}'>アップグレード</a> によりTeamboxはさらに便利になります！"
+      copy1: "Crewmateの調子はいかがですか？ <a href='%{link}'>アップグレード</a> によりCrewmateはさらに便利になります！"
       copy2: "<a href='%{link}'>アップグレードはこちらから</a>。プロジェクト数と容量アップ、さらに全てのプロジェクト間の検索が可能になります。"
       copy3: "<a href='{{link}}'>プレミアムアカウントでさらなる充実を！</a> エクストラ容量が追加され、更にプロジェクト利用可能数も２０００となります。"
       copy4: "プレミアム・アカウントにより<a href='%{link}'>効率アップ</a>: 検索バーが全てのプロジェクトの横断検索を提供します。"
@@ -1305,7 +1305,7 @@ ja:
       title: どの組織をアップグレードしますか？
       usage: "この組織上に<b>%{available_projects} さらなるプロジェクト</b> 作成する事が出来ます。"
     thanks: 
-      explain: プレミアムアカウントの購入は、Teamboxの開発に大きく貢献します。
+      explain: プレミアムアカウントの購入は、Crewmateの開発に大きく貢献します。
       title: サポートありがとうございます。
       you_can_now_create: "最大%{projects}個のプロジェクトを作成可能です。"
   projects: 
@@ -1368,7 +1368,7 @@ ja:
         one: 一つの稼働中のプロジェクトがあります。
         other: "{{count}}個のアクティブ・プロジェクトがあります。"
         zero: アクティブなプロジェクトがありません。
-      create_an_example_project: "Teamboxは初めてですか? <a href='%{link}'>サンプルプロジェクトを作成して</a>、いろいろ試して学んでみましょう。"
+      create_an_example_project: "Crewmateは初めてですか? <a href='%{link}'>サンプルプロジェクトを作成して</a>、いろいろ試して学んでみましょう。"
       created: プロジェクトが作成されました!
       invalid_project: 無効なプロジェクトです。エラーを修正して再度実行してください。
       invite_by_email: ご友人・知人のメールアドレスを入力して、招待しましょう
@@ -1451,7 +1451,7 @@ ja:
       submit: パスワードをリセットする
       title: パスワードをリセット出来ます
     sent: 
-      follow_the_link_html: eメールに記載されたリンクをたどることで、Teamboxにログインできます。eメールが見つからない場合は、迷惑メールフォルダを探してみてください。
+      follow_the_link_html: eメールに記載されたリンクをたどることで、Crewmateにログインできます。eメールが見つからない場合は、迷惑メールフォルダを探してみてください。
       login_link_sent: "パスワードの再取得のため､メールを%{email}にお送りしました。"
       title: パスワードリセット
   roles: 
@@ -1478,12 +1478,12 @@ ja:
       login_failed: "%{login}としてログインできませんでした"
       submit: ログイン
       title: ログイン
-      video: Teamboxとは？
+      video: Crewmateとは？
   shared: 
     archived_projects: 
       archived_projects: アーカイブされたプロジェクト
     chrome_frame: 
-      enhance: "Enhance your Teamboxでの体験を Google Chrome Frameでさらに向上する事が出来ます。ここを <a href=\"%{link}\" target=\\\"_blank\\\">クリック</a>して設定しましょう。"
+      enhance: "Enhance your Crewmateでの体験を Google Chrome Frameでさらに向上する事が出来ます。ここを <a href=\"%{link}\" target=\\\"_blank\\\">クリック</a>して設定しましょう。"
     footer: 
       help: ヘルプ
       mobile: モバイル版
@@ -1543,7 +1543,7 @@ ja:
     public_navigation: 
       community: コミュニティ
       help: ヘルプとサポート
-      home: Teambox
+      home: Crewmate
       privacy: プライバシー
       services: サービス
       terms: 使用条件
@@ -1568,7 +1568,7 @@ ja:
       ie: IEをアップデートする
       or_install: もしくは、次のブラウザをインストールして下さい。
       safari: Safari
-      upgrade: "古いInternet Explorerを使っています。Teamboxはこのバージョンでは正しく動作しません。"
+      upgrade: "古いInternet Explorerを使っています。Crewmateはこのバージョンでは正しく動作しません。"
     user_navigation: 
       account_settings: アカウント設定
       delete_account: アカウント削除
@@ -1778,7 +1778,7 @@ ja:
       uploading: アップロード中
     primer: 
       create_first: プロジェクトの最初のファイルをアップロードしましょう!
-      define1_html: チーム内でのファイル共有に問題があったことはありませんか?　Teamboxでのファイル共有は簡単です。
+      define1_html: チーム内でのファイル共有に問題があったことはありませんか?　Crewmateでのファイル共有は簡単です。
       define2_html: ここにファイルをアップロードしたり、会話に添付したり、またタスクやページに添付することもできます。
       empty: このプロジェクトにはファイルがアップロードされていません。
       item1_html: "<b>大きなファイル</b> どんなサイズのファイルもアップロードできます。eメールのように制限はありません。"
@@ -1792,8 +1792,8 @@ ja:
       uploaded_by: アップロードしたユーザー
   users: 
     activation: 
-      activated: "あなたのアカウントは認証されました。Teamboxにようこそ :)"
-      already_done: メールアドレスは既に確認されています。これからTeamboxをご利用頂くことができます。
+      activated: "あなたのアカウントは認証されました。Crewmateにようこそ :)"
+      already_done: メールアドレスは既に確認されています。これからCrewmateをご利用頂くことができます。
       invalid_html: <p>無効もしくは期限の切れたリンクです。メールアドレスとパスワードでログインしてください。</p><p>ログインに関するデーターが不明な場合は、こちらの”パスワードを忘れましたか”リンクを利用ください。</p>
       invalid_user: 無効なユーザー
       resent: 認証メールを再送しました。メールをご確認下さい。
@@ -1807,7 +1807,7 @@ ja:
       possible_clients: Googleカレンダー、iCal、Outlook、Blackberry等と同期出来ます。
       subscribe_to_all: 全てのプロジェクト
       subscribe_to_project: "プロジェクト%{project}: "
-      tasks_can_be_synced: Teamboxのタスクは通常お使いのカレンダーアプリと同期可能です。期限ミスを防ぐ事が出来ます。
+      tasks_can_be_synced: Crewmateのタスクは通常お使いのカレンダーアプリと同期可能です。期限ミスを防ぐ事が出来ます。
       title: カレンダーとの同期
       your_calendars: あなたのカレンダー
     create: 
@@ -1815,7 +1815,7 @@ ja:
       thanks: ご登録ありがとうございます！
     daily_task_reminder_email: 
       daily_task_reminder: 本日のタスクリマインダー・メール
-      daily_task_reminder_from_teambox: Teamboxからの今日のタスクのリマインダー・メールです。
+      daily_task_reminder_from_teambox: Crewmateからの今日のタスクのリマインダー・メールです。
       late_tasks: 遅延タスク
       settings_page: 設定ページで無効にできます
       tasks_for_next_two_weeks: 今後2週間のタスクは次の通りです。
@@ -1837,12 +1837,12 @@ ja:
       feed_reader: 
         body_html: "この場合、<a href='%{link}'>知識ベース(英語)</a>を参照下さい。"
         title: どのニュースリーダーを使えば良いのでしょうか？
-      follow_activities: Teamboxの活動内容をPCもしくは携帯電話でニュースリーダーで追う事が可能です。
+      follow_activities: Crewmateの活動内容をPCもしくは携帯電話でニュースリーダーで追う事が可能です。
       import: 
         body: こちらにフォロー可能なフィードリストがあります。フィードリーダーにインポートするには<strong>リンクを右クリック</strong>し、<strong>リンクアドレスをコピーする</strong>を選択してください。
         title: 新規ニュースフィードのインポート方法
       more_tips: 
-        body_html: "<a href='%{link}'>Teamboxをもっと便利に使いましょう！</a>. "
+        body_html: "<a href='%{link}'>Crewmateをもっと便利に使いましょう！</a>. "
         title: 便利な使い方
       receive_notifications: PCもしくは携帯電話のフィードリーダーを利用すると、プロジェクトの動きに関する通知を受け取る事が出来ます。
       subscribe_to_all: 全てのプロジェクトの動き
@@ -1850,7 +1850,7 @@ ja:
       title: あなたの行動フィードを同期
       your_feeds: 新しいニュースフィード
     form: 
-      agreement: "登録をすることにより、Teamboxのご利用 %{terms} 及びプライバシー規定 %{privacy} に同意したことになります。"
+      agreement: "登録をすることにより、Crewmateのご利用 %{terms} 及びプライバシー規定 %{privacy} に同意したことになります。"
       betatester: β版を事前に利用する（注：正式リリース前ですので不安定です）。
       biography: 自己紹介
       change_password: パスワード変更
@@ -1859,10 +1859,10 @@ ja:
         account_deleted: アカウントは削除されました。再度のご利用、お待ちしています。
         couldnt_delete_account: アクティブな（或いはアーカイブされた）プロジェクトがあるために、アカウントを削除出来ませんでした。
         delete_my_account: 直ちにアカウントを削除
-        steps_before_1: Teamboxアカウントを削除するためには、全てのプロジェクトから退出するか、削除しなくてはなりません。
+        steps_before_1: Crewmateアカウントを削除するためには、全てのプロジェクトから退出するか、削除しなくてはなりません。
         steps_before_2: アカウントを削除した場合、他のユーザーが彼らのプロジェクトのデーターを失わない事を確実にします。
         steps_before_3: 現在ご利用中のプロジェクから退出、もしくは削除をしてください。その後再びこのページに戻り、アカウントを削除してください。
-        what_will_happen: アカウント削除後は、あなたのTeamboxプロファイールにはアクセス出来ません。
+        what_will_happen: アカウント削除後は、あなたのCrewmateプロファイールにはアクセス出来ません。
       email: eメール
       first_day_of_week: 週のはじめ
       first_name: 名
@@ -1874,7 +1874,7 @@ ja:
       new: 
         account: 
           choose_username: ユーザー名を作成して下さい。ログインに使用すると同時に、メンバーがあなたを見つける事が出来ます。
-          title: Teamboxアカウント
+          title: Crewmateアカウント
           validations: すべて小文字です。スペースは無効です。アンダーバー（下線）は利用出来ます。
         use_this_email: このメールアドレス宛にプロジェクトへの招待状が届いています。プロジェクトにアクセスを希望する場合は、メールアドレスを変更しないでください。登録終了後、メールアドレスの変更が出来ます。
       newsletter: 新情報や便利情報のお知らせ機能を利用する！
@@ -1895,7 +1895,7 @@ ja:
         gravatar_in_use: "あなたの写真がありませんので%{gravatar}: を利用しています。"
         max_size: "ファイルサイズは%{mb}におさめる必要があります"
         presence: 空ファイルはアップロードできません
-        upload_here_or_at_gravatar: "ここでアバターをアップロードするか、%{gravatar}にアップロードして、Teamboxだけではなく他の多くのウェブサイトで利用できるようにもできます。"
+        upload_here_or_at_gravatar: "ここでアバターをアップロードするか、%{gravatar}にアップロードして、Crewmateだけではなく他の多くのウェブサイトで利用できるようにもできます。"
         we_have_this_avatar: "現在のあなたのアバターです:"
       privacy: プライバシー
       subscription: 
@@ -1914,7 +1914,7 @@ ja:
       no_public_signup: "Public signupsはこのシステムでは承認されていません。"
       submit: アカウントの作成
       title: アカウントの作成
-      you_already_have_an_account_html: "Teamboxアカウントを%{email}のメールアドレスでお持ちです。 <a href='%{login_link}'>このメールアドレスでログイン</a> もしくはパスワードをお忘れの場合 <a href='%{reset_password_link}'>パスワードをリセットしてください。</a>"
+      you_already_have_an_account_html: "Crewmateアカウントを%{email}のメールアドレスでお持ちです。 <a href='%{login_link}'>このメールアドレスでログイン</a> もしくはパスワードをお忘れの場合 <a href='%{reset_password_link}'>パスワードをリセットしてください。</a>"
       you_are_logged_in: あなたは既にアカウントをお持ちです。別のユーザーとして登録する場合は、まずログアウトをして下さい。
     show: 
       pending_invite: "%{name} 様は現在プロジェクトへの招待受付待ちです。招待受付完了後、追加情報へのアクセス可能です。"
@@ -1931,7 +1931,7 @@ ja:
             ======
         image: "![alt text](http://w3.org/img.jpg)"
         italic_text: "*イタリア体* テキスト "
-        link: "[A link](http://teambox.com) "
+        link: "[A link](http://crewmate.org) "
         ordered_list: |-
             1. リストの整列
             2. 空行を残して下さい!
@@ -1945,7 +1945,7 @@ ja:
         header_html: "<h3 style=\"font-size:18px\">ヘッダー</h3>"
         image_html: "<img src=\"http://www.w3.org/Icons/valid-html401\"> "
         italic_text_html: "<i>斜体</i> テキスト "
-        link_html: "<a href=\"http://www.teambox.com\">何かしらのリンク</a> "
+        link_html: "<a href=\"http://www.crewmate.org\">何かしらのリンク</a> "
         ordered_list_html: |-
             <li>順番を整えたリスト</li>
             <li>まわりに空行を残して下さい</li>
@@ -1970,8 +1970,8 @@ ja:
       formatted_address: "%{street}, %{city} (%{country})"
       remove_from_project: プロジェクトから削除
     welcome: 
-      get_started: Teamboxを始めよう!
-      intro1: "ようこそ新メンバー! <br/>Teamboxを一日の出発点にするためにはどうすればいいか、すぐにわかります。"
+      get_started: Crewmateを始めよう!
+      intro1: "ようこそ新メンバー! <br/>Crewmateを一日の出発点にするためにはどうすればいいか、すぐにわかります。"
       intro2: まずは、<b>共同作業</b>のためにプロジェクトを作成しましょう。
       projects: 
         create_your_first_project: "イベントや、デザインや、製品開発など... さぁ、今すぐ<a href='%{link}'>最初のプロジェクトを作成</a>しましょう!"
@@ -1979,10 +1979,10 @@ ja:
         title: プロジェクト
       spread: 
         facebook: Facebook
-        help: "<b>私達に協力してください。</b> Teamboxをどのように使っているかを"
+        help: "<b>私達に協力してください。</b> Crewmateをどのように使っているかを"
         in_your_site: あなたのサイトで友達に伝えてください!
-        reasons: 私達はTeamboxがあなたの役に立つことを願って、長年Teamboxに取り組んでいます。<br/>私達はあなたと同じく、使命と意欲を持った開発者です。
-        tell_us: "Teamboxを楽しんでいただけたなら、ぜひ私達に<a href='mailto:%{address}'>メールで</a>お知らせください。"
+        reasons: 私達はCrewmateがあなたの役に立つことを願って、長年Crewmateに取り組んでいます。<br/>私達はあなたと同じく、使命と意欲を持った開発者です。
+        tell_us: "Crewmateを楽しんでいただけたなら、ぜひ私達に<a href='mailto:%{address}'>メールで</a>お知らせください。"
         title: 私達のことも好きになっていただけますか?
         twitter: Twitterや
       stop_welcome: 「ようこそ」タブを表示しないようにする

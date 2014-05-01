@@ -819,7 +819,7 @@ ko:
       username_or_email: "다른 팀원의 이름이나 이메일을 입력하세요"
     sent: 
       email_sent: "초대장이 발송되었습니다."
-  last_announcement_html: "Teambox의 최신 소식은 <a href='http://blog.teambox.com'>블로그</a>를 읽어보세요."
+  last_announcement_html: "Crewmate의 최신 소식은 <a href='http://crewmate.org/articles'>블로그</a>를 읽어보세요."
   locales: 
     ko: 한국어
   not_found: 
@@ -928,7 +928,7 @@ ko:
       feature2_html: "<b><b>발행</b>. 공유한 페이지를 즉시 인터넷에 발행 가능합니다. 모든 사람들에게 보여주세요."
       feature3_html: "<b>출력</b>. 페이지는 쉽게 프린트 가능합니다. 프린트를 하거나 PDF로 출력하세요!"
       feature4_html: "<b>위키</b>. 페이지는 위키처럼 동작합니다. 프로젝트 정보를 쉽게 얻으세요!."
-      footer1_html: "Teambox를 자주쓰는 정보를 위한 <b>칠판</b>처럼 사용하세요."
+      footer1_html: "Crewmate를 자주쓰는 정보를 위한 <b>칠판</b>처럼 사용하세요."
       footer2_html: "또한 페이지 안에 어느곳에서나 파일을 첨부할 수 있습니다. 시작하세요!"
       submit: 생성
       title: "새 페이지"
@@ -937,7 +937,7 @@ ko:
       define1_html: "로드맵, 흥미로운 링크, 설명서, 이메일 양식등, 다른 팀원들과 함께 <b>유용한 정보</b>를 공유하세요."
       define2_html: "즉시 사용가능한 드래그 앤 드롭을 이용해서 페이지를 쉽게 편집해 보세요."
       empty: "프로젝트 안에 페이지가 아직 없습니다."
-      footer1_html: "Teambox를 자주쓰는 정보를 위한 <b>칠판</b>처럼 사용하세요."
+      footer1_html: "Crewmate를 자주쓰는 정보를 위한 <b>칠판</b>처럼 사용하세요."
       footer2_html: "또한 페이지 안에 어느곳에서나 파일을 첨부할 수 있습니다. 시작하세요!"
       item1_html: "<b>공유</b>. 모든 팀원들은 프로젝트에 속한 페이지를 보고 편집할 수 있습니다."
       item2_html: "<b>발행</b>. 공유한 페이지를 즉시 인터넷에 발행 가능합니다. 모든 사람들에게 보여주세요."
@@ -1009,8 +1009,8 @@ ko:
       new_project: "새로운 프로젝트"
       projects: "내 프로젝트"
       rss: 
-        description: "Teambox내의 모든 프로젝트들을 간략하게 보기"
-        title: "Teambox 프로젝트 간략보기"
+        description: "Crewmate내의 모든 프로젝트들을 간략하게 보기"
+        title: "Crewmate 프로젝트 간략보기"
       subscribe: "새소식 받기 (news feed 받기)"
     new: 
       create_an_example_project: "팀박스를 처음 사용하시나요? <a href='%{link}'>예제 프로젝트를 만들어 보세요</a>. 편하게 예제 프로젝트를 살펴보고 익혀보세요."
@@ -1361,8 +1361,8 @@ ko:
       uploaded_by: "업로드 한 사람"
   users: 
     activation: 
-      activated: "계정이 활성화 되었습니다! Teambox에 오신것을 환영합니다. :)"
-      already_done: "메일이 확인되었습니다! Teambox를 사용하실 수 있습니다."
+      activated: "계정이 활성화 되었습니다! Crewmate에 오신것을 환영합니다. :)"
+      already_done: "메일이 확인되었습니다! Crewmate를 사용하실 수 있습니다."
       invalid_html: "<p>부적절하거나 만료된 링크입니다. 이메일과 비밀번호로 로그인 하세요.</p><p>로그인 정보를 잊으셨다면, 아래의 패스워드를 잊었습니다. 링크를 이용해 주세요.</p>"
       invalid_user: "부적절한 사용자"
       resent: "확인 메일을 다시 보냈습니다. 수신함을 확인해 주세요!"
@@ -1376,7 +1376,7 @@ ko:
       possible_clients: "구글 켈린더나 애플의 iCal, Outlook, Blackberry나 다른 캘린더와 동기화 할 수 있습니다."
       subscribe_to_all: "모든 프로젝트: "
       subscribe_to_project: "프로젝트 %{project}: "
-      tasks_can_be_synced: "Teambox 테스크와 다른 캘린더들을 동기화 할 수 있습니다. 다가오는 일정을 항상 쉽게 기억하세요."
+      tasks_can_be_synced: "Crewmate 테스크와 다른 캘린더들을 동기화 할 수 있습니다. 다가오는 일정을 항상 쉽게 기억하세요."
       title: "캘린더와 동기화 하기"
       your_calendars: "당신의 캘린더"
     create: 
@@ -1505,7 +1505,7 @@ ko:
       formatted_address: "%{street}, %{city} (%{country})"
       remove_from_project: "프로젝트에서 삭제"
     welcome: 
-      get_started: "Teambox와 함께 시작하세요!"
+      get_started: "Crewmate와 함께 시작하세요!"
       intro1: "새로 가입해 주셔서 감사합니다! 팀박스는 곧 당신의 삶에 있어서 필수불가한 요소로 자리잡게 될 겁니다."
       intro2: "<b>협업</b>을 위한 프로젝트를 생성하세요:"
       projects: 

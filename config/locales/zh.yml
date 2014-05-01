@@ -219,7 +219,7 @@ zh:
       define_html: 使用话题作为一个集中的方式<b>讨论决定</b>和<b>同步您的团队</b>。<br/>每个话题是一系列的评论，用于代替成堆的邮件。
       empty: 当前项目还没有任何话题。
       footer1_html: "话题是一个很好的方式，用于<b>分享设计</b>, <b>决定会议日期</b>或者<b>报告新闻动态</b>。"
-      footer2_html: 因为话题是线程式的，它很容易回溯了解到某个文件已经发布，每个成员说过的内容。在Teambox中，<b>协作也是汇报的过程</b>.
+      footer2_html: 因为话题是线程式的，它很容易回溯了解到某个文件已经发布，每个成员说过的内容。在Crewmate中，<b>协作也是汇报的过程</b>.
       item1_html: "<b>分享文件</b>. 评论也可以包含附件。"
       item2_html: <b>订阅</b>一个话题可以通过Email或RSS得到将来回复的通知。
       item3_html: "<b>加深印象</b>. 任何评论都可以使用文本样式进行格式化。"
@@ -611,18 +611,18 @@ zh:
       do_not_answer: 请不要回复此邮件。
     confirm: 
       hey: "您好, %{user_name}!"
-      log_in: 现在就登录Teambox！
+      log_in: 现在就登录Crewmate！
       plaintext_link: 如果出现问题，复制并粘贴以下链接到您的浏览器地址栏：
       problems_html: "如果您有任何问题，请通过%{support}联系我们"
-      report_abuse: "您收到此邮件是因为您使用了%{email}注册了一个Teambox帐号"
+      report_abuse: "您收到此邮件是因为您使用了%{email}注册了一个Crewmate帐号"
     invitation: 
       accept_the_invitation: 接受邀请开始协作
-      collaborate_with: "%{name}希望通过Teambox与您协作："
+      collaborate_with: "%{name}希望通过Crewmate与您协作："
       current_users: 此项目中的当前用户列表：
       plaintext_link: 如果以上链接不能工作，复制并粘贴以下代码到您的浏览器地址栏：
       plan_share_and_collaborate: 计划，分享和跟踪需要做的工作。足够简单。
       report_abuse: 此邮件应您的朋友要求而发送给您。如有滥用请及时报告。
-      teambox_is_a_pm_platform: Teambox是一个用于真实世界协作的项目管理平台。
+      teambox_is_a_pm_platform: Crewmate是一个用于真实世界协作的项目管理平台。
       you_have_been_invited_to: "您已经被邀请加入项目<b>%{project}</b>"
     notify: 
       are_watching: 已经订阅了此话题，将能够收到回复的提醒。
@@ -633,7 +633,7 @@ zh:
       due_on: "截止日期：%{date}"
       my_tasks: "分配给您的更多%{project}中的任务"
       notification_settings: "您可以通过<a href='%{url}'>提醒设置</a>修改更多邮件相关设置。"
-      project: "Teambox项目:"
+      project: "Crewmate项目:"
       reply: 您也可以通过回复此邮件来发表您对这个话题的答复。
       status: "状态: %{status}"
       stop_watching: "<a href='%{stop_watching_url}'>停止订阅</a>这一话题将中止收到邮件提醒。"
@@ -642,10 +642,10 @@ zh:
       view_online: "您可以<a href='%{link}'>在线查看这个话题</a>，进行答复，也可以附加文件。"
     reset_password: 
       hey: "您好, %{user_name}!"
-      log_in: 现在就登录Teambox！
+      log_in: 现在就登录Crewmate！
       plaintext_link: 如果出现问题，复制并粘贴以下链接到您的浏览器地址栏：
       problems_html: "如果您有任何问题，请通过%{support}联系我们"
-      report_abuse: "您收到此邮件是因为您使用了%{email}注册了一个Teambox帐号"
+      report_abuse: "您收到此邮件是因为您使用了%{email}注册了一个Crewmate帐号"
     upload: 
       file: "文件:"
   example_projects: 
@@ -654,8 +654,8 @@ zh:
       error: 不能创建样例项目。
       error_list: "不能创建样例项目。以下项目是无效的：%{list}。"
       learn: 通过例子学习！
-      line1: 如果您是第一次使用Teambox，您可以创建一个包含一些内容的样例项目。
-      line2: 浏览这些页面将引导您使用Teambox的各个部分。
+      line1: 如果您是第一次使用Crewmate，您可以创建一个包含一些内容的样例项目。
+      line2: 浏览这些页面将引导您使用Crewmate的各个部分。
       line3: 确保您<b>阅读介绍</b>和<b>试验</b>如何创建、修改和删除元素！
       line4: 在这个项目您不能邀请其它用户，但您可以做其它任何事。
   form: 
@@ -707,7 +707,7 @@ zh:
       username_or_email: 请输入您的团队成员的用户名或email
     sent: 
       email_sent: "<b>我们刚刚发布了一个提醒邮件给此用户，邮件中包含了一个接受您项目邀请的链接。</b>. 如果他们不能收到此邮件，请确保此邮件不会作为垃圾邮件处理，或者尝试换一个邮件地址。如果还有问题，请联系我们。"
-  last_announcement_html: "Read <a href='http://blog.teambox.com'>our blog</a> for the latest news about Teambox."
+  last_announcement_html: "Read <a href='http://crewmate.org/articles'>our blog</a> for the latest news about Crewmate."
   locales: 
     zh: 中文
   not_found: 
@@ -792,7 +792,7 @@ zh:
     new: 
       define1_html: 这里您可以和您的团队<b>分享有用的信息</b>：路线图，有意思的链接，规定，邮件模板等等...
       define2_html: 修改一个项目是相当容易和有趣的事，通过拖曳元素您可以即时修改页面。
-      footer1_html: 使用Teambox作为您的频繁使用的<b>共享白板</b>。
+      footer1_html: 使用Crewmate作为您的频繁使用的<b>共享白板</b>。
       footer2_html: 您也可以添加附件到任何页面。使用愉快！
       submit: 创建
       title: 新增页面
@@ -801,7 +801,7 @@ zh:
       define1_html: 这里您可以和您的团队<b>分享有用的信息</b>：路线图，有意思的链接，规定，邮件模板等等...
       define2_html: 修改一个项目是相当容易和有趣的事，通过拖曳元素您可以即时修改页面。
       empty: 这个项目还没有任何页面。
-      footer1_html: 使用Teambox作为您的频繁使用的<b>共享白板</b>。
+      footer1_html: 使用Crewmate作为您的频繁使用的<b>共享白板</b>。
       footer2_html: 您也可以添加附件到任何页面。使用愉快！
       item1_html: "<b>分享</b>. 所有您的团队成员都可以查看和修改项目的页面。"
       item2_html: "<b>发布</b>. 通过共享页面进行即时网络发布，全世界都可以看到。"
@@ -870,7 +870,7 @@ zh:
         title: 项目摘要
       subscribe: 订阅动态反馈
     new: 
-      create_an_example_project: "第一次使用Teambox？可以先<a href='%{link}'>创建一个样例项目</a>以尝试并熟悉Teambox。"
+      create_an_example_project: "第一次使用Crewmate？可以先<a href='%{link}'>创建一个样例项目</a>以尝试并熟悉Crewmate。"
       created: 您的项目已经创建成功！
       invalid_project: 无效的项目，请修正错误并重试
       new_project: 新项目...
@@ -922,7 +922,7 @@ zh:
       submit: 发给我一个重置密码的链接
       title: 忘记密码？
     sent: 
-      follow_the_link_html: 点击此邮件中的链接以登录Teambox！如果您找不到邮件，请尝试看一下垃圾邮件夹。
+      follow_the_link_html: 点击此邮件中的链接以登录Crewmate！如果您找不到邮件，请尝试看一下垃圾邮件夹。
       login_link_sent: "我们将发送邮件到%{email}给您以重置您的密码。"
       title: 重置密码
   sessions: 
@@ -935,7 +935,7 @@ zh:
       login_failed: "不能作为%{login}登录"
       submit: 登录
       title: 登录
-      video: 什么是Teambox?
+      video: 什么是Crewmate?
   shared: 
     archived_projects: 
       archived_projects: 已存档的项目
@@ -980,7 +980,7 @@ zh:
     public_navigation: 
       community: 社区
       help: 帮助和支持
-      home: Teambox
+      home: Crewmate
       privacy: 隐私
       services: 服务
       terms: 使用条款
@@ -1004,7 +1004,7 @@ zh:
       ie: "升级Internet Explorer"
       or_install: 或者安装
       safari: Safari
-      upgrade: "您正在使用一个过于陈旧版本的Internet Explorer，Teambox可能不能正常工作。"
+      upgrade: "您正在使用一个过于陈旧版本的Internet Explorer，Crewmate可能不能正常工作。"
     user_navigation: 
       account_settings: 帐号设置
       notifications: 提醒
@@ -1142,7 +1142,7 @@ zh:
       select_a_file: 选择文件
     primer: 
       create_first: 在这个项目中上传第一个文件！
-      define1_html: 还有与您的团队分享文件的问题？Teambox再次让分享更容易。
+      define1_html: 还有与您的团队分享文件的问题？Crewmate再次让分享更容易。
       define2_html: 您可以在这里上传文件，或者附加文件到话题，任务或页面。
       empty: 这个项目还没有任何文件。
       item1_html: "<b>更大的文件</b>. 上传任意大小的文件，忘记电子邮件附件大小的限制吧。"
@@ -1155,8 +1155,8 @@ zh:
       uploaded_by: "上传者:"
   users: 
     activation: 
-      activated: "您的帐号已经激活！欢迎使用Teambox :)"
-      already_done: 您已经确认了您的email地址！现在您可以使用Teambox了。
+      activated: "您的帐号已经激活！欢迎使用Crewmate :)"
+      already_done: 您已经确认了您的email地址！现在您可以使用Crewmate了。
       invalid_html: <p>无效或已经过期的链接。请使用您的email和密码登录。</p><p>如果您忘记了您的登录密码，请点击下面的“忘记密码”链接。</p>
       invalid_user: 无效用户
       resent: 我们已经重新发送了激活邮件。请检查您的收件箱！
@@ -1165,7 +1165,7 @@ zh:
       thanks: 谢谢注册！
     daily_task_reminder_email: 
       daily_task_reminder: 每日任务提醒
-      daily_task_reminder_from_teambox: 这是来自Teambox的每日任务提醒邮件。
+      daily_task_reminder_from_teambox: 这是来自Crewmate的每日任务提醒邮件。
       late_tasks: 延迟任务
       settings_page: 设置页
       tasks_for_next_two_weeks: 下两周任务
@@ -1185,7 +1185,7 @@ zh:
         field: 您的头像
         max_size: "文件大小不能超过%{mb}"
         presence: 您不能上传空文件
-        upload_here_or_at_gravatar_html: "您可以在这里上传新的头像，或上传到%{gravatar}作为一个通用的头像，用于Teambox或其它网站。"
+        upload_here_or_at_gravatar_html: "您可以在这里上传新的头像，或上传到%{gravatar}作为一个通用的头像，用于Crewmate或其它网站。"
         we_have_this_avatar_html: 当前您的头像：
       biography: 自我介绍
       change_password: 修改密码
@@ -1209,7 +1209,7 @@ zh:
         field: 您的头像
         max_size: "文件大小不能超过%{mb}"
         presence: 您不能上传空文件
-        upload_here_or_at_gravatar: "您可以在这里上传新的头像，或上传到%{gravatar}作为一个通用的头像，用于Teambox或其它网站。"
+        upload_here_or_at_gravatar: "您可以在这里上传新的头像，或上传到%{gravatar}作为一个通用的头像，用于Crewmate或其它网站。"
         we_have_this_avatar: 当前您的头像：
       sunday: 周日
       time_zone: 时区
@@ -1224,7 +1224,7 @@ zh:
       no_public_signup: 此系统不允许公共注册。
       submit: 创建帐号
       title: 创建新帐号
-      you_already_have_an_account_html: "您已经有一个使用了地址%{email}的Teambox帐号。<a href='%{login_link}'>使用此邮箱登录</a>或<a href='%{reset_password_link}'>重置密码</a>，如果您已经忘记密码。"
+      you_already_have_an_account_html: "您已经有一个使用了地址%{email}的Crewmate帐号。<a href='%{login_link}'>使用此邮箱登录</a>或<a href='%{reset_password_link}'>重置密码</a>，如果您已经忘记密码。"
       you_are_logged_in: 您已经有一个帐号。请先注销，并使用另一个帐号登录。
     show: 
       pending_invite: "%{name}当前已经有一个您的项目的未受理邀请。在此邀请被接受前，您不允许操作任何信息。"
@@ -1247,8 +1247,8 @@ zh:
       formatted_address: "%{city} %{street}(%{country})"
       remove_from_project: 从项目中移除
     welcome: 
-      get_started: 开始使用Teambox!
-      intro1: 欢迎您成为我们的新成员！您将了解到Teambox如何成为您每日工作的起点。
+      get_started: 开始使用Crewmate!
+      intro1: 欢迎您成为我们的新成员！您将了解到Crewmate如何成为您每日工作的起点。
       intro2: 接下来怎么做？创建一个项目进行<b>协作</b>：
       projects: 
         create_your_first_project: "事件，设计，产品... 现在开始<a href='%{link}'>创建您的第一个项目</a>！"
@@ -1256,10 +1256,10 @@ zh:
         title: 项目
       spread: 
         facebook: Facebook
-        help: 您可以<b>帮肋我们</b>，通过告诉您的朋友您对Teambox的喜爱
+        help: 您可以<b>帮肋我们</b>，通过告诉您的朋友您对Crewmate的喜爱
         in_your_site: 在您的网站！
-        reasons: 我们已经在Teambox工作多年时间，希望它可以对您有所帮助。<br/>我们和您一样，是真实的人，为目标为激情工作的开发者！
-        tell_us: "如果您喜欢使用Teambox，也请考虑<a href='mailto:%{address}'>通过Email告诉我们</a>！"
+        reasons: 我们已经在Crewmate工作多年时间，希望它可以对您有所帮助。<br/>我们和您一样，是真实的人，为目标为激情工作的开发者！
+        tell_us: "如果您喜欢使用Crewmate，也请考虑<a href='mailto:%{address}'>通过Email告诉我们</a>！"
         title: 您也喜欢我们的产品吗？
         twitter: "Twitter,"
       stop_welcome: 不再显示此欢迎页签
