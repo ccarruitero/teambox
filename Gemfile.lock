@@ -343,7 +343,6 @@ DEPENDENCIES
   cucumber-rails (~> 0.3.2)
   dalli
   database_cleaner (~> 1.2.0)
-  debugger
   factory_girl (~> 1.3.2)
   faker
   fuubar
