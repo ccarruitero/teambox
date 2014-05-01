@@ -82,6 +82,7 @@ RSpec.configure do |config|
   # For more information take a look at Spec::Runner::Configuration and Spec::Runner
 end
 
+# FIXME: this should be a shared example
 def route_matches(path, method, params)
   it "is routable for params #{params.inspect} with #{method.to_s.upcase} and #{path.inspect}" do
     { method.to_sym => path }.should route_to(params)
