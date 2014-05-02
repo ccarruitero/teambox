@@ -65,17 +65,17 @@ module ProjectsHelper
   def instructions_for_email(project)
     suffix = ''
     case location_name
-      when 'show_projects' #project@app.teambox.com
+      when 'show_projects' #project@app.crewmate.org
         email_help = t('shared.instructions.send_email_help_project_html', :email => "#{project.permalink}@#{Teambox.config.smtp_settings[:domain]}")
-      when 'show_tasks' #project+task+12@app.teambox.com
+      when 'show_tasks' #project+task+12@app.crewmate.org
         email_help = t('shared.instructions.send_email_help_task_html', :email => "#{project.permalink}+task+#{@task.id}@#{Teambox.config.smtp_settings[:domain]}")
-      when 'index_conversations' #project+conversation@app.teambox.com
+      when 'index_conversations' #project+conversation@app.crewmate.org
         email_help = t('shared.instructions.send_email_help_conversations_html', :email => "#{project.permalink}+conversation@#{Teambox.config.smtp_settings[:domain]}")
         suffix = '_conversations'
-      when 'new_conversations' #project+conversation@app.teambox.com
+      when 'new_conversations' #project+conversation@app.crewmate.org
         email_help = t('shared.instructions.send_email_help_conversations_html', :email => "#{project.permalink}+conversation@#{Teambox.config.smtp_settings[:domain]}")
         suffix = '_conversations'
-      when 'show_conversations' #project+conversation+5@app.teambox.com
+      when 'show_conversations' #project+conversation+5@app.crewmate.org
         email_help = t('shared.instructions.send_email_help_conversation_html', :email => "#{project.permalink}+conversation+#{@conversation.id}@#{Teambox.config.smtp_settings[:domain]}")
     end
 

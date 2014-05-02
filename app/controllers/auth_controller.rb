@@ -1,6 +1,4 @@
 # -*- encoding : utf-8 -*-
-# TODO: Make it run on Heroku
-# Fixed by https://teambox.com/projects/teambox/conversations/76950
 
 class AuthController < ApplicationController
   skip_before_filter :login_required
