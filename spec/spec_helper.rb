@@ -1,7 +1,9 @@
 # -*- encoding : utf-8 -*-
-# This file is copied to spec/ when you run 'rails generate rspec:install'
-require 'simplecov'
-SimpleCov.start 'rails'
+if ENV['CODECLIMATE_REPO_TOKEN']
+  require 'codeclimate-test-reporter'
+  CodeClimate::TestReporter.start
+end
+
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
@@ -19,6 +21,8 @@ require 'database_cleaner'
 require 'webmock/rspec'
 # require 'rack/test'
 require 'csv'
+
+WebMock.disable_net_connect!(:allow => 'codeclimate.com')
 
 RSpec.configure do |config|
   config.include AuthenticatedTestHelper

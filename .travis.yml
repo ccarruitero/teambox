@@ -18,3 +18,6 @@ script: "bundle exec rake spec"
 matrix:
   allow_failures:
     - rvm: 2.0.0
+addons:
+  code_climate:
+    repo_token: 74d9b568038c718984353cf6e8c54a8b151f87af24ae6eab5791bc2d00dc6211

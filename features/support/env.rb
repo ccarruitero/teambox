@@ -4,8 +4,6 @@
 # newer version of cucumber-rails. Consider adding your own code to a new file
 # instead of editing this one. Cucumber will automatically load all features/**/*.rb
 # files.
-require 'simplecov'
-SimpleCov.start 'rails'
 
 ENV["RAILS_ENV"] ||= "cucumber"
 require File.expand_path(File.dirname(__FILE__) + '/../../config/environment')
@@ -58,7 +56,7 @@ if defined?(ActiveRecord::Base)
   DatabaseCleaner.strategy = :truncation
 end
 
-require 'rack/test'	
+require 'rack/test'
 require 'rack/test/cookie_jar'
 
 Before do

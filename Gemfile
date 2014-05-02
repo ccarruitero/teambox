@@ -67,10 +67,13 @@ group :test, :development do
   gem 'webmock'
 end
 
+group :test do
+  gem 'codeclimate-test-reporter', require: nil
+end
+
 # we don't call the group :test because we don't want them auto-required
 group :testing do
   gem 'database_cleaner', '~> 1.2.0'
-  gem 'simplecov'
   gem 'factory_girl', '~> 1.3.2'
   gem 'pickle', '~> 0.4.4'
   gem 'cucumber-rails', '~> 0.3.2', require: nil
