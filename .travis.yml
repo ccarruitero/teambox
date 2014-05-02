@@ -21,3 +21,8 @@ matrix:
 addons:
   code_climate:
     repo_token: 74d9b568038c718984353cf6e8c54a8b151f87af24ae6eab5791bc2d00dc6211
+notifications:
+  irc: "chat.freenode.net#crewmate"
+  email:
+    on_success: never
+    on_failure: change
