@@ -1,6 +1,6 @@
 # Crewmate
 
-[![Build Status](https://travis-ci.org/crewmate/crewmate.png?branch=master)](https://travis-ci.org/crewmate/crewmate) [![Code Climate](https://codeclimate.com/github/crewmate/crewmate.png)](https://codeclimate.com/github/crewmate/crewmate) [![Dependency Status](https://gemnasium.com/crewmate/crewmate.png)](https://gemnasium.com/crewmate/crewmate) [![Stories in Ready](https://badge.waffle.io/crewmate/crewmate.png?label=Ready)](http://waffle.io/crewmate/crewmate)
+[![Build Status](https://travis-ci.org/crewmate/crewmate.png?branch=master)](https://travis-ci.org/crewmate/crewmate) [![Code Climate](https://codeclimate.com/github/crewmate/crewmate.png)](https://codeclimate.com/github/crewmate/crewmate) [![Code Coverage](https://codeclimate.com/github/crewmate/crewmate/coverage.png)](https://codeclimate.com/github/crewmate/crewmate) [![Dependency Status](https://gemnasium.com/crewmate/crewmate.png)](https://gemnasium.com/crewmate/crewmate) [![Stories in Ready](https://badge.waffle.io/crewmate/crewmate.png?label=Ready)](http://waffle.io/crewmate/crewmate)
 
 Crewmate is a project management software, a community fork of [Teambox v3](https://github.com/teambox/teambox), built on Ruby on Rails with a focus on collaboration.
 
