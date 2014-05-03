@@ -11,11 +11,11 @@
     .top{ :style => 'background-color: rgb(255,255,220); border-bottom: 1px solid rgb(200,200,150); width: 100%; display: block; font-size: 12px; padding: 10px 0; text-align: center' }
       This is a developer preview of Teambox API 1.0.
       It's in beta, so it's subject to changes.
-      = link_to "Send us your feedback", "http://teambox.com/community"
+      = link_to "Send us your feedback", "https://github.com/crewmate/crewmate"
     .container
       .wrapper
         #header
-          = link_to image_tag('teambox-logo.gif', :alt => 'Teambox project management', :style => 'float:right'), root_path
+          = link_to image_tag('crewmate-logo.gif', :alt => 'Crewmate project management', :style => 'float:right'), root_path
           %h1 API documentation
           .clear
         .content
@@ -25,5 +25,4 @@
           #sidebar
             = yield :column
       .footer
-        %p.copyright Copyright &copy; 2011 Teambox. All rights reserved
-
+        %p.copyright Copyright &copy; 2011 Teambox. &copy; 2013 Crewmate. All rights reserved

@@ -4,7 +4,7 @@
     %meta{ 'http-equiv' => "content-type", :content => "text/html;charset=utf-8" }
     = csrf_meta_tag
     %link{ :rel => "shortcut icon", :href => "/favicon.ico" }
-    %title= @title || h(@project).presence || "Teambox public projects"
+    %title= @title || h(@project).presence || "Crewmate public projects"
     = include_stylesheets :application
     = include_stylesheets :public
 
@@ -19,7 +19,7 @@
       .wrapper
         - show_flash
         #header
-          = link_to image_tag('teambox-logo.gif', :alt => 'Teambox logo', :style => 'float:right'), root_path
+          = link_to image_tag('crewmate-logo.gif', :alt => 'Crewmate logo', :style => 'float:right'), root_path
           %h1= h(@project) || "Public projects"
           .clear
         .content_wrap
