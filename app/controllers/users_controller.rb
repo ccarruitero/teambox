@@ -86,7 +86,7 @@ class UsersController < ApplicationController
       end
 
       if @invitation
-        # Can be an invitation to a project or just to Teambox
+        # Can be an invitation to a project or just to Crewmate
         if @invitation.project
           redirect_to project_path(@invitation.project)
         else

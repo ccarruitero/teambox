@@ -48,7 +48,7 @@ protected
   def load_organization
     @organization = Organization.find_by_permalink(params[:id])
     unless @organization
-      render :text => "That organization doesn't exist. But if it did, it'd surely be using Teambox!"
+      render :text => "That organization doesn't exist. But if it did, it'd surely be using Crewmate!"
     end
   end
 

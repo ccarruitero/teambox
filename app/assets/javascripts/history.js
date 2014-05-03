@@ -6,7 +6,7 @@ if(route) {
 
 pushHistoryState = function(route) {
   if (window.history && window.history.pushState) {
-    window.history.pushState({path: route}, "Teambox", route)
+    window.history.pushState({path: route}, "Crewmate", route)
   } else {
     window.location.hash = "!" + route
   }

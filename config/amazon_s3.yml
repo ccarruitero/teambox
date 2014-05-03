@@ -16,8 +16,8 @@ defaults: &defaults
 
 development:
   <<: *defaults
-  # bucket: teambox-dev
+  # bucket: crewmate-dev
 
 production:
   <<: *defaults
-  # bucket: teambox
+  # bucket: crewmate

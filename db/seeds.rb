@@ -144,7 +144,7 @@ def seed_data
                         :betatester => true,
                         :notify_conversations => false,
                         :notify_tasks => false,
-                        :email => "example_#{a}@teambox.com")
+                        :email => "example_#{a}@crewmate.org")
     user.activate!
     user
   end
