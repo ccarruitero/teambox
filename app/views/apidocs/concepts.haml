@@ -1,13 +1,13 @@
 %h2 API structure
 
 %p
-  Every part of Teambox can be accessed by the API with simple requests.
+  Every part of Crewmate can be accessed by the API with simple requests.
   Usual actions include listing objects, adding a new one, editing,
   showing one and destroying a record (index, new, edit, show, delete).
 
-%h2 Understanding Teambox models
+%h2 Understanding Crewmate models
 
-%p In Teambox, your account is a User model. A User can belong to many Projects.
+%p In Crewmate, your account is a User model. A User can belong to many Projects.
 %p
   The membership of a User in a Project is represented by a Person model.
   Person stores information like the role and the date when User joined the Project.
@@ -15,7 +15,7 @@
   Projects are owned by one User, and have many other Users in it. Projects
   contain Comments, Conversations, Task Lists, Tasks, Pages and Files.
 %p
-  Comments are the most important concept in Teambox.
+  Comments are the most important concept in Crewmate.
   A Comment belongs to a Conversation or a Task, allowing them to be threaded.
   Comments store important information, like the number of hours you spent on
   a Task or status changes for it.
@@ -29,7 +29,7 @@
 %h2 HTTP Status Codes
 
 %p
-  For each request you make to the Teambox API, we will return an <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">HTTP status code</a>.
+  For each request you make to the Crewmate API, we will return an <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">HTTP status code</a>.
   Following convention, the following status codes will be returned for each request:
 
 %ul
@@ -50,7 +50,7 @@
 
 %h2 Authentication
 
-%p Teambox currently uses HTTP basic authentication to authenticate requests.
+%p Crewmate currently uses HTTP basic authentication to authenticate requests.
 %p Soon we will offer OAuth 2 authentication support, which is more secure and reliable. <a href="http://www.slideshare.net/mbleigh/the-present-future-of-oauth">Learn more about it here</a>.
   
 

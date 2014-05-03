@@ -1,20 +1,20 @@
 %img{ :src => "/images/api_index.png", :style => 'width: 479px; height: 224px' }
 
-%p The Teambox API will allow you to connect your applications to Teambox.
+%p The Crewmate API will allow you to connect your applications to Crewmate.
 %p Some possibilities of what you will be able to do are:
 
 .together
   %img{ :src => "/images/api.png", :style => 'float: left; padding-top: 40px' }
   %ul{ :style => 'float: left' }
-    %li Create desktop and mobile clients to access Teambox.
-    %li Link your own GTD application with Teambox tasks.
+    %li Create desktop and mobile clients to access Crewmate.
+    %li Link your own GTD application with Crewmate tasks.
     %li Post messages from other applications, like your own CRM.
-    %li Program custom behaviours on Teambox.
+    %li Program custom behaviours on Crewmate.
     %li Develop browser extensions.
   .clear
 
 %p
-  We're here to help you understand how the Teambox API is
+  We're here to help you understand how the Crewmate API is
   structured and how you can consume it.
 %p
   First, you'll need to understand some basic concepts.
@@ -27,7 +27,7 @@
   This documentation assumes you are familiar with HTTP and its usual verbs:
   GET, POST, PUT, DELETE.
 %p
-  Teambox uses a RESTful JSON API. Routes will be specified in this document,
+  Crewmate uses a RESTful JSON API. Routes will be specified in this document,
   and the API will return the standard HTTP status codes.
 
 %p
@@ -43,8 +43,8 @@
 %pre
   %code
     = JSON.pretty_generate(example_api_wrap(@project, :references => [:organization, :user]))
-%p This is the way we will be handling API requests and data exchange with Teambox.
-%p With this simple command, you can get recent activities from Teambox:
+%p This is the way we will be handling API requests and data exchange with Crewmate.
+%p With this simple command, you can get recent activities from Crewmate:
 
 %pre
   %code
@@ -58,7 +58,7 @@
 
 %h2 Useful tools
 
-%p To post information into Teambox, you can do it through the terminal with curl.
+%p To post information into Crewmate, you can do it through the terminal with curl.
 %p
   But there's a very nice web interface called
   = link_to "hurl", "http://hurl.it"
