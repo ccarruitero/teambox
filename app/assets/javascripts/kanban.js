@@ -108,21 +108,6 @@
     showColumn: function() {
       this.setClassStyle('column_wrap', 'block');
       this.setIdStyle('column-btn', 'none');
-    },
-
-    setDraggables: function() {
-      var tasks = document.getElementsByClassName('kanban-task');
-      var that = this;
-      for(var i=0; i < tasks.length; i++) {
-        var elem = tasks[i]
-        new Draggable(elem, {
-          revert: true,
-          onDrag: function() {
-            console.log('position: ' + elem.offsetTop)
-            console.log('position: ' + document.body.style.border-top)
-          }
-         })
-      }
     }
   }
 
