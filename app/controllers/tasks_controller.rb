@@ -107,6 +107,18 @@ class TasksController < ApplicationController
     end
   end
 
+  def update_status
+    # temporaly endpoint to update status for kanban
+    # use api looks correct way, but needs to complete oauth implementation
+    if can? :update, @task and @task.status != params[:status]
+      @task.update_attributes(status: params[:status])
+    end
+
+    respond_to do |f|
+      f.json {render json: @task.status.to_json }
+    end
+  end
+
   def destroy
     authorize! :destroy, @task
     @task.destroy
@@ -165,7 +177,11 @@ class TasksController < ApplicationController
     end
 
     def load_task
-      @task = @current_project.tasks.find params[:id]
+      if params[:id]
+        @task = @current_project.tasks.find params[:id]
+      elsif params[:task_id]
+        @task = @current_project.tasks.find params[:task_id]
+      end
       @task_list = @task.task_list
     end
 

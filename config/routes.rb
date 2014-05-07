@@ -169,6 +169,8 @@ Teambox::Application.routes.draw do
           put :unwatch
         end
 
+      put 'update_status', to: 'tasks#update_status'
+
         resources :comments
       end
 
