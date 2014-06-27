@@ -10,6 +10,8 @@ class SessionsController < ApplicationController
   before_filter :set_page_title
   before_filter :community_version_check, :except => [:create, :backdoor]
 
+  include Persona
+
   def new
     clear_auth_session! unless @conflict = session[:conflict] and @profile = session[:profile]
 
@@ -75,6 +77,16 @@ class SessionsController < ApplicationController
     end
 
     redirect_back_or_to root_path
+  end
+
+  def persona_auth
+    audience = 'http://' + request.host_with_port
+    user = Persona.authenticate(params[:assertion], audience)
+    if user['email']
+      register_user? user['email']
+    else
+      redirect_to failed_url, notice: 'Authentication failed'
+    end
   end
 
 protected
