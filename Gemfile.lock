@@ -323,7 +323,6 @@ GEM
       rack (>= 1.0)
       rack-test (>= 0.5.3)
     websocket (1.0.7)
-    websocket-driver (0.3.2)
     whenever (0.4.2)
       chronic (>= 0.2.3)
     xml-simple (1.1.2)
@@ -378,7 +377,6 @@ DEPENDENCIES
   rdiscount (~> 1.6.3)
   rspec-rails (~> 2.14.1)
   sass
-  simplecov
   sprockets (~> 2.10.0)
   sqlite3
   teambox-permalink_fu
@@ -392,6 +390,5 @@ DEPENDENCIES
   vestal_versions (~> 1.2.2)!
   webmock
   webrat
-  websocket-driver
   whenever (~> 0.4.1)
   will_paginate!
