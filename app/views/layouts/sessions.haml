@@ -5,8 +5,8 @@
     = csrf_meta_tag
     %link{ :rel => "shortcut icon", :href => "/favicon.ico" }
     %title Crewmate
+    %script{ src: "https://login.persona.org/include.js"}
     = include_stylesheets :sessions
-    = sprockets_include_tag :public
 
   %body{ :class => "#{location_name} #{I18n.locale} #{Rails.env}"}
     .container
@@ -21,3 +21,4 @@
       .footer
         %p.copyright Copyright &copy; 2011 Teambox. &copy; 2013 Crewmate. All rights reserved
 
+    = sprockets_include_tag :public
