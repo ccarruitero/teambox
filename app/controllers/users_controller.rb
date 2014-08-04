@@ -1,10 +1,16 @@
 # -*- encoding : utf-8 -*-
 class UsersController < ApplicationController
-  no_login_required :only => [ :new, :create, :confirm_email, :forgot_password, :reset_password, :login_from_reset_password ]
+  no_login_required :only => [ :new, :create, :confirm_email, :forgot_password,
+                               :reset_password, :login_from_reset_password ]
 
-  before_filter :find_user, :only => [ :show, :confirm_email, :login_from_reset_password ]
+  before_filter :find_user, :only => [ :show, :confirm_email,
+                                       :login_from_reset_password ]
   before_filter :load_invitation, :only => [ :new, :create ]
-  skip_before_filter :confirmed_user?, :only => [ :new, :create, :confirm_email, :forgot_password, :reset_password, :login_from_reset_password, :unconfirmed_email ]
+  skip_before_filter :confirmed_user?, only: [ :new,:create,:confirm_email,
+                                               :forgot_password,
+                                               :reset_password,
+                                               :login_from_reset_password,
+                                               :unconfirmed_email ]
   skip_before_filter :load_project
   before_filter :set_page_title
   before_filter :can_users_signup?, :only => [:new, :create]
