@@ -100,6 +100,7 @@ protected
     session.delete :profile
     session.delete :app_link
     session.delete :conflict
+    session.delete :email
   end
 
   def community_version_check
@@ -122,6 +123,16 @@ protected
           f.m { render :new }
         end
       end
+    end
+  end
+
+  def register_user? email
+    register_user = User.find_by_email email
+    if register_user != nil
+      session[:email] = email
+      redirect_to root_url, notice: 'You are logged in!'
+    else
+      redirect_to register_url, notice: 'You needs register to access.'
     end
   end
 end
