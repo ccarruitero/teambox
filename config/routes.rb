@@ -60,6 +60,7 @@ Teambox::Application.routes.draw do
     match '/complete_signup' => 'users#complete_signup', :as => :complete_signup
     match '/auth/:provider/unlink' => 'users#unlink_app', :as => :unlink_app
     match '/auth/google' => 'auth#index', :as => :authorize_google_docs, :defaults => {:provider => 'google'}
+    post '/auth/persona', to: 'sessions#persona_auth'
 
     resources :google_docs do
       get :search, :on => :collection
@@ -87,6 +88,7 @@ Teambox::Application.routes.draw do
       end
     end
 
+    get '/account', to: 'users#index'
     match '/account/settings' => 'users#edit', :as => :account_settings, :sub_action => 'settings'
     match '/account/picture' => 'users#edit', :as => :account_picture, :sub_action => 'picture'
     match '/account/profile' => 'users#edit', :as => :account_profile, :sub_action => 'profile'
