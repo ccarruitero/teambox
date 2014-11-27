@@ -64,4 +64,4 @@ Kanban.TaskList.adapter = Ember.RESTAdapter.create({
   }
 });
 Kanban.TaskList.url = "api/1/projects/projectId/task_lists";
-Kanban.Project.collectionKey = "objects";
+Kanban.TaskList.collectionKey = "objects";
