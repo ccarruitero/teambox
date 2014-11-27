@@ -1,18 +1,37 @@
 <section>
-  <h2>Tasks (kanbanview)</h2>
+  <h2>kanbanView</h2>
   <div id="board">
-    <div class="board-item">
-      <h3>Backlog</h3>
-    </div>
-    <div class="board-item">
-      <h3>To Do</h3>
-    </div>
-    <div class="board-item">
-      <h3>In Progress</h3>
-    </div>
-    <div class="board-item">
-      <h3>Done</h3>
-    </div>
   </div>
 </section>
 <nav id="navbar"></nav>
+
+<script type="text/x-handlebars">
+  {{outlet}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="index">
+  <h4>Projects</h4>
+  {{#each project in model}}
+    <li class="project">
+      {{#linkTo 'task_lists' project.id}}{{project.name}}{{/linkTo}}
+    </li>
+  {{/each}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="task-lists">
+  <h4>Task Lists</h4>
+  {{#each taskList in model}}
+    <li class="task_list">
+      {{#linkTo '' taskList.id}}{{taskList.name}}{{/linkTo}}
+    </li>
+  {{/each}}
+</script>
+
+<script type="text/x-handlebars" id="tasks">
+  {{#each task itemController='task'}}
+  <section class="task">
+    <li>{{name}}</li>
+    <li>{{status}}</li>
+  </section>
+  {{/each}}
+</script>

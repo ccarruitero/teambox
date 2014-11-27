@@ -56,7 +56,7 @@ Teambox::Application.routes.draw do
     match '/format/:f' => 'sessions#change_format', :as => :change_format
 
     match '/projects/:project_id/invite/:login' => 'invitations#create', :as => :create_project_invitation, :method => :post
-    get 'projects/:project_id/kanban' => 'projects#kanban', as: :kanban_project
+    get 'kanban' => 'projects#kanban', as: :kanban
 
     match '/auth/:provider/callback' => 'auth#callback', :as => :auth_callback
     match '/auth/failure' => 'auth#failure', :as => :auth_failure

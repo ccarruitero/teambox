@@ -190,13 +190,8 @@ class ProjectsController < ApplicationController
   end
 
   def kanban
-    @todo_tasks = @current_project.tasks.where('status < ?', 2)
-    @doing_tasks = @current_project.tasks.where('status = ?', 2)
-    @done_tasks = @current_project.tasks.where('status = ?', 3)
-
     respond_to do |f|
       f.html { render layout: 'kanban' }
-      f.json { render json: @current_project.tasks.to_json }
     end
   end
 
