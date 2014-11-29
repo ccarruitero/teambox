@@ -13,7 +13,7 @@
   <h4>Projects</h4>
   {{#each project in model}}
     <li class="project">
-      {{#linkTo 'task_lists' project.id}}{{project.name}}{{/linkTo}}
+      {{#linkTo 'tasks' project.id}}{{project.name}}{{/linkTo}}
     </li>
   {{/each}}
 </script>
@@ -22,16 +22,16 @@
   <h4>Task Lists</h4>
   {{#each taskList in model}}
     <li class="task_list">
-      {{#linkTo '' taskList.id}}{{taskList.name}}{{/linkTo}}
+      {{#linkTo 'tasks' taskList.id}}{{taskList.name}}{{/linkTo}}
     </li>
   {{/each}}
 </script>
 
 <script type="text/x-handlebars" id="tasks">
-  {{#each task itemController='task'}}
+  <h4>Tasks</h4>
+  {{#each task in model}}
   <section class="task">
-    <li>{{name}}</li>
-    <li>{{status}}</li>
+    <li>{{task.name}}</li>
   </section>
   {{/each}}
 </script>
