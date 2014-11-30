@@ -5,7 +5,10 @@ var get = Ember.get;
 
 window.Kanban = Ember.Application.create({
   rootElement: '#board',
-  LOG_MODULE_RESOLVER: true
+  LOG_MODULE_RESOLVER: true,
+  LOG_TRANSITIONS: true,
+  LOG_VIEW_LOOKUPS: true,
+  LOG_BINDINGS: true
 });
 
 Kanban.Project = Ember.Model.extend({
@@ -22,7 +25,9 @@ Kanban.Router.map(function() {
                 { path: 'projects/:project_id/task_lists'}, function() {
                   this.resource('task_list', {path: ':task_list_id'});
                 });
-  this.resource('tasks', { path: 'projects/:project_id/tasks'});
+  this.resource('tasks', { path: 'projects/:project_id/tasks'}, function() {
+    this.resource('task', { path: '/:task_id'});
+  });
 });
 
 Kanban.IndexRoute = Ember.Route.extend({
@@ -105,5 +110,38 @@ Kanban.Task.adapter = Ember.RESTAdapter.create({
     });
   }
 });
+
 Kanban.Task.url = "api/1/projects/projectId/tasks";
 Kanban.Task.collectionKey = "objects";
+
+Kanban.TaskDetailComponent = Ember.Component.extend({
+  tagName: 'section',
+  classNames: ['task'],
+  classNameBindings: ['statusName'],
+  statusName: '',
+
+  init: function() {
+    this._super();
+    var taskStatus = this.get('controller.task')._data.status;
+    this.statusName = this.parseStatusName(taskStatus);
+  },
+
+  parseStatusName: function(status){
+    if (status == 0) {
+    // new
+      return 'backlog';
+    } else if (status == 1) {
+    // open
+      return 'todo';
+    } else if (status == 2) {
+    // hold
+      return 'doing';
+    } else if (status == 3) {
+    // resolved
+      return 'done';
+    } else if (status == 4) {
+    // rejected
+      return 'archived';
+    }
+  }
+});

@@ -30,8 +30,10 @@
 <script type="text/x-handlebars" id="tasks">
   <h4>Tasks</h4>
   {{#each task in model}}
-  <section class="task">
-    <li>{{task.name}}</li>
-  </section>
+    {{task-detail task=task}}
   {{/each}}
+</script>
+
+<script type="text/x-handlebars" id="components/task-detail">
+    <li>{{task.name}}</li>
 </script>
