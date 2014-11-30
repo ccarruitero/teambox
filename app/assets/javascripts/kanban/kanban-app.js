@@ -2,4 +2,4 @@
 //= require handlebars
 //= require ember
 //= require ember-model
-//= require app
+//= require kanban/app
