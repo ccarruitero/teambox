@@ -21,6 +21,11 @@ section h2 {
   font-weight: inherit;
 }
 
+h5 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
 #board {
   width: 100%;
   display: -webkit-flex;
@@ -29,8 +34,23 @@ section h2 {
   flex-direction: row;
 }
 
-#board .board-item {
-  width: 25%;
+.task-box {
+  width: 20%;
   -webkit-flex: auto;
   flex: auto;
+  z-index: -1;
+  height: 500px;
+  float: left;
+}
+
+.task {
+  width: 240px;
+  height: 40px;
+  float: left;
+  margin: 5px;
+  padding: 20px 5px;
+  background: red;
+  list-style: none;
+  text-align: center;
+  border-radius: 8px;
 }
