@@ -29,7 +29,15 @@
 
 <script type="text/x-handlebars" id="tasks">
   <h4>Tasks</h4>
-  {{#each task in model}}
+    {{task-zone tasks=backlogTasks title='backlog'}}
+    {{task-zone tasks=todoTasks title='todo'}}
+    {{task-zone tasks=doingTasks title='doing'}}
+    {{task-zone tasks=doneTasks title='done'}}
+</script>
+
+<script type="text/x-handlebars" id="components/task-zone">
+  <h5>{{title}}</h5>
+  {{#each task in tasks}}
     {{task-detail task=task}}
   {{/each}}
 </script>

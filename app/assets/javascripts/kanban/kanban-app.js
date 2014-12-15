@@ -3,7 +3,7 @@
 //= require ember
 //= require ember-model
 //= require kanban/app
-//= require kanban/project
-//= require kanban/task_list
-//= require kanban/task
+//= require_tree ./models
+//= require_tree ./controllers
+//= require_tree ./routes
 //= require_tree ./components

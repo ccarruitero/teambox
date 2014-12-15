@@ -1,9 +1,3 @@
-Kanban.TasksRoute = Ember.Route.extend({
-  model: function(project_id) {
-    return Kanban.Task.findQuery({projectId: project_id});
-  }
-});
-
 Kanban.Task = Ember.Model.extend({
   id: attr(),
   name: attr(),
