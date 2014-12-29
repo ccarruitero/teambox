@@ -30,17 +30,18 @@ Kanban.TasksController = Ember.ArrayController.extend({
     updateTaskStatus: function(taskId, newStatusName, lastStatusName) {
       console.log('event fired from controller since need access to model');
       // update backend
-      var task = Kanban.Task.find(taskId);
+      var task = this.getTaskInTaskBox(lastStatusName, taskId);
       var parsedStatus = this.parseStatus(newStatusName);
       task.set('status', parsedStatus);
       task.save();
       // update client
       // this._super();
-      var taskObject = this.getTaskInTaskBox(lastStatusName, taskId);
       // update before task box
-      this.get(lastStatusName + 'Tasks').popObject(taskObject);
+      var lastBox = this.get(lastStatusName + 'Tasks');
+      var index = lastBox.indexOf(task);
+      this.get(lastStatusName + 'Tasks').splice(index, 1);
       // update new task box
-      this.get(newStatusName + 'Tasks').pushObject(taskObject);
+      this.get(newStatusName + 'Tasks').pushObject(task);
     }
   }
 });
