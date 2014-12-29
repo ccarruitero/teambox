@@ -38,7 +38,7 @@
 <script type="text/x-handlebars" id="components/task-zone">
   <h5>{{title}}</h5>
   {{#each task in tasks}}
-    {{task-detail task=task}}
+    {{task-detail task=task class=task.statusName}}
   {{/each}}
 </script>
 
