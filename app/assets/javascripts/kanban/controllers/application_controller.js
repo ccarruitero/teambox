@@ -18,7 +18,6 @@ Kanban.TasksController = Ember.ArrayController.extend({
     for (var i=0; i < tasks.length; i++) {
       var task = tasks[i];
       if (task.get('id').toString() === taskId) {
-        console.log('task was found');
         taskToMove = task;
       }
     }
@@ -28,20 +27,16 @@ Kanban.TasksController = Ember.ArrayController.extend({
 
   actions: {
     updateTaskStatus: function(taskId, newStatusName, lastStatusName) {
-      console.log('event fired from controller since need access to model');
       // update backend
       var task = this.getTaskInTaskBox(lastStatusName, taskId);
       var parsedStatus = this.parseStatus(newStatusName);
       task.set('status', parsedStatus);
       task.save();
       // update client
-      // this._super();
-      // update before task box
       var lastBox = this.get(lastStatusName + 'Tasks');
       var index = lastBox.indexOf(task);
-      this.get(lastStatusName + 'Tasks').splice(index, 1);
-      // update new task box
-      this.get(newStatusName + 'Tasks').pushObject(task);
+      this.get(lastStatusName + 'Tasks').removeObject(task);
+      this.get(newStatusName + 'Tasks').addObject(task);
     }
   }
 });
