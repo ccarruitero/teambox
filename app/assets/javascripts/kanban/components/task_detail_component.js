@@ -13,7 +13,6 @@ Kanban.TaskDetailComponent = Ember.Component.extend({
     var classList = e.target.classList;
     var currentTaskBox = classList[classList.length - 1];
     var taskInfo = taskId + ' ' + currentTaskBox;
-    console.log(taskInfo);
     e.dataTransfer.setData('taskInfo', taskInfo);
   },
 
