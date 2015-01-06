@@ -50,6 +50,7 @@ gem 'mysql2', '~> 0.2.0', group: 'mysql'
 # gem 'mysql', '~> 2.8.1', :require => nil, :group => 'mysql'
 gem 'pg', group: 'pg'
 gem 'sqlite3', group: 'sqlite'
+gem 'faye-websocket', '~> 0.9.2'
 
 group :development do
   gem 'pry-rails'
