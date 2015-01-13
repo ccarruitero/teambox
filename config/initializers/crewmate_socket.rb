@@ -22,7 +22,9 @@ class CrewmateWebSocket
 
       ws.on :message do |event|
         p [:message, event.data]
-        ws.send(event.data)
+        @clients.each do |cli|
+          cli.send(event.data)
+        end
       end
 
       ws.on :close do |event|
