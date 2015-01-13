@@ -1,4 +1,14 @@
 Kanban.TasksController = Ember.ArrayController.extend({
+  init: function() {
+    var self = this;
+    this.get('socket.client').onmessage = function(evt) {
+      var obj = JSON.parse(evt.data);
+      var task = Kanban.Task.find(obj.taskId);
+      self.updateTaskStatusUI(obj.lastStatus, obj.newStatus, task);
+    };
+    this._super();
+  },
+
   parseStatus: function(statusName) {
     if (statusName == 'backlog') {
       return 0
@@ -25,6 +35,11 @@ Kanban.TasksController = Ember.ArrayController.extend({
     return taskToMove;
   },
 
+  updateTaskStatusUI: function(lastStatusName, newStatusName, task) {
+    this.get(lastStatusName + 'Tasks').removeObject(task);
+    this.get(newStatusName + 'Tasks').addObject(task);
+  },
+
   actions: {
     updateTaskStatus: function(taskId, newStatusName, lastStatusName) {
       // update backend
@@ -35,8 +50,14 @@ Kanban.TasksController = Ember.ArrayController.extend({
       // update client
       var lastBox = this.get(lastStatusName + 'Tasks');
       var index = lastBox.indexOf(task);
-      this.get(lastStatusName + 'Tasks').removeObject(task);
-      this.get(newStatusName + 'Tasks').addObject(task);
+      this.updateTaskStatusUI(lastStatusName, newStatusName, task);
+      var obj = {
+                  type: 'update',
+                  taskId: taskId,
+                  newStatus: newStatusName,
+                  lastStatus: lastStatusName
+                };
+      this.get('socket.client').send(JSON.stringify(obj));
     }
   }
 });
